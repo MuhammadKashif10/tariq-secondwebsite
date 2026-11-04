@@ -19,7 +19,7 @@ Business details live in `src/config/site.ts`.
 **Required**
 
 - [x] `phone`, `phoneDisplay`, `whatsapp`, `streetAddress`, `hoursLabel` and `hours`: taken from fastjunkservicedubai.com.
-- [ ] `email`: confirm the mailbox exists. That site lists no email, so this is still an unconfirmed address on this domain.
+- [x] `email`: supplied by the owner.
 
 **Check the copy matches how you operate.** It was written without your input:
 
@@ -36,7 +36,7 @@ Business details live in `src/config/site.ts`.
 - [ ] `priceTiers[].fromAed`: add real prices to show "From AED x". Neither competitor publishes prices.
 - [ ] `reviews`: add genuine reviews and the section appears on the homepage and About page.
 - [ ] `tradeLicence`, `profiles`: these add trust and feed the structured data.
-- [ ] Add real photos of your crew and truck. They will outperform any stock image.
+- [ ] Replace the stock photos with real photos of your crew and truck. The current ones show models, not your team. Swap the files in `public/images` or change the paths in `src/data/images.ts`.
 - [ ] Set up a Google Business Profile and verify the site in Search Console, then submit `/sitemap.xml`.
 
 The structured data has no star rating. Do not add ratings unless they come from real reviews.
@@ -51,8 +51,13 @@ The structured data has no star rating. Do not add ratings unless they come from
 | FAQs | `src/data/faqs.ts` |
 | Guides | `src/data/posts.ts` |
 | Load builder items and sizes | `src/components/LoadBuilder.tsx` |
+| Photos and which page uses them | `src/data/images.ts` |
 
 New entries in the data files get their own page and sitemap entry automatically.
+
+## Photo licences
+
+Photos in `public/images` come from Unsplash and Pexels. Both licences allow free commercial use without attribution. Do not resell the photos on their own, and do not suggest that people shown in them endorse the business.
 
 ## Deploying
 

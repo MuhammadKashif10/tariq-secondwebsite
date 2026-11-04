@@ -3,6 +3,7 @@ import Link from "next/link";
 import { PageHero, PriceTiers } from "@/components/Blocks";
 import { CtaBand, WhatsAppButton } from "@/components/Cta";
 import { Icon } from "@/components/Icon";
+import { photos } from "@/data/images";
 
 export const metadata: Metadata = {
   title: "Junk Removal Prices in Dubai",
@@ -27,27 +28,28 @@ export default function PricingPage() {
       <PageHero
         crumbs={[{ name: "Pricing", path: "/pricing" }]}
         eyebrow="Pricing"
+        photo={photos.packingBox}
         title="One price, agreed before anything moves."
         lead="Every job is different, so we price from your photo. Here's exactly what goes into that number."
       >
         <WhatsAppButton label="Get my price" />
       </PageHero>
 
-      <section className="py-14 md:py-20">
+      <section className="py-16 md:py-24">
         <div className="wrap">
-          <h2 className="text-3xl md:text-4xl">Roughly how much truck do you need?</h2>
+          <h2 className="text-3xl md:text-[2.75rem]">Roughly how much truck do you need?</h2>
           <div className="mt-8">
             <PriceTiers />
           </div>
         </div>
       </section>
 
-      <section className="bg-sand-2 py-14 md:py-20">
+      <section className="bg-white py-16 md:py-24">
         <div className="wrap">
-          <h2 className="text-3xl md:text-4xl">Four things set your price</h2>
-          <ul className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <h2 className="text-3xl md:text-[2.75rem]">Four things set your price</h2>
+          <ul className="mt-9 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {factors.map((factor) => (
-              <li key={factor.title} className="border-t-4 border-ink pt-4">
+              <li key={factor.title} className="rounded-3xl bg-sand p-6">
                 <h3 className="text-xl">{factor.title}</h3>
                 <p className="mt-2 text-muted">{factor.text}</p>
               </li>
@@ -56,9 +58,9 @@ export default function PricingPage() {
         </div>
       </section>
 
-      <section className="py-14 md:py-20">
-        <div className="wrap grid gap-6 md:grid-cols-2">
-          <div className="rounded-xl border-2 border-ink bg-paper p-6">
+      <section className="py-16 md:py-24">
+        <div className="wrap grid gap-5 md:grid-cols-2">
+          <div className="card p-8">
             <h2 className="text-2xl">Included in your quote</h2>
             <ul className="mt-4 space-y-3">
               {included.map((item) => (
@@ -69,9 +71,9 @@ export default function PricingPage() {
               ))}
             </ul>
           </div>
-          <div className="rounded-xl border-2 border-sand-3 p-6">
+          <div className="rounded-3xl bg-ink p-8 text-white">
             <h2 className="text-2xl">What could change it</h2>
-            <ul className="mt-4 list-disc space-y-3 pl-5">
+            <ul className="mt-4 list-disc space-y-3 pl-5 text-mist marker:text-signal">
               {extras.map((item) => (
                 <li key={item}>{item}</li>
               ))}
@@ -79,7 +81,7 @@ export default function PricingPage() {
             <p className="mt-4 font-semibold">If something changes, you'll agree the new price before the crew loads anything.</p>
           </div>
         </div>
-        <p className="wrap mt-8 text-lg">
+        <p className="wrap mt-10 text-lg">
           On a tight budget? If you qualify, Dubai Municipality's bulky waste pickup is free.{" "}
           <Link href="/blog/dubai-municipality-free-bulky-waste-vs-private-junk-removal" className="link">
             See when it's the better choice

@@ -7,6 +7,12 @@ for (const warning of launchWarnings()) {
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
+  images: {
+    formats: ["image/avif", "image/webp"],
+    qualities: [50, 70],
+    deviceSizes: [640, 828, 1080, 1440, 1920],
+    minimumCacheTTL: 2678400,
+  },
   async headers() {
     return [
       {

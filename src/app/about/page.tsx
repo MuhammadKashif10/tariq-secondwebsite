@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { PageHero, Reviews } from "@/components/Blocks";
 import { CtaBand, WhatsAppButton } from "@/components/Cta";
 import { Icon, type IconName } from "@/components/Icon";
 import { site } from "@/config/site";
+import { photos } from "@/data/images";
 
 export const metadata: Metadata = {
   title: "About Us",
@@ -23,16 +25,21 @@ export default function AboutPage() {
       <PageHero
         crumbs={[{ name: "About", path: "/about" }]}
         eyebrow="About us"
+        photo={photos.moversRoom}
         title="Getting rid of junk in Dubai should take one message."
         lead="In a city of permits, service lifts and gated communities, the removal itself is the easy part. We take care of the rest."
       >
         <WhatsAppButton />
       </PageHero>
 
-      <section className="py-14 md:py-20">
-        <div className="wrap grid gap-8 lg:grid-cols-[1fr_1.5fr]">
-          <h2 className="text-3xl md:text-4xl">Why we work the way we do</h2>
+      <section className="py-16 md:py-24">
+        <div className="wrap grid gap-12 lg:grid-cols-2 lg:items-center">
+          <div className="reveal relative aspect-[4/5] overflow-hidden rounded-[2rem] shadow-lift">
+            <Image src={photos.moverCorridor.src} alt={photos.moverCorridor.alt} fill sizes="(min-width: 1024px) 45vw, 100vw" className="object-cover" />
+          </div>
           <div className="space-y-4 text-lg leading-relaxed">
+            <p className="eyebrow">Our approach</p>
+            <h2 className="text-3xl md:text-[2.75rem]">Why we work the way we do</h2>
             <p>
               Ask around for a junk removal price in Dubai and you'll normally hear "it depends". It does depend, but that shouldn't be where the conversation ends.
             </p>
@@ -46,12 +53,12 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="bg-sand-2 py-14 md:py-20">
+      <section className="bg-white py-16 md:py-24">
         <div className="wrap">
-          <h2 className="text-3xl md:text-4xl">The standards we hold ourselves to</h2>
-          <ul className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <h2 className="text-3xl md:text-[2.75rem]">The standards we hold ourselves to</h2>
+          <ul className="mt-9 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {standards.map((item) => (
-              <li key={item.title} className="rounded-xl bg-paper p-5">
+              <li key={item.title} className="rounded-3xl bg-sand p-6">
                 <Icon name={item.icon} className="size-8 text-signal-deep" />
                 <h3 className="mt-3 text-xl">{item.title}</h3>
                 <p className="mt-2 text-muted">{item.text}</p>

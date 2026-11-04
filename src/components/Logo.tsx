@@ -1,17 +1,17 @@
 export function Logo({ dark = false }: { dark?: boolean }) {
   return (
-    <span className="flex items-center gap-2.5">
-      <svg viewBox="0 0 48 32" className="h-8 w-12 shrink-0" aria-hidden="true">
-        <path d="M1 3h28v21H1z" fill="#f4581c" />
-        <path d="M6 3 1 10v6L12 3zM18 3 6 24h6L24 3z" fill={dark ? "#10211f" : "#f5efe4"} opacity=".9" />
-        <path d="M31 9h8l8 8v7H31z" fill={dark ? "#f5efe4" : "#10211f"} />
-        <circle cx="11" cy="26" r="5" fill={dark ? "#f5efe4" : "#10211f"} />
-        <circle cx="38" cy="26" r="5" fill={dark ? "#f5efe4" : "#10211f"} />
-      </svg>
-      <span className={`font-display text-[1.05rem] leading-[1.02] font-extrabold tracking-tight ${dark ? "text-sand" : "text-ink"}`}>
-        Dubai Junk
-        <br />
-        Removal Services
+    <span className="flex items-center gap-3">
+      <span className="grid size-11 shrink-0 place-items-center rounded-2xl bg-ink shadow-soft ring-1 ring-white/10">
+        <svg viewBox="0 0 32 24" className="w-7" aria-hidden="true">
+          <path d="M1 3a2 2 0 0 1 2-2h15a2 2 0 0 1 2 2v15H1z" fill="#f5b13d" />
+          <path d="M22 7h4.2a2 2 0 0 1 1.5.7l3.3 3.8V18h-9z" fill="#fff" />
+          <circle cx="8" cy="19" r="3.6" fill="#fff" stroke="#0a1a2f" strokeWidth="1.6" />
+          <circle cx="25" cy="19" r="3.6" fill="#fff" stroke="#0a1a2f" strokeWidth="1.6" />
+        </svg>
+      </span>
+      <span className={`leading-[1.1] ${dark ? "text-white" : "text-ink"}`}>
+        <span className="block text-[1.05rem] font-extrabold tracking-tight">Dubai Junk Removal</span>
+        <span className={`block text-[0.68rem] font-semibold tracking-[0.2em] uppercase ${dark ? "text-mist" : "text-muted"}`}>Services</span>
       </span>
     </span>
   );

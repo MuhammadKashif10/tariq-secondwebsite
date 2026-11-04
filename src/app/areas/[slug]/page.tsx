@@ -7,6 +7,7 @@ import { Icon } from "@/components/Icon";
 import { LoadBuilder } from "@/components/LoadBuilder";
 import { areas, getArea, zones } from "@/data/areas";
 import { faqGroups } from "@/data/faqs";
+import { areaPhotos, zonePhotos } from "@/data/images";
 import { getService } from "@/data/services";
 import { serviceMessage } from "@/lib/contact";
 import { faqSchema, serviceSchema } from "@/lib/schema";
@@ -56,18 +57,22 @@ export default async function AreaPage({ params }: Props) {
         eyebrow={zone?.name}
         title={title}
         lead={area.intro}
+        photo={areaPhotos[area.slug] ?? zonePhotos[area.zone]}
       />
 
-      <section className="py-14 md:py-20">
-        <div className="wrap grid gap-10 lg:grid-cols-[1.2fr_1fr]">
+      <section className="py-16 md:py-24">
+        <div className="wrap grid gap-12 lg:grid-cols-[1.2fr_1fr]">
           <div>
-            <h2 className="text-3xl md:text-4xl">Getting in and out of {area.name}</h2>
+            <p className="eyebrow">Local know-how</p>
+            <h2 className="mt-4 text-3xl md:text-[2.75rem]">Getting in and out of {area.name}</h2>
             <p className="mt-4 text-lg leading-relaxed">{area.access}</p>
-            <h2 className="mt-10 text-3xl md:text-4xl">Common jobs here</h2>
-            <ul className="mt-4 space-y-3 text-lg">
+            <h2 className="mt-12 text-3xl md:text-4xl">Common jobs here</h2>
+            <ul className="mt-5 space-y-3 text-lg font-medium">
               {area.jobs.map((job) => (
-                <li key={job} className="flex gap-2.5">
-                  <Icon name="check" className="mt-1 size-5 shrink-0 text-signal-deep" />
+                <li key={job} className="flex items-center gap-3">
+                  <span className="grid size-6 shrink-0 place-items-center rounded-full bg-signal text-ink">
+                    <Icon name="check" className="size-3.5" />
+                  </span>
                   {job}
                 </li>
               ))}
@@ -77,10 +82,10 @@ export default async function AreaPage({ params }: Props) {
         </div>
       </section>
 
-      <section className="bg-sand-2 py-14 md:py-20">
+      <section className="bg-white py-16 md:py-24">
         <div className="wrap">
-          <h2 className="text-3xl md:text-4xl">Popular in {area.name}</h2>
-          <ul className="mt-8 grid gap-4 md:grid-cols-3">
+          <h2 className="text-3xl md:text-[2.75rem]">Popular in {area.name}</h2>
+          <ul className="mt-9 grid grid-cols-2 gap-3 sm:gap-5 md:grid-cols-3">
             {areaServices.map((service) => (
               <li key={service.slug}>
                 <ServiceCard service={service} />
@@ -90,10 +95,10 @@ export default async function AreaPage({ params }: Props) {
         </div>
       </section>
 
-      <section className="py-14 md:py-20">
-        <div className="wrap grid gap-10 lg:grid-cols-[1fr_2fr]">
+      <section className="py-16 md:py-24">
+        <div className="wrap grid gap-10 lg:grid-cols-[1fr_1.8fr]">
           <div>
-            <h2 className="text-3xl md:text-4xl">{area.name} questions</h2>
+            <h2 className="text-3xl md:text-[2.75rem]">{area.name} questions</h2>
             <h3 className="mt-8 text-lg">Nearby areas</h3>
             <ul className="mt-2 space-y-1">
               {nearby.map((item) => (

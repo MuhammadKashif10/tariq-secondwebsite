@@ -30,7 +30,7 @@ export function ContactForm() {
   }
 
   return (
-    <form onSubmit={submit} className="grid gap-4 rounded-2xl border-2 border-ink bg-paper p-5 sm:grid-cols-2 sm:p-7">
+    <form onSubmit={submit} className="card grid gap-5 p-6 sm:grid-cols-2 sm:p-9">
       <Field label="Your name" className="sm:col-span-2">
         <input name="name" required autoComplete="name" className="field" />
       </Field>
@@ -76,7 +76,7 @@ export function ContactForm() {
 
 function Field({ label, className = "", children }: { label: string; className?: string; children: React.ReactNode }) {
   return (
-    <label className={`grid gap-1.5 font-semibold ${className}`}>
+    <label className={`grid gap-2 text-sm font-semibold ${className}`}>
       {label}
       {children}
     </label>

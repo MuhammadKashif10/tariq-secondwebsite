@@ -30,8 +30,7 @@ export const site = {
   phoneDisplay: "+971 55 784 3154",
   /** WhatsApp number, digits only, with country code. */
   whatsapp: "971557843154",
-  /** REPLACE: confirm this mailbox exists. */
-  email: "hello@dubaijunkremovalservices.com",
+  email: "mkashifshah10@gmail.com",
 
   /** Shown on the site and added to the schema. */
   streetAddress: "Business Bay, Dubai",

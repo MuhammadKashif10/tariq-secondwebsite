@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { JsonLd, PageHero } from "@/components/Blocks";
 import { CtaBand } from "@/components/Cta";
 import { site } from "@/config/site";
+import { postPhotos } from "@/data/images";
 import { getPost, posts } from "@/data/posts";
 import { getService } from "@/data/services";
 import { articleSchema } from "@/lib/schema";
@@ -46,6 +47,7 @@ export default async function PostPage({ params }: Props) {
         eyebrow={post.tag}
         title={post.title}
         lead={`${date} · ${post.readMinutes} min read · By the ${site.name} team`}
+        photo={postPhotos[post.slug]}
       />
       <article className="wrap max-w-3xl py-12 text-lg leading-relaxed md:py-16">
         {post.blocks.map((block, index) => {
@@ -63,7 +65,7 @@ export default async function PostPage({ params }: Props) {
         })}
         {post.sources && (
           <aside className="mt-10 border-t-2 border-sand-3 pt-5 text-base">
-            <h2 className="font-sans text-base font-bold tracking-normal">Sources</h2>
+            <h2 className="text-base font-bold tracking-normal">Sources</h2>
             <ul className="mt-2 space-y-1">
               {post.sources.map((source) => (
                 <li key={source.url}>
@@ -76,7 +78,7 @@ export default async function PostPage({ params }: Props) {
           </aside>
         )}
         {service && (
-          <p className="mt-10 rounded-xl bg-sand-2 p-5">
+          <p className="card mt-10 p-6">
             Related service:{" "}
             <Link href={`/services/${service.slug}`} className="link">
               {service.name} in Dubai
