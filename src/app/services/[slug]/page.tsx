@@ -8,7 +8,6 @@ import { Icon } from "@/components/Icon";
 import { areas } from "@/data/areas";
 import { photos, servicePhotos } from "@/data/images";
 import { getService, services } from "@/data/services";
-import { serviceMessage } from "@/lib/contact";
 import { faqSchema, serviceSchema } from "@/lib/schema";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -35,7 +34,6 @@ export default async function ServicePage({ params }: Props) {
   if (!service) notFound();
 
   const path = `/services/${service.slug}`;
-  const message = serviceMessage(service.name);
   const related = service.related.flatMap((slug) => getService(slug) ?? []);
   const localAreas = areas.filter((area) => area.services.includes(service.slug));
   const heroPhoto = servicePhotos[service.slug];
@@ -56,7 +54,7 @@ export default async function ServicePage({ params }: Props) {
         title={service.headline}
         photo={heroPhoto}
       >
-        <WhatsAppButton message={message} label="Get a price on WhatsApp" />
+        <WhatsAppButton label="Get a price on WhatsApp" />
         <CallButton dark />
       </PageHero>
 
@@ -107,7 +105,7 @@ export default async function ServicePage({ params }: Props) {
                 </li>
               ))}
             </ul>
-            <WhatsAppButton message={message} label="Get my price" className="mt-6 w-full" />
+            <WhatsAppButton label="Get my price" className="mt-6 w-full" />
             </div>
           </aside>
         </div>
@@ -148,7 +146,7 @@ export default async function ServicePage({ params }: Props) {
         </div>
       </section>
 
-      <CtaBand title={`Book ${service.name.toLowerCase()} in Dubai`} message={message} />
+      <CtaBand title={`Book ${service.name.toLowerCase()} in Dubai`} />
     </>
   );
 }

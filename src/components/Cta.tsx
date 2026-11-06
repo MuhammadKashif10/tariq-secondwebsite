@@ -5,16 +5,14 @@ import { defaultMessage, telUrl, whatsappUrl } from "@/lib/contact";
 import { Icon, WhatsAppIcon } from "./Icon";
 
 export function WhatsAppButton({
-  message = defaultMessage,
   label = "Send a photo on WhatsApp",
   className = "",
 }: {
-  message?: string;
   label?: string;
   className?: string;
 }) {
   return (
-    <a href={whatsappUrl(message)} target="_blank" rel="noopener" className={`btn btn-wa ${className}`}>
+    <a href={whatsappUrl(defaultMessage)} target="_blank" rel="noopener" className={`btn btn-wa ${className}`}>
       <WhatsAppIcon />
       {label}
     </a>
@@ -33,11 +31,9 @@ export function CallButton({ dark = false, className = "" }: { dark?: boolean; c
 export function CtaBand({
   title = "Got a pile that needs to go?",
   text = "Take a photo, send it over, and you'll have a fixed price to say yes or no to. No forms, no site visit.",
-  message,
 }: {
   title?: string;
   text?: string;
-  message?: string;
 }) {
   return (
     <section className="bg-sand py-16 md:py-24">
@@ -51,7 +47,7 @@ export function CtaBand({
               <p className="mt-4 max-w-xl text-lg text-mist">{text}</p>
             </div>
             <div className="flex flex-col gap-3">
-              <WhatsAppButton message={message} />
+              <WhatsAppButton />
               <CallButton dark />
             </div>
           </div>

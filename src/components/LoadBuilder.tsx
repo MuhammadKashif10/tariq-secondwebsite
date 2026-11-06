@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { whatsappUrl } from "@/lib/contact";
+import { defaultMessage, whatsappUrl } from "@/lib/contact";
 import { Icon, WhatsAppIcon, type IconName } from "./Icon";
 
 /** Rough share of a pickup truck each item takes up. A guide, not a price. */
@@ -23,7 +23,7 @@ function loadLabel(percent: number) {
   return "More than one truck";
 }
 
-export function LoadBuilder({ area }: { area?: string }) {
+export function LoadBuilder() {
   const [counts, setCounts] = useState<Record<string, number>>({});
 
   const change = (id: string, delta: number) =>
@@ -38,10 +38,9 @@ export function LoadBuilder({ area }: { area?: string }) {
   }, [counts]);
 
   const fill = Math.min(percent, 100) / 100;
-  const where = area ? ` in ${area}` : "";
   const message = lines.length
-    ? `Hi, I'd like a quote for a junk pickup${where}:\n${lines.map((line) => `- ${line}`).join("\n")}\nEstimated load: ${loadLabel(percent).toLowerCase()}.\nI'll send a photo and my location.`
-    : `Hi, I'd like a junk removal quote${where}. I'll send a photo.`;
+    ? `${defaultMessage}\n${lines.map((line) => `- ${line}`).join("\n")}\nEstimated load: ${loadLabel(percent).toLowerCase()}.`
+    : defaultMessage;
 
   return (
     <div className="rounded-[1.75rem] bg-white p-5 text-ink shadow-float sm:p-6">

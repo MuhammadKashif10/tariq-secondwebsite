@@ -6,9 +6,5 @@ export function whatsappUrl(message: string) {
 
 export const telUrl = `tel:${site.phone}`;
 
-export const defaultMessage = "Hi, I'd like a junk removal quote. I'll send a photo of what needs to go.";
-
-export function serviceMessage(service: string, area?: string) {
-  const where = area ? ` in ${area}` : " in Dubai";
-  return `Hi, I'd like a quote for ${service.toLowerCase()}${where}. I'll send a photo.`;
-}
+/** The one message pre-typed on every WhatsApp button. */
+export const defaultMessage = "Hi, I need junk removal service in Dubai.";

@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { areas } from "@/data/areas";
 import { services } from "@/data/services";
-import { whatsappUrl } from "@/lib/contact";
+import { defaultMessage, whatsappUrl } from "@/lib/contact";
 import { WhatsAppIcon } from "./Icon";
 
 /**
@@ -18,12 +18,12 @@ export function ContactForm() {
     const data = new FormData(event.currentTarget);
     const get = (key: string) => String(data.get(key) ?? "").trim();
     const lines = [
-      `Hi, I'm ${get("name")} and I'd like a quote.`,
+      defaultMessage,
+      `Name: ${get("name")}`,
       `Service: ${get("service")}`,
       `Area: ${get("area")}`,
       get("access") && `Floor and lift: ${get("access")}`,
       get("details") && `Details: ${get("details")}`,
-      "I'll send photos here.",
     ].filter(Boolean);
     window.open(whatsappUrl(lines.join("\n")), "_blank", "noopener");
     setSent(true);

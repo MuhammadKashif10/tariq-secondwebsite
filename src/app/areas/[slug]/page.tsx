@@ -9,7 +9,6 @@ import { areas, getArea, zones } from "@/data/areas";
 import { faqGroups } from "@/data/faqs";
 import { areaPhotos, zonePhotos } from "@/data/images";
 import { getService } from "@/data/services";
-import { serviceMessage } from "@/lib/contact";
 import { faqSchema, serviceSchema } from "@/lib/schema";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -78,7 +77,7 @@ export default async function AreaPage({ params }: Props) {
               ))}
             </ul>
           </div>
-          <LoadBuilder area={area.name} />
+          <LoadBuilder />
         </div>
       </section>
 
@@ -114,7 +113,7 @@ export default async function AreaPage({ params }: Props) {
         </div>
       </section>
 
-      <CtaBand title={`Clearing something in ${area.name}?`} message={serviceMessage("junk removal", area.name)} />
+      <CtaBand title={`Clearing something in ${area.name}?`} />
     </>
   );
 }
