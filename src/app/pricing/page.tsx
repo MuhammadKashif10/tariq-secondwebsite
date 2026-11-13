@@ -4,13 +4,14 @@ import { PageHero, PriceTiers } from "@/components/Blocks";
 import { CtaBand, WhatsAppButton } from "@/components/Cta";
 import { Icon } from "@/components/Icon";
 import { photos } from "@/data/images";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Junk Removal Prices in Dubai",
   description:
     "How junk removal is priced in Dubai: truck space, weight, access and timing. See what's included in your fixed quote and how to lower it.",
-  alternates: { canonical: "/pricing" },
-};
+  path: "/pricing",
+});
 
 const factors = [
   { title: "Volume", text: "How much truck space your items take up. This is the biggest factor." },

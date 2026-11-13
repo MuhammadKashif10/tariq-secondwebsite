@@ -1,19 +1,22 @@
 import type { Metadata } from "next";
-import { AreaDirectory, PageHero } from "@/components/Blocks";
+import { AreaDirectory, JsonLd, PageHero } from "@/components/Blocks";
 import { CtaBand, WhatsAppButton } from "@/components/Cta";
 import { areas } from "@/data/areas";
 import { photos } from "@/data/images";
+import { itemListSchema } from "@/lib/schema";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Areas We Cover Across Dubai",
   description:
     "Junk removal in Dubai Marina, Downtown, JVC, Palm Jumeirah, Deira, Al Quoz and more. Find access tips and local services for your community.",
-  alternates: { canonical: "/areas" },
-};
+  path: "/areas",
+});
 
 export default function AreasPage() {
   return (
     <>
+      <JsonLd data={itemListSchema("Areas we cover in Dubai", areas.map((a) => ({ name: a.name, path: `/areas/${a.slug}` })))} />
       <PageHero
         crumbs={[{ name: "Areas", path: "/areas" }]}
         eyebrow="Areas"

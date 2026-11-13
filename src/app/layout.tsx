@@ -5,7 +5,7 @@ import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { MobileBar } from "@/components/MobileBar";
 import { site } from "@/config/site";
-import { businessSchema } from "@/lib/schema";
+import { businessSchema, websiteSchema } from "@/lib/schema";
 import "./globals.css";
 
 const jakarta = Plus_Jakarta_Sans({ subsets: ["latin"], variable: "--font-jakarta", display: "swap" });
@@ -31,7 +31,13 @@ export const metadata: Metadata = {
     locale: "en_AE",
   },
   twitter: { card: "summary_large_image" },
-  robots: { index: true, follow: true },
+  robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1 } },
+  formatDetection: { telephone: false, email: false, address: false },
+  category: "Junk removal",
+  verification: {
+    ...(site.googleSiteVerification ? { google: site.googleSiteVerification } : {}),
+    ...(site.bingSiteVerification ? { other: { "msvalidate.01": site.bingSiteVerification } } : {}),
+  },
 };
 
 export const viewport: Viewport = {
@@ -46,6 +52,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           Skip to content
         </a>
         <JsonLd data={businessSchema()} />
+        <JsonLd data={websiteSchema()} />
         <Header />
         <main id="main">{children}</main>
         <Footer />

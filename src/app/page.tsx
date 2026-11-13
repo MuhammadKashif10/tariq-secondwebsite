@@ -11,12 +11,15 @@ import { photos } from "@/data/images";
 import { services } from "@/data/services";
 import { defaultMessage, whatsappUrl } from "@/lib/contact";
 import { faqSchema } from "@/lib/schema";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  alternates: { canonical: "/" },
+export const metadata: Metadata = pageMetadata({
+  title: "Dubai Junk Removal Services: Fixed Price from a Photo",
+  absolute: true,
   description:
     "Junk removal in Dubai, priced from one WhatsApp photo. We lift, load and clear furniture, appliances, villas and offices. Same-day slots when available.",
-};
+  path: "/",
+});
 
 const promises: { icon: IconName; title: string; text: string }[] = [
   { icon: "tag", title: "Fixed price", text: "Agreed before we lift a thing" },

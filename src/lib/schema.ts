@@ -1,8 +1,9 @@
 import { hasRealPhone, site } from "@/config/site";
 import { areas } from "@/data/areas";
-import type { Faq } from "@/data/services";
+import { services, type Faq } from "@/data/services";
 
 const businessId = `${site.url}/#business`;
+const websiteId = `${site.url}/#website`;
 
 /**
  * Only states facts held in the site config. Ratings are left out until real
@@ -17,7 +18,18 @@ export function businessSchema() {
     url: site.url,
     description: site.description,
     image: `${site.url}/opengraph-image`,
-    ...(hasRealPhone ? { telephone: site.phone } : {}),
+    logo: `${site.url}/apple-icon`,
+    ...(hasRealPhone
+      ? {
+          telephone: site.phone,
+          contactPoint: {
+            "@type": "ContactPoint",
+            telephone: site.phone,
+            contactType: "customer service",
+            areaServed: "AE",
+          },
+        }
+      : {}),
     email: site.email,
     address: {
       "@type": "PostalAddress",
@@ -36,7 +48,41 @@ export function businessSchema() {
       opens: hours.opens,
       closes: hours.closes,
     })),
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Junk removal services",
+      itemListElement: services.map((service) => ({
+        "@type": "Offer",
+        itemOffered: { "@type": "Service", name: service.name, url: `${site.url}/services/${service.slug}` },
+      })),
+    },
     ...(site.profiles.length ? { sameAs: site.profiles } : {}),
+  };
+}
+
+export function websiteSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": websiteId,
+    name: site.name,
+    url: site.url,
+    inLanguage: "en-AE",
+    publisher: { "@id": businessId },
+  };
+}
+
+export function itemListSchema(name: string, items: { name: string; path: string }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name,
+    itemListElement: items.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.name,
+      url: `${site.url}${item.path}`,
+    })),
   };
 }
 

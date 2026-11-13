@@ -6,12 +6,13 @@ import { CtaBand } from "@/components/Cta";
 import { Icon } from "@/components/Icon";
 import { photos, postPhotos } from "@/data/images";
 import { posts } from "@/data/posts";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Dubai Junk Removal Guides",
   description: "Practical guides to clearing junk in Dubai: free municipal pickup, move-out checklists, mattress disposal, e-waste and service lift rules.",
-  alternates: { canonical: "/blog" },
-};
+  path: "/blog",
+});
 
 export default function BlogPage() {
   return (

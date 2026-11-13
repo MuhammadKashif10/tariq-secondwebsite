@@ -18,7 +18,8 @@ Business details live in `src/config/site.ts`.
 
 **Required**
 
-- [x] `phone`, `phoneDisplay`, `whatsapp`, `streetAddress`, `hoursLabel` and `hours`: taken from fastjunkservicedubai.com.
+- [x] `phone`, `phoneDisplay` and `whatsapp`: supplied by the owner.
+- [x] `streetAddress`, `hoursLabel` and `hours`: taken from fastjunkservicedubai.com.
 - [x] `email`: supplied by the owner.
 
 **Check the copy matches how you operate.** It was written without your input:
@@ -28,7 +29,7 @@ Business details live in `src/config/site.ts`.
 - [ ] Crews dismantle furniture, sweep up, and send completion photos
 - [ ] Reuse, recycling and disposal claims ("Where it goes" on the homepage, the About page, service pages)
 - [ ] Same-day, evening and weekend availability
-- [ ] All 27 listed areas and all 12 services
+- [ ] All 45 listed areas and all 12 services
 - [ ] Privacy and Terms pages: have these reviewed for your business
 
 **Recommended**
@@ -37,7 +38,9 @@ Business details live in `src/config/site.ts`.
 - [ ] `reviews`: add genuine reviews and the section appears on the homepage and About page.
 - [ ] `tradeLicence`, `profiles`: these add trust and feed the structured data.
 - [ ] Replace the stock photos with real photos of your crew and truck. The current ones show models, not your team. Swap the files in `public/images` or change the paths in `src/data/images.ts`.
-- [ ] Set up a Google Business Profile and verify the site in Search Console, then submit `/sitemap.xml`.
+- [ ] Set up a Google Business Profile with the same name, phone and area as the site.
+- [ ] Verify the site in Google Search Console and Bing Webmaster Tools. Paste each code into `googleSiteVerification` and `bingSiteVerification`, push, then submit `https://dubaijunkremovalservices.com/sitemap.xml`.
+- [ ] When you change site content, update `contentUpdated` so the sitemap dates stay accurate.
 
 The structured data has no star rating. Do not add ratings unless they come from real reviews.
 
@@ -58,6 +61,8 @@ New entries in the data files get their own page and sitemap entry automatically
 ## Photo licences
 
 Photos in `public/images` come from Unsplash and Pexels. Both licences allow free commercial use without attribution. Do not resell the photos on their own, and do not suggest that people shown in them endorse the business.
+
+Each area page has its own photo in `public/images/areas` (Marina and Deira use the matching photos in `public/images`). Sources, licences and whether each photo shows the actual area are listed in `src/data/area-photo-credits.ts`. Where no free photo of an area exists, the photo shows a matching property type and its alt text describes only what is visible. Replace these with your own job photos from each area when you can.
 
 ## Deploying
 

@@ -5,12 +5,13 @@ import { Icon, WhatsAppIcon } from "@/components/Icon";
 import { site } from "@/config/site";
 import { photos } from "@/data/images";
 import { defaultMessage, telUrl, whatsappUrl } from "@/lib/contact";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Contact Us for a Quote",
   description: "Get a junk removal quote in Dubai. WhatsApp a photo, call us, or fill in the short form, and you'll get a fixed price.",
-  alternates: { canonical: "/contact" },
-};
+  path: "/contact",
+});
 
 export default function ContactPage() {
   return (

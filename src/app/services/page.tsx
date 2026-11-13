@@ -1,19 +1,22 @@
 import type { Metadata } from "next";
-import { PageHero, ServiceCard } from "@/components/Blocks";
+import { JsonLd, PageHero, ServiceCard } from "@/components/Blocks";
 import { CtaBand, WhatsAppButton } from "@/components/Cta";
 import { photos } from "@/data/images";
 import { services } from "@/data/services";
+import { itemListSchema } from "@/lib/schema";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Junk Removal Services in Dubai",
   description:
     "All our Dubai junk removal services: furniture, sofas, mattresses, appliances, villa and office clearance, garden waste, renovation debris and e-waste.",
-  alternates: { canonical: "/services" },
-};
+  path: "/services",
+});
 
 export default function ServicesPage() {
   return (
     <>
+      <JsonLd data={itemListSchema("Junk removal services in Dubai", services.map((s) => ({ name: s.name, path: `/services/${s.slug}` })))} />
       <PageHero
         crumbs={[{ name: "Services", path: "/services" }]}
         eyebrow="Services"

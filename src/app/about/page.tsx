@@ -5,12 +5,13 @@ import { CtaBand, WhatsAppButton } from "@/components/Cta";
 import { Icon, type IconName } from "@/components/Icon";
 import { site } from "@/config/site";
 import { photos } from "@/data/images";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "About Us",
   description: `${site.name} makes clearing junk in Dubai simple: a clear price from a photo, careful crews, and honest answers about timing and disposal.`,
-  alternates: { canonical: "/about" },
-};
+  path: "/about",
+});
 
 const standards: { icon: IconName; title: string; text: string }[] = [
   { icon: "tag", title: "The price is the price", text: "You'll agree the full amount before anything moves. If the job changes, you'll agree the change first." },

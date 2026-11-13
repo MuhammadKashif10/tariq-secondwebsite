@@ -25,12 +25,22 @@ export const site = {
     "Junk removal across Dubai. Send a photo on WhatsApp, get a fixed price, and a crew lifts, loads and clears it. Furniture, appliances, full villa clearances and more.",
 
   /** Real number in E.164 format, with + and country code. */
-  phone: "+971557843154",
+  phone: "+971553563316",
   /** How the number reads on the page. */
-  phoneDisplay: "+971 55 784 3154",
+  phoneDisplay: "+971 55 356 3316",
   /** WhatsApp number, digits only, with country code. */
-  whatsapp: "971557843154",
+  whatsapp: "971553563316",
   email: "mkashifshah10@gmail.com",
+
+  /** Last time the site's content changed. Used for sitemap dates. */
+  contentUpdated: "2026-11-13",
+
+  /**
+   * Search engine verification codes. Paste only the code from the meta tag
+   * each tool gives you, for example "abc123", not the whole tag.
+   */
+  googleSiteVerification: "",
+  bingSiteVerification: "",
 
   /** Shown on the site and added to the schema. */
   streetAddress: "Business Bay, Dubai",

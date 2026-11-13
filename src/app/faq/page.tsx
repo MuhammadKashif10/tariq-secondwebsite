@@ -4,12 +4,13 @@ import { CtaBand } from "@/components/Cta";
 import { faqGroups } from "@/data/faqs";
 import { photos } from "@/data/images";
 import { faqSchema } from "@/lib/schema";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Junk Removal FAQs",
   description: "Answers on junk removal in Dubai: pricing, same-day pickup, what we can take, building permits and service lifts.",
-  alternates: { canonical: "/faq" },
-};
+  path: "/faq",
+});
 
 export default function FaqPage() {
   return (

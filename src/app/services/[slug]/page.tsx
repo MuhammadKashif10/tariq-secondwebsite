@@ -9,6 +9,7 @@ import { areas } from "@/data/areas";
 import { photos, servicePhotos } from "@/data/images";
 import { getService, services } from "@/data/services";
 import { faqSchema, serviceSchema } from "@/lib/schema";
+import { pageMetadata } from "@/lib/seo";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -21,12 +22,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const service = getService((await params).slug);
   if (!service) return {};
-  return {
-    title: { absolute: service.metaTitle },
-    description: service.metaDescription,
-    alternates: { canonical: `/services/${service.slug}` },
-    openGraph: { title: service.metaTitle, description: service.metaDescription, url: `/services/${service.slug}` },
-  };
+  return pageMetadata({ title: service.metaTitle, absolute: true, description: service.metaDescription, path: `/services/${service.slug}`, image: `/services/${service.slug}/opengraph-image` });
 }
 
 export default async function ServicePage({ params }: Props) {
