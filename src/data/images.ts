@@ -1,3 +1,4 @@
+import { imageUrl } from "@/lib/image-url";
 import type { ZoneId } from "./areas";
 
 /**
@@ -7,7 +8,9 @@ import type { ZoneId } from "./areas";
  */
 export type Photo = { src: string; alt: string };
 
-const photo = (file: string, alt: string): Photo => ({ src: `/images/${file}.jpg`, alt });
+// Every photo path goes through imageUrl(), which points it at the Cloudflare
+// image origin when NEXT_PUBLIC_IMAGE_CDN_URL is set. See docs/cloudflare-r2-images.md.
+const photo = (file: string, alt: string): Photo => ({ src: imageUrl(`/images/${file}.jpg`), alt });
 
 
 export const photos = {
@@ -65,7 +68,7 @@ export const zonePhotos: Record<ZoneId, Photo> = {
 };
 
 /** One photo per area page, never shared. Sources and licences: area-photo-credits.ts */
-export const areaPhotos: Record<string, Photo> = {
+const areaPhotoFiles: Record<string, Photo> = {
   "dubai-marina": { src: "/images/dubai-marina.jpg", alt: "Dubai Marina towers around the marina waterway" },
   "jumeirah-beach-residence": { src: "/images/areas/jumeirah-beach-residence.jpg", alt: "The Dubai Marina and Jumeirah Beach Residence tower skyline seen across the sea under a pink-tinged cloudy sky" },
   "jumeirah-lakes-towers": { src: "/images/areas/jumeirah-lakes-towers.jpg", alt: "A Dubai Metro train passing a curved elevated station beside residential towers, with date palms in the foreground" },
@@ -112,6 +115,10 @@ export const areaPhotos: Record<string, Photo> = {
   "jumeirah-golf-estates": { src: "/images/areas/jumeirah-golf-estates.jpg", alt: "An infinity pool terrace with shade structures and palms overlooking open green fairways under a blue sky" },
   "emirates-living": { src: "/images/areas/emirates-living.jpg", alt: "Beige villas among dense green trees and palms, with a lake and open land visible in the background" },
 };
+
+export const areaPhotos: Record<string, Photo> = Object.fromEntries(
+  Object.entries(areaPhotoFiles).map(([slug, p]) => [slug, { ...p, src: imageUrl(p.src) }]),
+);
 
 export const postPhotos: Record<string, Photo> = {
   "dubai-municipality-free-bulky-waste-vs-private-junk-removal": photos.abandonedCouch,

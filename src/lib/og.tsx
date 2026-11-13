@@ -2,13 +2,32 @@ import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { ImageResponse } from "next/og";
 import { site } from "@/config/site";
+import { imageCdnUrl, imagePath } from "@/lib/image-url";
 
 export const ogSize = { width: 1200, height: 630 };
 export const ogContentType = "image/png";
 
+/**
+ * Photo bytes for a share image. Reads the local copy in /public when it
+ * exists, and falls back to the Cloudflare image origin once local copies
+ * have been removed.
+ */
+async function photoBytes(photo: string): Promise<Buffer> {
+  const local = path.join(process.cwd(), "public", imagePath(photo));
+  try {
+    return await readFile(local);
+  } catch {
+    const url = photo.startsWith("http") ? photo : imageCdnUrl ? `${imageCdnUrl}${photo}` : "";
+    if (!url) throw new Error(`Share image photo not found locally and no image CDN is set: ${photo}`);
+    const response = await fetch(url);
+    if (!response.ok) throw new Error(`Share image photo fetch failed (${response.status}): ${url}`);
+    return Buffer.from(await response.arrayBuffer());
+  }
+}
+
 /** Branded share image: the page's photo, its title, and how to get in touch. */
 export async function ogCard({ eyebrow, title, photo }: { eyebrow: string; title: string; photo: string }) {
-  const file = await readFile(path.join(process.cwd(), "public", photo));
+  const file = await photoBytes(photo);
   const src = `data:image/jpeg;base64,${file.toString("base64")}`;
   const size = title.length > 60 ? 54 : title.length > 40 ? 62 : 72;
 

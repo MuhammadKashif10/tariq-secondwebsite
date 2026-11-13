@@ -64,6 +64,10 @@ Photos in `public/images` come from Unsplash and Pexels. Both licences allow fre
 
 Each area page has its own photo in `public/images/areas` (Marina and Deira use the matching photos in `public/images`). Sources, licences and whether each photo shows the actual area are listed in `src/data/area-photo-credits.ts`. Where no free photo of an area exists, the photo shows a matching property type and its alt text describes only what is visible. Replace these with your own job photos from each area when you can.
 
+## Images on Cloudflare R2
+
+Photos can be served from a Cloudflare R2 bucket by setting `NEXT_PUBLIC_IMAGE_CDN_URL`. Leave it unset to serve them from `/public`. See [docs/cloudflare-r2-images.md](docs/cloudflare-r2-images.md) for setup, migration, verification and rollback.
+
 ## Deploying
 
 This is a standard Next.js app, so it runs on Vercel or any Node host. On Vercel, import the project and add both `dubaijunkremovalservices.com` and `www.dubaijunkremovalservices.com`. The `www` host redirects to the apex in `next.config.ts`.

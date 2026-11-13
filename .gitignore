@@ -5,3 +5,7 @@ out
 next-env.d.ts
 .env*
 .vercel
+!.env.example
+.wrangler
+cloudflare/r2-images/image-manifest.json
+.dev.vars
