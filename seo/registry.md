@@ -125,8 +125,8 @@ Titles are working titles in sentence case, at most 60 characters, because a gui
 
 | ID | Day | Working title (chars) | URL | Primary keyword | Cluster | Links to | Status |
 |---|---|---|---|---|---|---|---|
-| #01 | 1 | How to dispose of old furniture in Dubai: every option (54) | `/blog/how-to-dispose-of-old-furniture-in-dubai` | how to dispose old furniture in dubai | C1 Furniture | /services/furniture-removal, municipality guide | Planned |
-| #02 | 1 | Move-out permits in Dubai: how the NOC and gate pass work (57) | `/blog/move-out-permit-dubai` | move out permit dubai | C3 Property clearances | /services/move-out-clearance | Planned |
+| #01 | 1 | How to dispose of old furniture in Dubai: every option (54) | `/blog/how-to-dispose-of-old-furniture-in-dubai` | how to dispose old furniture in dubai | C1 Furniture | /services/furniture-removal, municipality guide | Live 2026-11-13 |
+| #02 | 1 | Move-out permits in Dubai: how the NOC and gate pass work (57) | `/blog/move-out-permit-dubai` | move out permit dubai | C3 Property clearances | /services/move-out-clearance | Live 2026-11-13 |
 | #03 | 2 | How to get a junk removal quote in Dubai from one photo (55) | `/blog/junk-removal-quote-from-photo` | junk removal quote dubai | C5 General junk | /services/junk-removal, /pricing, /contact | Planned |
 | #04 | 2 | Construction waste disposal in Dubai: rules for residents (57) | `/blog/renovation-waste-rules-dubai` | construction waste disposal dubai | C4 Outdoor & renovation | /services/construction-debris-removal | Planned |
 | #05 | 3 | Office relocation checklist for a Dubai lease handover (54) | `/blog/office-relocation-clearance-checklist-dubai` | office relocation checklist dubai | C3 Property clearances | /services/office-clearance | Planned |

@@ -42,6 +42,9 @@ export const photos = {
   abandonedCouch: photo("abandoned-couch", "Worn-out couch left against a wall"),
   dumpedSofa: photo("dumped-sofa-sand", "Old sofa dumped on open sandy ground"),
   deiraCreek: photo("deira-creek", "Deira waterfront and towers across Dubai Creek"),
+  // Pexels 9714795 and 4553261 (cropped), used under the Pexels licence.
+  furniturePile: photo("discarded-furniture-pile", "Pile of broken wooden chairs and tables seen from above"),
+  movingBoxesDoor: photo("moving-boxes-door", "Cardboard moving boxes stacked in front of white double doors"),
 } satisfies Record<string, Photo>;
 
 export const servicePhotos: Record<string, Photo> = {
@@ -127,4 +130,6 @@ export const postPhotos: Record<string, Photo> = {
   "how-to-dispose-of-a-mattress-in-dubai": photos.bedroom,
   "e-waste-disposal-dubai": photos.electronics,
   "junk-pickup-from-a-dubai-tower": photos.nightTowers,
+  "how-to-dispose-of-old-furniture-in-dubai": photos.furniturePile,
+  "move-out-permit-dubai": photos.movingBoxesDoor,
 };
