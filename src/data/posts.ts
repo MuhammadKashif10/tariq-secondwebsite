@@ -1,7 +1,11 @@
 export type Block =
   | { type: "p"; text: string }
   | { type: "h2"; text: string }
-  | { type: "ul"; items: string[] };
+  | { type: "h3"; text: string }
+  | { type: "ul"; items: string[] }
+  | { type: "ol"; items: string[] }
+  | { type: "callout"; title?: string; body: string }
+  | { type: "quote"; text: string; cite?: string };
 
 export type Post = {
   slug: string;
@@ -9,6 +13,8 @@ export type Post = {
   description: string;
   /** ISO date. Update when you revise a post. */
   date: string;
+  /** ISO date. Shown on the page and used for sitemap lastModified when set. */
+  updated?: string;
   readMinutes: number;
   tag: string;
   blocks: Block[];

@@ -11,6 +11,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...pages.map((path) => ({ url: `${site.url}${path}`, lastModified })),
     ...services.map((service) => ({ url: `${site.url}/services/${service.slug}`, lastModified })),
     ...areas.map((area) => ({ url: `${site.url}/areas/${area.slug}`, lastModified })),
-    ...posts.map((post) => ({ url: `${site.url}/blog/${post.slug}`, lastModified: post.date })),
+    ...posts.map((post) => ({ url: `${site.url}/blog/${post.slug}`, lastModified: post.updated ?? post.date })),
   ];
 }

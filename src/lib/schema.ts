@@ -1,6 +1,8 @@
 import { hasRealPhone, site } from "@/config/site";
 import { areas } from "@/data/areas";
+import type { Post } from "@/data/posts";
 import { services, type Faq } from "@/data/services";
+import { postWordCount, sortedPosts } from "@/lib/post";
 
 const businessId = `${site.url}/#business`;
 const websiteId = `${site.url}/#website`;
@@ -126,16 +128,40 @@ export function breadcrumbSchema(crumbs: Crumb[]) {
   };
 }
 
-export function articleSchema(title: string, description: string, path: string, date: string) {
+export function blogPageSchema() {
+  const ordered = sortedPosts();
   return {
     "@context": "https://schema.org",
-    "@type": "Article",
-    headline: title,
-    description,
-    datePublished: date,
-    dateModified: date,
-    mainEntityOfPage: `${site.url}${path}`,
-    author: { "@type": "Organization", name: site.name, url: site.url },
+    "@type": "Blog",
+    name: "Dubai Junk Removal Guides",
+    description:
+      "Practical guides to clearing junk in Dubai: municipal pickup, move-out checklists, mattress disposal, e-waste and tower access.",
+    url: `${site.url}/blog`,
+    inLanguage: "en-AE",
+    publisher: { "@id": businessId },
+    blogPost: ordered.map((post) => ({
+      "@type": "BlogPosting",
+      headline: post.title,
+      description: post.description,
+      datePublished: post.date,
+      dateModified: post.updated ?? post.date,
+      url: `${site.url}/blog/${post.slug}`,
+    })),
+  };
+}
+
+export function blogPostingSchema(post: Post, path: string) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: post.title,
+    description: post.description,
+    image: `${site.url}/blog/${post.slug}/opengraph-image`,
+    datePublished: post.date,
+    dateModified: post.updated ?? post.date,
+    wordCount: postWordCount(post),
+    mainEntityOfPage: { "@type": "WebPage", "@id": `${site.url}${path}` },
+    author: { "@id": businessId },
     publisher: { "@id": businessId },
   };
 }
