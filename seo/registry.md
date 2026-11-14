@@ -127,8 +127,8 @@ Titles are working titles in sentence case, at most 60 characters, because a gui
 |---|---|---|---|---|---|---|---|
 | #01 | 1 | How to dispose of old furniture in Dubai: every option (54) | `/blog/how-to-dispose-of-old-furniture-in-dubai` | how to dispose old furniture in dubai | C1 Furniture | /services/furniture-removal, municipality guide | Live 2026-11-13 |
 | #02 | 1 | Move-out permits in Dubai: how the NOC and gate pass work (57) | `/blog/move-out-permit-dubai` | move out permit dubai | C3 Property clearances | /services/move-out-clearance | Live 2026-11-13 |
-| #03 | 2 | How to get a junk removal quote in Dubai from one photo (55) | `/blog/junk-removal-quote-from-photo` | junk removal quote dubai | C5 General junk | /services/junk-removal, /pricing, /contact | Planned |
-| #04 | 2 | Construction waste disposal in Dubai: rules for residents (57) | `/blog/renovation-waste-rules-dubai` | construction waste disposal dubai | C4 Outdoor & renovation | /services/construction-debris-removal | Planned |
+| #03 | 2 | How to get a junk removal quote in Dubai from one photo (55) | `/blog/junk-removal-quote-from-photo` | junk removal quote dubai | C5 General junk | /services/junk-removal, /pricing, /contact | Live 2026-11-14 |
+| #04 | 2 | Construction waste disposal in Dubai: rules for residents (57) | `/blog/renovation-waste-rules-dubai` | construction waste disposal dubai | C4 Outdoor & renovation | /services/construction-debris-removal | Live 2026-11-14 |
 | #05 | 3 | Office relocation checklist for a Dubai lease handover (54) | `/blog/office-relocation-clearance-checklist-dubai` | office relocation checklist dubai | C3 Property clearances | /services/office-clearance | Planned |
 | #06 | 3 | How to dispose of an old fridge or freezer in Dubai (51) | `/blog/how-to-dispose-of-a-fridge-in-dubai` | how to dispose of a fridge in dubai | C2 Appliances & e-waste | /services/appliance-removal | Planned |
 | #07 | 4 | Leaving Dubai for good: what to do with your furniture (54) | `/blog/leaving-dubai-for-good-furniture-and-appliances` | leaving dubai for good | C3 Property clearances | /services/move-out-clearance | Planned |

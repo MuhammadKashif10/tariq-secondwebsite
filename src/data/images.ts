@@ -45,6 +45,9 @@ export const photos = {
   // Pexels 9714795 and 4553261 (cropped), used under the Pexels licence.
   furniturePile: photo("discarded-furniture-pile", "Pile of broken wooden chairs and tables seen from above"),
   movingBoxesDoor: photo("moving-boxes-door", "Cardboard moving boxes stacked in front of white double doors"),
+  // Pexels 28100043 and 15798781, used under the Pexels licence.
+  phonePhotoRoom: photo("phone-photo-living-room", "Hands holding a phone to photograph a living room"),
+  renovationRoom: photo("renovation-room-bags", "Room stripped back to brick during a renovation, with bags of material on the floor"),
 } satisfies Record<string, Photo>;
 
 export const servicePhotos: Record<string, Photo> = {
@@ -132,4 +135,6 @@ export const postPhotos: Record<string, Photo> = {
   "junk-pickup-from-a-dubai-tower": photos.nightTowers,
   "how-to-dispose-of-old-furniture-in-dubai": photos.furniturePile,
   "move-out-permit-dubai": photos.movingBoxesDoor,
+  "junk-removal-quote-from-photo": photos.phonePhotoRoom,
+  "renovation-waste-rules-dubai": photos.renovationRoom,
 };

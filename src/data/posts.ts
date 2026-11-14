@@ -601,6 +601,283 @@ export const posts: Post[] = [
       { label: "Bayut: how to obtain an Emaar move-in and move-out permit (updated October 2026)", url: "https://www.bayut.com/mybayut/emaar-move-in-out-permit" },
     ],
   },
+  {
+    slug: "junk-removal-quote-from-photo",
+    title: "How to get a junk removal quote in Dubai from one photo",
+    description:
+      "The photos and details that turn a WhatsApp message into a fixed junk removal quote in Dubai, and how to stop the price changing on the day.",
+    date: "2026-11-14",
+    readMinutes: 5,
+    tag: "How-to",
+    relatedService: "junk-removal",
+    blocks: [
+      {
+        type: "p",
+        text: "To get an accurate junk removal quote in Dubai, send clear photos of everything that's going, plus four details: the area, the floor, whether there's a service lift, and where a truck can park. With that, a crew can agree a fixed price before anyone arrives, and the price shouldn't change on the day.",
+      },
+      {
+        type: "p",
+        text: "Most quotes that change do so because something was missing from the first message, not because of the crew. Here's what to photograph, what to write, and how to show the items that are hard to judge from a picture.",
+      },
+      { type: "h2", text: "The five photos that get a fixed price fast" },
+      {
+        type: "p",
+        text: "One photo can be enough for a single sofa. For anything more, these five cover almost every job:",
+      },
+      {
+        type: "ol",
+        items: [
+          "The whole pile: stand back and get everything that's going in one frame, so the crew can judge the volume",
+          "Each large piece on its own: wardrobes, beds, sofas, appliances and tables, taken straight on rather than from above",
+          "Anything broken, wet or unusual: a collapsed bed, a leaking fridge, a mirror or a glass top",
+          "The route out: the corridor, the stairs, the door to the lift or the gate, especially if anything is narrow or tight",
+          "The loading point: the building entrance, the loading bay or the villa driveway, so the crew knows where the truck will stand",
+        ],
+      },
+      {
+        type: "p",
+        text: "Take the photos in daylight or with the lights on, and hold the phone level. A dark, close-up shot of the corner of a sofa doesn't show how big it is.",
+      },
+      {
+        type: "callout",
+        title: "Ready to send?",
+        body: "Message the photos and details to us on WhatsApp. We reply with a fixed price, and nothing is booked until you agree it.",
+      },
+      { type: "h2", text: "Details to include with the photos" },
+      {
+        type: "p",
+        text: "Photos show what's going. These details tell the crew what it will take to get it out:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Area and building or community, for example \"JVC, a mid-rise building\" or \"Mirdif, a villa\"",
+          "The floor, and whether there's a lift big enough for furniture, or only stairs",
+          "Whether the building needs a service lift booking or a move permit, and if you have one yet",
+          "Parking: a loading bay, a basement with a height limit, roadside only, or a driveway",
+          "A location pin, which saves the crew searching for the right entrance",
+          "The day and time you'd like, and any deadline, such as a handover or an inspection",
+          "Anything that needs dismantling, disconnecting or carrying from a storeroom, balcony or roof",
+        ],
+      },
+      {
+        type: "p",
+        text: "In a tower, the building's rules can matter as much as the items. If you're not sure what your building needs, ask reception before you book, and include the answer in your message.",
+      },
+      { type: "h2", text: "Showing heavy or awkward items" },
+      {
+        type: "p",
+        text: "Some things are hard to judge from a photo. A little extra detail stops them becoming a surprise on the day.",
+      },
+      { type: "h3", text: "Give a sense of size" },
+      {
+        type: "p",
+        text: "For big pieces, add rough measurements or put something familiar beside them, such as a chair or a door. \"A wardrobe about two metres tall and three doors wide\" is far more useful than \"a big wardrobe\".",
+      },
+      { type: "h3", text: "Say what it's made of" },
+      {
+        type: "p",
+        text: "Two tables can look the same in a photo and weigh very different amounts. Mention marble, granite, glass, solid wood or metal, and anything a single person can't lift. The same goes for bags. Say whether they hold clothes, or tiles and rubble.",
+      },
+      { type: "h3", text: "Mention anything fixed or connected" },
+      {
+        type: "p",
+        text: "Say if a wardrobe is screwed to the wall, a washing machine is still plumbed in, or a bed is bolted together. It changes the tools and time needed, and some fixed items belong to the landlord, so check before you include them.",
+      },
+      { type: "h3", text: "Don't forget the hidden spaces" },
+      {
+        type: "p",
+        text: "Storerooms, balconies, maid's rooms, under-bed drawers and parking spaces fill up without anyone noticing. Open them and photograph them too, even if you think they're nearly empty.",
+      },
+      { type: "h2", text: "Why quotes change on the day, and how to avoid it" },
+      {
+        type: "p",
+        text: "A fixed price is only as good as the information behind it. These are the usual reasons a price has to be looked at again:",
+      },
+      {
+        type: "ul",
+        items: [
+          "More items than the photos showed, often from a storeroom or balcony",
+          "The lift is out of service, too small, or not booked, so everything goes down the stairs",
+          "The building turns the crew away because there's no permit or lift slot",
+          "Items aren't ready: wardrobes still full, or appliances still connected",
+          "Something is far heavier than it looked, such as bags of tiles described as \"some bags\"",
+        ],
+      },
+      {
+        type: "p",
+        text: "Every one of these can be prevented before the day. Send photos of everything, book the lift, empty what needs emptying, and send a photo of any new item as soon as you add it, so it can be priced before the crew sets out.",
+      },
+      {
+        type: "p",
+        text: "How the price itself is worked out (volume, weight, access and timing) is explained on our pricing page. This guide is only about giving the crew what it needs to price the job right the first time.",
+      },
+      { type: "h2", text: "FAQs" },
+      { type: "h3", text: "Is a photo quote free?" },
+      {
+        type: "p",
+        text: "Yes. Quotes are free, there's no call-out fee, and you're under no obligation to book. You pay after the job is done.",
+      },
+      { type: "h3", text: "Can I get a quote for just one item?" },
+      {
+        type: "p",
+        text: "Yes. One clear photo of a single sofa, mattress or appliance, with the area, floor and lift details, is usually all that's needed.",
+      },
+      { type: "h3", text: "What if I find more things after I've been quoted?" },
+      {
+        type: "p",
+        text: "Send a photo of the extra items before the collection day. The price can be updated in advance, rather than on the doorstep.",
+      },
+    ],
+  },
+  {
+    slug: "renovation-waste-rules-dubai",
+    title: "Construction waste disposal in Dubai: rules for residents",
+    description:
+      "Where renovation debris can and can't go in Dubai, who is responsible for removing it, what the law and fines say, and how to handle a small DIY job.",
+    date: "2026-11-14",
+    readMinutes: 6,
+    tag: "Dubai guide",
+    relatedService: "construction-debris-removal",
+    blocks: [
+      {
+        type: "p",
+        text: "Construction waste disposal in Dubai has one basic rule: renovation debris must go to a designated disposal site in an authorised vehicle. It can't go in community bins, building corridors or on empty land.",
+      },
+      {
+        type: "p",
+        text: "Under Dubai's waste law, the person who produces the waste is responsible for getting it there. On most renovations that's the contractor, so the simplest protection is to write debris removal into your contract before the work starts.",
+      },
+      { type: "h2", text: "What counts as construction and demolition waste" },
+      {
+        type: "p",
+        text: "Dubai Municipality describes construction and demolition waste as the residues from building or knocking down buildings and infrastructure, mainly concrete, bricks, gypsum, wood, glass, metals and plastic. A home renovation produces a smaller version of the same thing:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Broken tiles, rubble and old screed",
+          "Gypsum board and old false ceilings",
+          "Kitchen cabinets, worktops and old sanitary ware",
+          "Doors, frames, skirting and wood offcuts",
+          "Cable, pipe and metal fittings",
+          "Packaging from the new materials",
+        ],
+      },
+      {
+        type: "p",
+        text: "Paint tins, solvents, adhesives and other chemicals are different. They can be hazardous, so keep them out of the general debris and ask your contractor how they'll be disposed of.",
+      },
+      { type: "h2", text: "Where it must not go" },
+      { type: "h3", text: "Public places and empty land" },
+      {
+        type: "p",
+        text: "Law No. 18 of 2024, Dubai's waste management law, says that no person may dump, discard, place or otherwise dispose of any waste in public places. The law's definition of a public place includes vacant land plots. The empty plot at the end of the road isn't a disposal site, however convenient it looks.",
+      },
+      { type: "h3", text: "Community and building bins" },
+      {
+        type: "p",
+        text: "Household bins are for household waste. A few bags of rubble can split a bin and block it for everyone else. Dubai's published public hygiene penalty schedule also lists a fine for leaving goods or equipment next to a waste container.",
+      },
+      { type: "h3", text: "Corridors, stairwells and car parks" },
+      {
+        type: "p",
+        text: "In a tower, bags of debris left outside the flat or in the car park are a fire and access risk, and they're the building's problem until someone moves them. Most buildings set their own rules for renovation works, so check with management before the work starts and keep debris inside the property until it's collected.",
+      },
+      { type: "h2", text: "Who is responsible: you or your contractor" },
+      {
+        type: "p",
+        text: "Law No. 18 of 2024 requires a waste producer to transport the waste generated from its activities to disposal sites using authorised vehicles. Dubai Municipality's 2023 circular on sorting construction waste is addressed to contractors and engineering consultants, not homeowners.",
+      },
+      {
+        type: "p",
+        text: "In practice, when you hire a contractor, the contractor is producing the debris. When you knock out a bathroom yourself, you are. Either way, the debris has to leave by a legitimate route, and if it's dumped, the building and your neighbours will remember where it came from.",
+      },
+      { type: "h3", text: "Put debris removal in the contract" },
+      {
+        type: "p",
+        text: "Before you sign, make sure the quote or contract says, in writing:",
+      },
+      {
+        type: "ul",
+        items: [
+          "That removing all debris from the property is included in the price",
+          "How often it will be removed, for example at the end of each stage, so it doesn't pile up",
+          "Who will collect it, and where it will be taken",
+          "That old fittings you want to keep, such as a vanity or light fittings, are set aside, not thrown out",
+          "That corridors, lifts and shared areas will be protected and left clean",
+        ],
+      },
+      {
+        type: "p",
+        text: "If your community or building requires approval for the renovation, read its conditions on debris and working hours, and give your contractor a copy.",
+      },
+      { type: "h2", text: "Sorting materials as Dubai Municipality describes" },
+      {
+        type: "p",
+        text: "Dubai Municipality's Circular No. 12-10-1 of 2023 asks contractors to separate and sort construction waste on site before it's transported, for example into concrete, rebar, wood, tiles and plastic. It also asks them to remove reusable parts such as doors, windows, aluminium and cables before demolition.",
+      },
+      {
+        type: "p",
+        text: "The circular is written for construction sites, but the same idea makes a home renovation easier:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Keep heavy material, such as tiles and rubble, apart from bulky light material like cabinets and packaging",
+          "Set aside metal, which is easy to recycle",
+          "Take doors, fittings and sanitary ware out whole if someone could reuse them",
+          "Keep anything hazardous completely separate",
+        ],
+      },
+      {
+        type: "p",
+        text: "Sorted debris is quicker to load, and whoever collects it can see exactly what they're taking.",
+      },
+      { type: "h2", text: "Small DIY jobs: practical steps" },
+      {
+        type: "p",
+        text: "Retiling a bathroom or taking out a kitchen yourself still produces a surprising amount of waste. A typical small job goes like this:",
+      },
+      {
+        type: "ol",
+        items: [
+          "Check your building's or community's rules on renovation works, working hours and debris",
+          "Bag rubble in strong bags, and only fill them to a weight one person can lift",
+          "Keep the bags inside the property, on a protected floor, not in the corridor",
+          "Book the service lift for collection day if you're in a tower",
+          "Book a collection that will take it to a proper disposal site, and ask where it's going",
+          "Sweep the route afterwards, so the building has nothing to complain about",
+        ],
+      },
+      {
+        type: "p",
+        text: "When you get a quote for the collection, say what's in the bags. Tiles and rubble weigh far more than they look, and that affects the price and the vehicle.",
+      },
+      { type: "h2", text: "FAQs" },
+      { type: "h3", text: "What is the fine for dumping debris in Dubai?" },
+      {
+        type: "p",
+        text: "Executive Council Resolution No. 14 of 2015 lists AED 1,000 for disposing of waste in public places or on vacant land, and AED 5,000 for disposing of waste or hazardous materials outside designated sites. Law No. 18 of 2024 allows fines of up to AED 500,000, doubled for a repeat within a year, with the specific amounts set by resolution. Check the Dubai Legislation Portal for the current schedule.",
+      },
+      { type: "h3", text: "Can I put renovation waste in the community bin?" },
+      {
+        type: "p",
+        text: "No. Bins are for household waste, and leaving debris next to them is a listed violation. Book a collection that takes it to a disposal site instead.",
+      },
+      { type: "h3", text: "Should I hire a skip?" },
+      {
+        type: "p",
+        text: "A skip can suit a large villa project with space for it on the plot. For a flat or a small job, bagged debris collected by a crew is usually simpler, because there's nowhere to put a skip and no one to fill it.",
+      },
+    ],
+    sources: [
+      { label: "Dubai Legislation Portal: Law No. 18 of 2024 Regulating Waste Management", url: "https://dlp.dubai.gov.ae/Legislation%20Reference/2024/Law%20No.%20%2818%29%20of%202024%20Regulating%20Waste%20Management.html" },
+      { label: "Dubai Legislation Portal: Executive Council Resolution No. 14 of 2015", url: "https://dlp.dubai.gov.ae/Legislation%20Reference/2015/Executive%20Council%20Resolution%20No.%20(14)%20of%202015.html" },
+      { label: "Dubai Municipality: Circular No. 12-10-1 of 2023 on sorting construction waste", url: "https://dmpmedia.dm.gov.ae/uploads/2024/12/12-10-1.pdf" },
+      { label: "Dubai Municipality: Technical Guidelines on Construction and Demolition Waste Collection and Transportation (2024)", url: "https://dmpmedia.dm.gov.ae/uploads/2026/06/3-CD-Waste-Collection-and-Transportation.pdf" },
+    ],
+  },
 ];
 
 export const getPost = (slug: string) => posts.find((p) => p.slug === slug);
