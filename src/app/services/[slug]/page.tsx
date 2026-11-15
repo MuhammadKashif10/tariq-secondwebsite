@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { PostCard, toSummary } from "@/components/blog/PostCard";
 import { CheckList, FaqSection, JsonLd, PageHero, SectionHead, ServiceGrid, TipCards } from "@/components/Blocks";
 import { CallButton, CtaBand, WhatsAppButton } from "@/components/Cta";
 import { Icon } from "@/components/Icon";
@@ -9,6 +10,7 @@ import { areas } from "@/data/areas";
 import { photos, servicePhotos } from "@/data/images";
 import { getService, services } from "@/data/services";
 import { faqSchema, serviceSchema } from "@/lib/schema";
+import { sortedPosts } from "@/lib/post";
 import { pageMetadata } from "@/lib/seo";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -32,6 +34,7 @@ export default async function ServicePage({ params }: Props) {
   const path = `/services/${service.slug}`;
   const related = service.related.flatMap((slug) => getService(slug) ?? []);
   const localAreas = areas.filter((area) => area.services.includes(service.slug));
+  const guides = sortedPosts().filter((post) => post.relatedService === service.slug);
   const heroPhoto = servicePhotos[service.slug];
   // A second image for the body, different from the one in the hero.
   const bodyPhoto = heroPhoto === photos.moversRoom ? photos.moversInterior : photos.moversRoom;
@@ -110,7 +113,27 @@ export default async function ServicePage({ params }: Props) {
 
       <FaqSection title={`${service.name} questions`} faqs={service.faqs} />
 
-      <section className="sec sec-white sheet">
+      {guides.length > 0 && (
+        <section className="sec sec-white sheet">
+          <div className="wrap">
+            <SectionHead eyebrow="Related guides" title={`Guides on ${service.name.toLowerCase()}`}>
+              <Link href="/blog" className="btn btn-line">
+                All guides
+                <Icon name="arrow" className="ar size-5" />
+              </Link>
+            </SectionHead>
+            <ul className="cards3 mt-12">
+              {guides.map((post) => (
+                <li key={post.slug} className="rv">
+                  <PostCard post={toSummary(post)} />
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      )}
+
+      <section className={`sec ${guides.length > 0 ? "sec-light" : "sec-white"} sheet`}>
         <div className="wrap">
           <SectionHead eyebrow="Related" title="Related services">
             <Link href="/services" className="btn btn-line">
