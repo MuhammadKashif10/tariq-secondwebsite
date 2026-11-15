@@ -47,6 +47,9 @@ export const photos = {
   movingBoxesDoor: photo("moving-boxes-door", "Cardboard moving boxes stacked in front of white double doors"),
   // Pexels 28100043 and 15798781, used under the Pexels licence.
   phonePhotoRoom: photo("phone-photo-living-room", "Hands holding a phone to photograph a living room"),
+  // Pexels 5483236 and 8032016, used under the Pexels licence.
+  emptyOffice: photo("empty-office-workstations", "Rows of empty office workstations and chairs beside floor-to-ceiling windows"),
+  stainlessFridge: photo("stainless-fridge-kitchen", "A stainless steel double-door fridge between white kitchen cabinets"),
   renovationRoom: photo("renovation-room-bags", "Room stripped back to brick during a renovation, with bags of material on the floor"),
   // Illustrative pair for the before and after slider, from the redesign prototype.
   clutteredRoom: photo("cluttered-bedroom-before", "A cluttered bedroom with clothes piled on the bed and rails"),
@@ -140,4 +143,6 @@ export const postPhotos: Record<string, Photo> = {
   "move-out-permit-dubai": photos.movingBoxesDoor,
   "junk-removal-quote-from-photo": photos.phonePhotoRoom,
   "renovation-waste-rules-dubai": photos.renovationRoom,
+  "office-relocation-clearance-checklist-dubai": photos.emptyOffice,
+  "how-to-dispose-of-a-fridge-in-dubai": photos.stainlessFridge,
 };

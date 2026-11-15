@@ -878,6 +878,280 @@ export const posts: Post[] = [
       { label: "Dubai Municipality: Technical Guidelines on Construction and Demolition Waste Collection and Transportation (2024)", url: "https://dmpmedia.dm.gov.ae/uploads/2026/06/3-CD-Waste-Collection-and-Transportation.pdf" },
     ],
   },
+  {
+    slug: "office-relocation-clearance-checklist-dubai",
+    title: "Office relocation checklist for a Dubai lease handover",
+    description:
+      "An office relocation checklist for Dubai: what to clear and when, how to split movers from the clearance crew, and what the building and landlord need.",
+    date: "2026-11-15",
+    readMinutes: 6,
+    tag: "Moving",
+    relatedService: "office-clearance",
+    blocks: [
+      {
+        type: "p",
+        text: "An office relocation in Dubai runs on two lists: what moves to the new office, and what has to leave the old one before the lease ends. This checklist covers the second list, from scoping the clear-out three months ahead to the walk-through on handover day.",
+      },
+      {
+        type: "p",
+        text: "Most handovers that slip do so because the clearance was planned last. The movers get booked early, then someone notices in the final week that 40 chairs, a reception desk and a storeroom of old files aren't going anywhere.",
+      },
+      { type: "h2", text: "12 to 4 weeks out: scope what leaves" },
+      {
+        type: "p",
+        text: "Start with the lease, not the furniture. It says what condition the unit must be in when you hand it back. Some landlords accept the office as fitted. Others expect it returned closer to its original state. That one clause decides how much has to go.",
+      },
+      {
+        type: "ol",
+        items: [
+          "Read the handover clause and note the date the keys are due back",
+          "Ask the landlord or agent whether they want a pre-handover inspection, and book it",
+          "Walk the office floor by floor with a plan, including storerooms, server rooms, pantries and any parking or basement storage",
+          "Tag each item: moving, staying for the landlord, or leaving",
+          "Photograph everything tagged as leaving and keep a simple count, such as \"22 workstations, 30 chairs, 6 pedestal units\"",
+        ],
+      },
+      {
+        type: "p",
+        text: "Twelve weeks sounds generous, but furniture decisions involve several people. Finance wants to know what has resale value, IT wants its equipment handled separately, and staff want to keep their chairs. Starting early gives those conversations room.",
+      },
+      { type: "h2", text: "Movers vs clearance crew: split the inventory" },
+      {
+        type: "p",
+        text: "Movers and a clearance crew do different jobs. Movers pack, protect and deliver items to the new address. A clearance crew dismantles, carries out and takes away what isn't going anywhere. Mixing the two on one list leads to movers quoting for items you plan to discard, or discarded items arriving at the new office.",
+      },
+      {
+        type: "p",
+        text: "Split the inventory into two documents before you ask anyone for a price:",
+      },
+      {
+        type: "ul",
+        items: [
+          "The moving list: what goes to the new office, with the destination floor and room",
+          "The clearance list: what leaves for good, with photos and counts",
+          "A short note on anything uncertain, such as old archive boxes awaiting a decision",
+        ],
+      },
+      {
+        type: "p",
+        text: "IT equipment needs its own line. Removal isn't data destruction, so wipe or remove drives and shred confidential paperwork before anything is collected, or use a specialist that certifies destruction.",
+      },
+      {
+        type: "callout",
+        title: "Get the clearance priced",
+        body: "Send photos of everything on the clearance list on WhatsApp, with the building name, floor and handover date. We reply with a fixed price for the clearance.",
+      },
+      { type: "h2", text: "Building and landlord requirements" },
+      {
+        type: "p",
+        text: "Commercial towers in Business Bay, DIFC, JLT and Dubai Silicon Oasis each have their own rules for moving goods in and out. Ask the building management office for them in writing as soon as you have dates, then share them with the movers and the clearance crew.",
+      },
+      { type: "h3", text: "Loading bay and goods lift bookings" },
+      {
+        type: "p",
+        text: "Most office towers expect large items to leave through a loading bay and a goods or service lift, not the main lobby. Slots are often limited and shared with other tenants, so book early. Ask how long each slot lasts, whether there's a vehicle height limit in the basement, and whether lift walls need protecting.",
+      },
+      {
+        type: "p",
+        text: "If your movers and the clearance crew need the lift on the same day, give them separate slots. Two teams queuing for one lift slows both down.",
+      },
+      { type: "h3", text: "Access passes" },
+      {
+        type: "p",
+        text: "Many buildings and free zones ask for crew names, ID details and vehicle plates before they issue a pass for contractors. Passes can take a few working days. Ask what's needed, collect the details from each contractor, and submit them together so nobody is stopped at the barrier on the day.",
+      },
+      { type: "h2", text: "Phased and after-hours clearance" },
+      {
+        type: "p",
+        text: "Few businesses can stop working for a clear-out. Two approaches keep disruption small.",
+      },
+      {
+        type: "p",
+        text: "Phased clearance works zone by zone. Clear the storerooms and empty desks first, then meeting rooms, then the last occupied areas once staff have moved. Each phase is smaller, so it fits into shorter lift slots.",
+      },
+      {
+        type: "p",
+        text: "After-hours clearance happens in the evening or at the weekend, when lifts and corridors are quiet. Many commercial buildings allow it, but some restrict noisy work such as dismantling to set times. Check the building's working-hours rules before you plan around a Friday night.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Mark every item that leaves with a coloured sticker, and nothing else in the room",
+          "Keep one contact on site, or on the phone, who can make decisions",
+          "Clear corridors and fire exits as you go, because buildings check them",
+          "Leave a final sweep to the end of each phase, not the end of the project",
+        ],
+      },
+      { type: "h2", text: "Fit-out vs freestanding: what a clearance crew removes" },
+      {
+        type: "p",
+        text: "This is the line that catches people out at handover. A clearance crew removes freestanding furniture and loose items: desks, workstations that unbolt from each other, chairs, cabinets, meeting tables, freestanding partitions, pantry appliances and boxes.",
+      },
+      {
+        type: "p",
+        text: "Fit-out is different. Fixed partitions, glass walls, raised floors, suspended ceilings, built-in joinery and lighting are part of the building works. Taking them out is a job for a fit-out contractor, and the building may need to approve that work before it starts. Once the contractor has stripped them, a clearance crew can take away the debris they leave behind.",
+      },
+      {
+        type: "p",
+        text: "If your lease requires the fit-out removed, get the contractor booked first. The clearance has to fit around their programme, not the other way round.",
+      },
+      { type: "h2", text: "Handover-day checklist" },
+      {
+        type: "p",
+        text: "On the last day, walk the unit with this list before you meet the landlord or agent:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Every room, storeroom and cupboard is empty, unless the landlord agreed something stays",
+          "The server room and comms cupboard are clear of equipment and cabling you own",
+          "The pantry fridge and any water dispensers are emptied and removed",
+          "Corridors, the loading bay route and fire exits are free of leftovers",
+          "Floors are swept, and any marks from furniture have been photographed",
+          "Access cards, keys and parking passes are counted and ready to return",
+          "You have dated photos of every room as you leave it",
+        ],
+      },
+      {
+        type: "p",
+        text: "The photos matter. If there's a dispute over the condition of the unit later, a time-stamped record of an empty, swept office settles it quickly.",
+      },
+    ],
+  },
+  {
+    slug: "how-to-dispose-of-a-fridge-in-dubai",
+    title: "How to dispose of an old fridge or freezer in Dubai",
+    description:
+      "How to dispose of a fridge in Dubai: retailer take-back, resale, the free municipal pickup or a crew, plus how to prepare it and why the gas matters.",
+    date: "2026-11-15",
+    readMinutes: 6,
+    tag: "How-to",
+    relatedService: "appliance-removal",
+    blocks: [
+      {
+        type: "p",
+        text: "To dispose of a fridge in Dubai, you have four realistic routes: hand it back to the retailer when you buy a new one, sell or give it away if it works, book Dubai Municipality's free bulky waste pickup, or have a crew carry it out. Whichever you choose, empty and defrost it first, and never leave it beside the bins.",
+      },
+      {
+        type: "p",
+        text: "A fridge isn't ordinary junk. It's heavy, it leaks when it thaws, and its cooling circuit holds refrigerant gas that shouldn't be released. Here's how to pick the right route and get it out of a tower or villa without damage.",
+      },
+      { type: "h2", text: "Your options: retailer take-back, resale, municipal pickup, crew" },
+      { type: "h3", text: "Retailer take-back" },
+      {
+        type: "p",
+        text: "If you're buying a replacement, ask the shop what happens to the old one before you pay. Some UAE electronics retailers run appliance buyback or exchange offers. Sharaf DG's home appliance buyback, for example, gives credit against a new appliance after the old one is inspected, in participating stores. Offers like these change and can be withdrawn, so check the current terms when you buy.",
+      },
+      { type: "h3", text: "Resale or giving it away" },
+      {
+        type: "p",
+        text: "A working fridge in good condition can find a new home through online marketplaces or community groups. Be honest about its age and any faults, and agree who is carrying it before the buyer arrives. Keep it upright when it's moved, so it's ready to use at the other end.",
+      },
+      { type: "h3", text: "Dubai Municipality's bulky waste pickup" },
+      {
+        type: "p",
+        text: "Dubai Municipality runs a free bulky waste service that covers used electrical appliances as well as furniture. You request it through the municipality's apps or website, or on 800900, and a staff member contacts you to arrange the collection. The municipality says the service isn't available in free zones or real estate development zones, and published details mention access limits for high-rise buildings.",
+      },
+      {
+        type: "p",
+        text: "It's a good option if you live in a villa in an eligible area and can get the fridge to the kerb yourself. Our guide to the free municipal pickup explains when it fits and when it doesn't.",
+      },
+      { type: "h3", text: "A removal crew" },
+      {
+        type: "p",
+        text: "A crew makes sense when the fridge is on an upper floor, you're in a tower or a development outside the municipal service, you have a deadline, or the fridge is going with other items. We carry it from the kitchen, protect the floors on the way out, and direct it towards specialist recycling wherever possible.",
+      },
+      {
+        type: "callout",
+        title: "Price it from a photo",
+        body: "Send us a photo of the fridge on WhatsApp, with your area, floor and whether there's a service lift. We reply with a fixed price, working or not.",
+      },
+      { type: "h2", text: "Preparing a fridge for collection" },
+      {
+        type: "p",
+        text: "Whoever collects it, a little preparation makes the job faster, cleaner and safer.",
+      },
+      { type: "h3", text: "Defrost 24 hours ahead" },
+      {
+        type: "p",
+        text: "Switch the fridge off and unplug it about a day before collection. Leave the doors open with towels or a tray underneath to catch the water. A freezer with thick ice can take longer, so start earlier. A defrosted fridge is lighter and won't leak in the lift or on the stairs.",
+      },
+      { type: "h3", text: "Empty, clean and tape doors" },
+      {
+        type: "ul",
+        items: [
+          "Take out all food, then wipe the inside so it doesn't smell when it's moved",
+          "Remove loose glass shelves and drawers, or tape them in place",
+          "Tape the doors shut so they can't swing open during the carry",
+          "Coil the power cable and tape it to the back",
+          "Check the gaps behind and beside the fridge for anything that fell down",
+        ],
+      },
+      {
+        type: "p",
+        text: "If your fridge has a water dispenser or ice maker connected to the water supply, ask a plumber or your maintenance team to disconnect it first. Our crews unplug and move freestanding appliances, but we don't disconnect plumbed or gas-fed ones.",
+      },
+      { type: "h2", text: "Refrigerant: why a fridge is not ordinary junk" },
+      {
+        type: "p",
+        text: "Behind the back panel is a sealed circuit of pipes, a compressor and refrigerant gas. Older fridges can contain gases that damage the ozone layer. Newer ones often use gases with a strong warming effect if they escape.",
+      },
+      {
+        type: "p",
+        text: "The UAE regulates ozone-depleting substances at federal level. Cabinet Resolution No. 26 of 2014 sets the national rules for these substances and names refrigerators and freezers among the products it covers.",
+      },
+      {
+        type: "p",
+        text: "In practice, that means two things for you. Don't cut, drill or bend the pipes at the back to make the fridge easier to carry, because that releases the gas. And don't take it apart for the metal. Let it go whole to someone who will pass it to a recycler able to handle the refrigerant.",
+      },
+      { type: "h2", text: "Moving a fridge through a tower safely" },
+      {
+        type: "p",
+        text: "A large fridge is one of the hardest things to get out of an apartment. Plan the route before collection day:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Measure the fridge, the kitchen door and the narrowest point of the corridor. American-style fridges sometimes need their doors taken off to fit through",
+          "Book the service lift if your building requires it, and ask whether the walls need protecting",
+          "Ask reception where the truck can stop, and whether a pass is needed",
+          "Clear a path through the flat, including rugs that could slip",
+        ],
+      },
+      {
+        type: "p",
+        text: "Moving a fridge is a two-person job at least. It's top-heavy and awkward on a trolley, and a dropped fridge can crack tiles or dent a lift.",
+      },
+      { type: "h2", text: "Landlord-owned appliances in furnished flats" },
+      {
+        type: "p",
+        text: "In many furnished and some unfurnished rentals, the fridge belongs to the landlord, not the tenant. If it's on the tenancy inventory, it isn't yours to throw away, even if it's broken.",
+      },
+      {
+        type: "p",
+        text: "Report the fault to your landlord or agent in writing and ask what they want done. If they agree to it being removed, get that agreement in writing before anyone carries it out. It protects you at move-out, when the inventory is checked against what's in the flat.",
+      },
+      { type: "h2", text: "FAQs" },
+      { type: "h3", text: "Will anyone take a broken fridge?" },
+      {
+        type: "p",
+        text: "Yes. Retailer buyback offers sometimes accept non-working appliances, depending on their terms, and the municipal service and removal crews take fridges whether they work or not. A broken fridge is still worth recycling for its metal and components. Just make sure it's emptied and defrosted.",
+      },
+      { type: "h3", text: "Is it illegal to leave a fridge by the bins?" },
+      {
+        type: "p",
+        text: "Dubai's published public hygiene penalty schedule, Executive Council Resolution No. 14 of 2015, lists a fine for leaving goods near a waste container. A fridge left outside with its door on is also a safety risk, because a child could climb inside. Use one of the routes above instead.",
+      },
+    ],
+    sources: [
+      { label: "Dubai Municipality: bulky waste disposal service (furniture and used electrical appliances)", url: "https://www.dm.gov.ae/35-increase-in-requests-for-dubai-municipality-bulky-waste-disposal-service/" },
+      { label: "Dubai Municipality: Waste Segregation Guide (800900 bulky waste hotline)", url: "https://www.dm.gov.ae/wp-content/uploads/2024/12/Waste-Segregation-Guide.pdf" },
+      { label: "Khaleej Times: free bulk waste removal via WhatsApp", url: "https://www.khaleejtimes.com/uae/dubai-offers-free-bulk-waste-removal-service-via-whatsapp" },
+      { label: "ILO NATLEX: UAE Cabinet Resolution No. 26 of 2014 on the national regime of ozone-depleting substances", url: "https://natlex.ilo.org/dyn/natlex2/r/natlex/fe/details?p3_isn=98630" },
+      { label: "Sharaf DG: home appliance buyback offer (terms change, check the current page)", url: "https://uae.sharafdg.com/ha-buyback-offer/" },
+      { label: "Dubai Legislation Portal: Executive Council Resolution No. 14 of 2015", url: "https://dlp.dubai.gov.ae/Legislation%20Reference/2015/Executive%20Council%20Resolution%20No.%20(14)%20of%202015.html" },
+    ],
+  },
 ];
 
 export const getPost = (slug: string) => posts.find((p) => p.slug === slug);
