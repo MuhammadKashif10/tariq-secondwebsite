@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { JsonLd, PageHero, ServiceCard } from "@/components/Blocks";
+import { JsonLd, PageHero, SectionHead } from "@/components/Blocks";
 import { PostBody } from "@/components/blog/PostBody";
-import { PostCard } from "@/components/blog/PostCard";
+import { PostCard, toSummary } from "@/components/blog/PostCard";
 import { PostShare } from "@/components/blog/PostShare";
 import { PostQuoteMobile, PostSidebar, PostTocMobile } from "@/components/blog/PostSidebar";
 import { CtaBand } from "@/components/Cta";
 import { Icon } from "@/components/Icon";
+import { ServiceCard } from "@/components/ServiceCard";
 import { site } from "@/config/site";
 import { postPhotos } from "@/data/images";
 import { getPost, posts } from "@/data/posts";
@@ -19,6 +20,7 @@ import {
   relatedPosts,
 } from "@/lib/post";
 import { blogPostingSchema } from "@/lib/schema";
+import { toCard } from "@/lib/service-card";
 import { pageMetadata } from "@/lib/seo";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -78,17 +80,17 @@ export default async function PostPage({ params }: Props) {
         photo={postPhotos[post.slug]}
       />
 
-      <div className="wrap py-12 md:py-16">
-        <div className="grid gap-12 lg:grid-cols-[minmax(0,1fr)_17.5rem] lg:items-start">
+      <section className="sec sec-light sheet">
+        <div className="wrap grid gap-12 lg:grid-cols-[minmax(0,1fr)_18.5rem] lg:items-start">
           <article>
             <PostTocMobile items={toc} />
             <PostBody blocks={post.blocks} />
             <PostQuoteMobile />
 
             {post.sources && (
-              <aside className="mt-12 max-w-[70ch] border-t-2 border-sand-3 pt-6 text-base">
-                <h2 className="text-base font-bold tracking-normal">Sources</h2>
-                <ul className="mt-2 space-y-1">
+              <aside className="mt-12 max-w-[70ch] rounded-[28px] border border-line bg-white p-6 text-base">
+                <h2 className="h-sm text-xl">Sources</h2>
+                <ul className="mt-3 list-none space-y-2 p-0">
                   {post.sources.map((source) => (
                     <li key={source.url}>
                       <a href={source.url} target="_blank" rel="noopener noreferrer" className="link">
@@ -101,10 +103,10 @@ export default async function PostPage({ params }: Props) {
             )}
 
             {service && (
-              <div className="mt-10 max-w-[70ch]">
+              <div className="mt-12 max-w-[380px]">
                 <p className="eyebrow">Related service</p>
                 <div className="mt-4">
-                  <ServiceCard service={service} />
+                  <ServiceCard service={toCard(service)} />
                 </div>
               </div>
             )}
@@ -113,12 +115,12 @@ export default async function PostPage({ params }: Props) {
               <PostShare path={path} title={post.title} />
             </div>
 
-            <nav aria-label="Guide pagination" className="mt-10 grid max-w-[70ch] gap-4 border-t-2 border-sand-3 pt-8 sm:grid-cols-2">
+            <nav aria-label="Guide pagination" className="mt-10 grid max-w-[70ch] gap-4 border-t border-line pt-8 sm:grid-cols-2">
               {prev ? (
-                <Link href={`/blog/${prev.slug}`} className="card group p-5 transition-shadow hover:shadow-lift">
-                  <span className="text-sm font-bold text-muted">Previous</span>
-                  <span className="mt-1 flex items-center gap-2 font-bold">
-                    <Icon name="arrow" className="size-4 rotate-180 transition-transform group-hover:-translate-x-1" />
+                <Link href={`/blog/${prev.slug}`} className="cd group !p-6">
+                  <span className="mutL text-sm font-bold">Previous</span>
+                  <span className="mt-1 flex items-center gap-2 font-extrabold">
+                    <Icon name="arrow" className="size-4 shrink-0 rotate-180 transition-transform group-hover:-translate-x-1" />
                     {prev.title}
                   </span>
                 </Link>
@@ -126,11 +128,11 @@ export default async function PostPage({ params }: Props) {
                 <span />
               )}
               {next && (
-                <Link href={`/blog/${next.slug}`} className="card group p-5 text-right transition-shadow hover:shadow-lift sm:col-start-2">
-                  <span className="text-sm font-bold text-muted">Next</span>
-                  <span className="mt-1 flex items-center justify-end gap-2 font-bold">
+                <Link href={`/blog/${next.slug}`} className="cd group !p-6 text-right sm:col-start-2">
+                  <span className="mutL text-sm font-bold">Next</span>
+                  <span className="mt-1 flex items-center justify-end gap-2 font-extrabold">
                     {next.title}
-                    <Icon name="arrow" className="size-4 transition-transform group-hover:translate-x-1" />
+                    <Icon name="arrow" className="size-4 shrink-0 transition-transform group-hover:translate-x-1" />
                   </span>
                 </Link>
               )}
@@ -138,16 +140,16 @@ export default async function PostPage({ params }: Props) {
           </article>
           <PostSidebar items={toc} />
         </div>
-      </div>
+      </section>
 
       {more.length > 0 && (
-        <section className="bg-white py-16 md:py-24">
+        <section className="sec sec-white sheet">
           <div className="wrap">
-            <h2 className="text-3xl md:text-4xl">More guides</h2>
-            <ul className="mt-9 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <SectionHead eyebrow="Keep reading" title="More guides" />
+            <ul className="cards3 mt-12">
               {more.map((item) => (
                 <li key={item.slug}>
-                  <PostCard post={item} />
+                  <PostCard post={toSummary(item)} />
                 </li>
               ))}
             </ul>

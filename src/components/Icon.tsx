@@ -121,6 +121,15 @@ const paths = {
     </>
   ),
   menu: <path d="M3 6h18M3 12h18M3 18h18" />,
+  plus: <path d="M12 5v14M5 12h14" />,
+  chevron: <path d="M15 6l-6 6 6 6" />,
+  search: (
+    <>
+      <circle cx="11" cy="11" r="7" />
+      <path d="m20 20-3.5-3.5" />
+    </>
+  ),
+  swap: <path d="M8 7l-4 5 4 5M16 7l4 5-4 5" />,
   close: <path d="M5 5l14 14M19 5 5 19" />,
   shield: <path d="M12 2.5 4 5.5v6c0 5 3.3 8.5 8 10 4.7-1.5 8-5 8-10v-6z" />,
 } satisfies Record<string, ReactNode>;

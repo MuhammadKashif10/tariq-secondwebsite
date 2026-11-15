@@ -23,6 +23,7 @@ function loadLabel(percent: number) {
   return "More than one truck";
 }
 
+/** Two-column load check: tap items on the left, see the truck fill and the ready message on the right. */
 export function LoadBuilder() {
   const [counts, setCounts] = useState<Record<string, number>>({});
 
@@ -37,81 +38,73 @@ export function LoadBuilder() {
     };
   }, [counts]);
 
-  const fill = Math.min(percent, 100) / 100;
   const message = lines.length
     ? `${defaultMessage}\n${lines.map((line) => `- ${line}`).join("\n")}\nEstimated load: ${loadLabel(percent).toLowerCase()}.`
     : defaultMessage;
 
   return (
-    <div className="rounded-[1.75rem] bg-white p-5 text-ink shadow-float sm:p-6">
-      <div className="flex items-center justify-between gap-3">
+    <div className="qb rv">
+      <div className="flex flex-col gap-[30px]">
         <div>
-          <p className="text-xs font-bold tracking-[0.12em] text-signal-deep uppercase">Instant load check</p>
-          <h2 className="mt-1 text-xl sm:text-2xl">Build your load</h2>
+          <h3>
+            <b>1</b>Tap what's going
+          </h3>
+          <div className="opts">
+            {catalogue.map((item) => {
+              const count = counts[item.id] ?? 0;
+              return (
+                <button key={item.id} type="button" className={`opt ${count ? "on" : ""}`} onClick={() => change(item.id, 1)} aria-label={`Add ${item.label}${count ? `, ${count} added` : ""}`}>
+                  <Icon name={item.icon} className="size-5" />
+                  {item.label}
+                  {count > 0 && <span className="cnt">{count}</span>}
+                </button>
+              );
+            })}
+          </div>
         </div>
-        <p role="status" className="rounded-full bg-sand-2 px-3 py-1.5 text-right text-xs font-bold">
-          {loadLabel(percent)}
-        </p>
+        <div>
+          <h3>
+            <b>2</b>Change your mind?
+          </h3>
+          {lines.length === 0 ? (
+            <p className="mutD m-0 text-[15.5px]">Items you add appear here, so you can take one away.</p>
+          ) : (
+            <div className="opts">
+              {catalogue
+                .filter((item) => (counts[item.id] ?? 0) > 0)
+                .map((item) => (
+                  <button key={item.id} type="button" className="opt" onClick={() => change(item.id, -1)} aria-label={`Remove one ${item.label}`}>
+                    <span aria-hidden="true">−</span>
+                    {item.label}
+                    <span className="cnt !bg-amb !text-ink">{counts[item.id]}</span>
+                  </button>
+                ))}
+            </div>
+          )}
+        </div>
+        <p className="mutD m-0 text-[14.5px]">Sizes are a rough guide. Your quote comes from your photo.</p>
       </div>
 
-      <svg viewBox="0 0 320 128" className="mt-4 w-full" role="img" aria-label={`Truck filled to about ${Math.min(percent, 100)} percent`}>
-        <rect x="6" y="6" width="214" height="92" rx="10" fill="var(--color-sand-3)" />
-        <clipPath id="cargo">
-          <rect x="6" y="6" width="214" height="92" rx="10" />
-        </clipPath>
-        <g clipPath="url(#cargo)">
-          <rect x="6" y="6" width="214" height="92" fill="var(--color-signal)" className="truck-fill" style={{ transform: `scaleY(${fill})` }} />
-        </g>
-        <path d="M60 6v92M113 6v92M167 6v92" stroke="var(--color-ink)" strokeOpacity=".14" strokeWidth="2" />
-        <path d="M226 98V44a6 6 0 0 1 6-6h28a8 8 0 0 1 6 2.6l32 34a8 8 0 0 1 2 5.4v18z" fill="var(--color-ink)" />
-        <path d="M240 50h18a4 4 0 0 1 3 1.3l19 21c1 1.2.3 2.7-1.200 2.700H240a4 4 0 0 1-4-4V54a4 4 0 0 1 4-4Z" fill="#dbe7f3" />
-        <rect x="2" y="98" width="304" height="7" rx="3.500" fill="var(--color-ink)" />
-        <circle cx="64" cy="106" r="17" fill="var(--color-ink)" />
-        <circle cx="64" cy="106" r="7" fill="#fff" />
-        <circle cx="258" cy="106" r="17" fill="var(--color-ink)" />
-        <circle cx="258" cy="106" r="7" fill="#fff" />
-      </svg>
-
-      <ul className="mt-4 grid grid-cols-2 gap-2">
-        {catalogue.map((item) => {
-          const count = counts[item.id] ?? 0;
-          return (
-            <li
-              key={item.id}
-              className={`flex items-center gap-1.5 rounded-2xl p-1.5 pl-3 transition-colors ${count ? "bg-signal/25 ring-1 ring-signal" : "bg-sand hover:bg-sand-2"}`}
-            >
-              <button
-                type="button"
-                onClick={() => change(item.id, 1)}
-                aria-label={`Add ${item.label}`}
-                className="flex min-h-10 min-w-0 flex-1 items-center gap-2 text-left text-sm leading-tight font-semibold"
-              >
-                <Icon name={item.icon} className="size-5 shrink-0" />
-                <span>{item.label}</span>
-              </button>
-              {count > 0 && (
-                <span className="flex shrink-0 items-center gap-1.5 pr-1">
-                  <button
-                    type="button"
-                    onClick={() => change(item.id, -1)}
-                    aria-label={`Remove one ${item.label}`}
-                    className="grid size-7 place-items-center rounded-full bg-ink font-bold text-white"
-                  >
-                    −
-                  </button>
-                  <span className="w-3 text-center text-sm font-bold">{count}</span>
-                </span>
-              )}
-            </li>
-          );
-        })}
-      </ul>
-
-      <a href={whatsappUrl(message)} target="_blank" rel="noopener" className="btn btn-wa mt-4 w-full">
-        <WhatsAppIcon />
-        {lines.length ? "Send this list on WhatsApp" : "Get a price on WhatsApp"}
-      </a>
-      <p className="mt-2.5 text-center text-xs text-muted">Sizes are a rough guide. Your quote comes from your photo.</p>
+      <div className="qb-r">
+        <p className="eyebrow mb-4">Your load</p>
+        <div className="truck-box" role="img" aria-label={`Truck filled to about ${Math.min(percent, 100)} percent`}>
+          <div className="load">
+            <div className="fill" style={{ width: `${Math.min(percent, 100)}%` }} />
+          </div>
+          <div className="cab" />
+          <div className="wh" style={{ left: 34 }} />
+          <div className="wh" style={{ left: 140 }} />
+          <div className="wh" style={{ left: 228 }} />
+        </div>
+        <p role="status" className="-mt-2 mb-[18px] font-extrabold text-amb">
+          {loadLabel(percent)}
+        </p>
+        <div className="msg">{message}</div>
+        <a href={whatsappUrl(message)} target="_blank" rel="noopener" className="btn btn-amb mt-[18px] w-full">
+          <WhatsAppIcon />
+          {lines.length ? "Send this list on WhatsApp" : "Get a price on WhatsApp"}
+        </a>
+      </div>
     </div>
   );
 }

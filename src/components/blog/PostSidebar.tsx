@@ -1,61 +1,61 @@
 import Link from "next/link";
 import { WhatsAppButton } from "@/components/Cta";
 
-export function PostSidebar({ items }: { items: { id: string; text: string }[] }) {
-  if (items.length === 0) return null;
+type TocItem = { id: string; text: string };
 
+function QuoteCard({ className = "" }: { className?: string }) {
   return (
-  <aside className="hidden lg:block">
-    <div className="sticky top-28 space-y-6">
-      <nav aria-label="On this page" className="card p-6">
-        <p className="eyebrow">On this page</p>
-        <ol className="mt-4 space-y-2 text-base font-semibold">
-          {items.map((item) => (
-            <li key={item.id}>
-              <Link href={`#${item.id}`} className="link text-ink no-underline hover:underline">
-                {item.text}
-              </Link>
-            </li>
-          ))}
-        </ol>
-      </nav>
-      <div className="card p-6">
-        <p className="text-lg font-bold">Need a fixed price?</p>
-        <p className="mt-2 text-sm leading-relaxed text-muted">Send a photo of what you want cleared and we will reply with a price for the load.</p>
-        <WhatsAppButton label="Get my price" className="mt-5 w-full" />
-      </div>
+    <div className={`glass-ink ${className}`}>
+      <p className="h-sm">Need a fixed price?</p>
+      <p className="mt-2 text-[15px] leading-relaxed text-soft">Send a photo of what you want cleared and we will reply with a price for the load.</p>
+      <WhatsAppButton label="Get my price" className="btn-amb mt-5 w-full" />
     </div>
-  </aside>
+  );
+}
+
+function TocList({ items }: { items: TocItem[] }) {
+  return (
+    <ol className="m-0 list-none space-y-1 p-0 text-[15px] font-bold">
+      {items.map((item) => (
+        <li key={item.id}>
+          <Link href={`#${item.id}`} className="block rounded-2xl border-l-[3px] border-amb px-3 py-2 transition-colors hover:bg-paper">
+            {item.text}
+          </Link>
+        </li>
+      ))}
+    </ol>
+  );
+}
+
+export function PostSidebar({ items }: { items: TocItem[] }) {
+  return (
+    <aside className="hidden lg:block">
+      <div className="sticky top-28 space-y-5">
+        {items.length > 0 && (
+          <nav aria-label="On this page" className="rounded-[32px] border border-line bg-white p-6">
+            <p className="eyebrow mb-4">On this page</p>
+            <TocList items={items} />
+          </nav>
+        )}
+        <QuoteCard />
+      </div>
+    </aside>
   );
 }
 
 export function PostQuoteMobile() {
-  return (
-    <div className="card mt-10 p-6 lg:hidden">
-      <p className="text-lg font-bold">Need a fixed price?</p>
-      <p className="mt-2 text-sm leading-relaxed text-muted">Send a photo of what you want cleared and we will reply with a price for the load.</p>
-      <WhatsAppButton label="Get my price" className="mt-5 w-full" />
-    </div>
-  );
+  return <QuoteCard className="mt-10 lg:hidden" />;
 }
 
-export function PostTocMobile({ items }: { items: { id: string; text: string }[] }) {
+export function PostTocMobile({ items }: { items: TocItem[] }) {
   if (items.length === 0) return null;
 
   return (
-    <details className="card mb-4 lg:hidden">
-      <summary className="cursor-pointer list-none px-6 py-4 font-bold [&::-webkit-details-marker]:hidden">
-        On this page
-      </summary>
-      <ol className="space-y-2 border-t border-sand-2 px-6 pt-4 pb-5 text-base font-semibold">
-        {items.map((item) => (
-          <li key={item.id}>
-            <Link href={`#${item.id}`} className="link text-ink no-underline hover:underline">
-              {item.text}
-            </Link>
-          </li>
-        ))}
-      </ol>
+    <details className="mb-8 rounded-[28px] border border-line bg-white lg:hidden">
+      <summary className="cursor-pointer list-none px-6 py-4 font-extrabold [&::-webkit-details-marker]:hidden">On this page</summary>
+      <div className="border-t border-line px-3 pt-3 pb-4">
+        <TocList items={items} />
+      </div>
     </details>
   );
 }

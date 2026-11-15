@@ -48,6 +48,9 @@ export const photos = {
   // Pexels 28100043 and 15798781, used under the Pexels licence.
   phonePhotoRoom: photo("phone-photo-living-room", "Hands holding a phone to photograph a living room"),
   renovationRoom: photo("renovation-room-bags", "Room stripped back to brick during a renovation, with bags of material on the floor"),
+  // Illustrative pair for the before and after slider, from the redesign prototype.
+  clutteredRoom: photo("cluttered-bedroom-before", "A cluttered bedroom with clothes piled on the bed and rails"),
+  emptyRoom: photo("empty-room-after", "An empty, bright room with wooden floors and a balcony door"),
 } satisfies Record<string, Photo>;
 
 export const servicePhotos: Record<string, Photo> = {

@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { JsonLd, PageHero, ServiceCard } from "@/components/Blocks";
+import { JsonLd, PageHero } from "@/components/Blocks";
 import { CtaBand, WhatsAppButton } from "@/components/Cta";
-import { photos } from "@/data/images";
+import { ServiceFilterGrid } from "@/components/ServiceRail";
 import { services } from "@/data/services";
 import { itemListSchema } from "@/lib/schema";
 import { pageMetadata } from "@/lib/seo";
+import { toCards } from "@/lib/service-card";
 
 export const metadata: Metadata = pageMetadata({
   title: "Junk Removal Services in Dubai",
@@ -20,20 +21,22 @@ export default function ServicesPage() {
       <PageHero
         crumbs={[{ name: "Services", path: "/services" }]}
         eyebrow="Services"
-        photo={photos.moversStreet}
         title="Everything we'll carry out, load up and take away."
-        lead="Not sure which one you need? You don't have to choose. Send a photo and we'll work it out."
-      >
-        <WhatsAppButton />
-      </PageHero>
-      <section className="py-16 md:py-24">
-        <ul className="wrap grid grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-3">
-          {services.map((service) => (
-            <li key={service.slug}>
-              <ServiceCard service={service} />
-            </li>
-          ))}
-        </ul>
+        aside={
+          <div className="glass">
+            <p className="eyebrow text-amb">Not sure which one?</p>
+            <h2 className="h-md mt-3.5">You don't have to choose.</h2>
+            <p className="mt-3 text-soft">Send a photo and we'll work it out.</p>
+            <div className="mt-6">
+              <WhatsAppButton />
+            </div>
+          </div>
+        }
+      />
+      <section className="sec sec-light sheet">
+        <div className="wrap">
+          <ServiceFilterGrid list={toCards(services)} />
+        </div>
       </section>
       <CtaBand />
     </>

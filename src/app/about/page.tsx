@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { PageHero, Reviews } from "@/components/Blocks";
+import { PageHero, Reviews, SectionHead } from "@/components/Blocks";
 import { CtaBand, WhatsAppButton } from "@/components/Cta";
 import { Icon, type IconName } from "@/components/Icon";
 import { site } from "@/config/site";
@@ -13,11 +13,11 @@ export const metadata: Metadata = pageMetadata({
   path: "/about",
 });
 
-const standards: { icon: IconName; title: string; text: string }[] = [
-  { icon: "tag", title: "The price is the price", text: "You'll agree the full amount before anything moves. If the job changes, you'll agree the change first." },
-  { icon: "clock", title: "Straight answers on timing", text: "If today isn't possible, we'll tell you so rather than promise and go quiet." },
-  { icon: "shield", title: "Care for your home", text: "Crews protect corners and floors, and they sweep up when they've finished." },
-  { icon: "recycle", title: "Responsible disposal", text: "We reuse and recycle where we can. The rest goes for disposal through proper channels." },
+const standards: { icon: IconName; color: string; title: string; text: string }[] = [
+  { icon: "tag", color: "#ffb93b", title: "The price is the price", text: "You'll agree the full amount before anything moves. If the job changes, you'll agree the change first." },
+  { icon: "clock", color: "#5aa9ff", title: "Straight answers on timing", text: "If today isn't possible, we'll tell you so rather than promise and go quiet." },
+  { icon: "shield", color: "#9b8cff", title: "Care for your home", text: "Crews protect corners and floors, and they sweep up when they've finished." },
+  { icon: "recycle", color: "#38d9a9", title: "Responsible disposal", text: "We reuse and recycle where we can. The rest goes for disposal through proper channels." },
 ];
 
 export default function AboutPage() {
@@ -33,14 +33,23 @@ export default function AboutPage() {
         <WhatsAppButton />
       </PageHero>
 
-      <section className="py-16 md:py-24">
-        <div className="wrap grid gap-12 lg:grid-cols-2 lg:items-center">
-          <div className="reveal relative aspect-[4/5] overflow-hidden rounded-[2rem] shadow-lift">
-            <Image src={photos.moverCorridor.src} alt={photos.moverCorridor.alt} fill sizes="(min-width: 1024px) 45vw, 100vw" className="object-cover" />
+      <section className="sec sec-light sheet">
+        <div className="wrap split">
+          <div className="pho rv">
+            <figure>
+              <Image src={photos.moverCorridor.src} alt={photos.moverCorridor.alt} fill sizes="(min-width: 1100px) 290px, 50vw" className="object-cover" />
+              <figcaption>Any floor</figcaption>
+            </figure>
+            <figure>
+              <Image src={photos.moversInterior.src} alt={photos.moversInterior.alt} fill sizes="(min-width: 1100px) 290px, 50vw" className="object-cover" />
+              <figcaption>Swept when we leave</figcaption>
+            </figure>
           </div>
-          <div className="space-y-4 text-lg leading-relaxed">
+          <div className="rv space-y-4 text-[18px] leading-[1.7]" style={{ "--d": ".1s" } as React.CSSProperties}>
             <p className="eyebrow">Our approach</p>
-            <h2 className="text-3xl md:text-[2.75rem]">Why we work the way we do</h2>
+            <h2 className="h-lg !mt-[18px] !mb-6">
+              Why we work the way <span className="grad">we do.</span>
+            </h2>
             <p>
               Ask around for a junk removal price in Dubai and you'll normally hear "it depends". It does depend, but that shouldn't be where the conversation ends.
             </p>
@@ -54,15 +63,17 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="bg-white py-16 md:py-24">
+      <section className="sec sec-dark2 sheet">
         <div className="wrap">
-          <h2 className="text-3xl md:text-[2.75rem]">The standards we hold ourselves to</h2>
-          <ul className="mt-9 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-            {standards.map((item) => (
-              <li key={item.title} className="rounded-3xl bg-sand p-6">
-                <Icon name={item.icon} className="size-8 text-signal-deep" />
-                <h3 className="mt-3 text-xl">{item.title}</h3>
-                <p className="mt-2 text-muted">{item.text}</p>
+          <SectionHead eyebrow="How we work" title="The standards we hold ourselves to" dark />
+          <ul className="cards3 mt-12">
+            {standards.map((item, index) => (
+              <li key={item.title} className="cd rv" style={{ "--d": `${(index % 3) * 0.08}s` } as React.CSSProperties}>
+                <span className="ci" style={{ background: item.color }}>
+                  <Icon name={item.icon} className="size-7" />
+                </span>
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
               </li>
             ))}
           </ul>

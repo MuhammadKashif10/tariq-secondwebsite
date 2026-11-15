@@ -12,12 +12,12 @@ export function PostShare({ path, title }: { path: string; title: string }) {
   ];
 
   return (
-    <section aria-label="Share this guide" className="mt-10 border-t-2 border-sand-3 pt-8">
-      <h2 className="text-lg font-bold">Share this guide</h2>
-      <ul className="mt-4 flex flex-wrap gap-3">
+    <section aria-label="Share this guide" className="mt-10 border-t border-line pt-8">
+      <h2 className="h-sm text-xl">Share this guide</h2>
+      <ul className="item-chips mt-4">
         {links.map((link) => (
           <li key={link.label}>
-            <a href={link.href} target="_blank" rel="noopener noreferrer" className="btn btn-ghost min-h-10 px-4 py-2 text-sm">
+            <a href={link.href} target="_blank" rel="noopener noreferrer">
               {link.label}
             </a>
           </li>

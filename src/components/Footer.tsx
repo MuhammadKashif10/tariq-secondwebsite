@@ -1,9 +1,11 @@
+import Image from "next/image";
 import Link from "next/link";
 import { site } from "@/config/site";
 import { areas } from "@/data/areas";
+import { photos } from "@/data/images";
 import { services } from "@/data/services";
-import { telUrl } from "@/lib/contact";
-import { Icon } from "./Icon";
+import { defaultMessage, telUrl, whatsappUrl } from "@/lib/contact";
+import { Icon, WhatsAppIcon } from "./Icon";
 import { Logo } from "./Logo";
 
 const popularAreas = [
@@ -25,78 +27,160 @@ const company = [
   { href: "/contact", label: "Contact" },
 ];
 
+const ribbon = ["Send a photo", "Fixed price", "We carry it out"];
+
 export function Footer() {
   return (
-    <footer className="bg-ink pb-24 text-mist lg:pb-0">
-      <div className="wrap grid gap-10 py-16 sm:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr_0.7fr]">
-        <div>
-          <Logo dark />
-          <p className="mt-5 max-w-xs leading-relaxed">Lifting, loading and clearing junk from homes and businesses across Dubai.</p>
-          <ul className="mt-6 space-y-3 text-sm">
-            <li>
-              <a href={telUrl} className="flex items-center gap-2.5 font-bold text-white hover:underline">
-                <Icon name="phone" className="size-4 text-signal" />
-                {site.phoneDisplay}
+    <footer className="foot">
+      <div className="wrap">
+        <div className="fcta rv">
+          <div className="fc-l">
+            <span className="eyebrow">Let's clear it</span>
+            <h2 className="giant">
+              One photo.
+              <br />
+              <span>One fixed price.</span>
+            </h2>
+            <p className="fc-p">Take a photo, send it over, and you'll have a fixed price to say yes or no to. No forms, no site visit.</p>
+            <div className="fc-btns">
+              <a className="btn btn-ink" href={whatsappUrl(defaultMessage)} target="_blank" rel="noopener">
+                <WhatsAppIcon />
+                Send a photo on WhatsApp
               </a>
-            </li>
-            <li>
-              <a href={`mailto:${site.email}`} className="flex items-center gap-2.5 hover:text-white hover:underline">
-                <Icon name="mail" className="size-4 text-signal" />
-                {site.email}
+              <a className="btn btn-line" href={telUrl}>
+                Call {site.phoneDisplay}
               </a>
-            </li>
-            <li className="flex items-center gap-2.5">
-              <Icon name="clock" className="size-4 shrink-0 text-signal" />
-              {site.hoursLabel}
-            </li>
-            {site.streetAddress && (
-              <li className="flex items-center gap-2.5">
-                <Icon name="pin" className="size-4 text-signal" />
-                {site.streetAddress}
-              </li>
-            )}
-          </ul>
+            </div>
+          </div>
+
+          <div className="fc-r" aria-hidden="true">
+            <div className="fp fp1">
+              <Image src={photos.junkBags.src} alt="" fill sizes="260px" className="object-cover" />
+            </div>
+            <div className="fp fp2">
+              <Image src={photos.villaPool.src} alt="" fill sizes="240px" className="object-cover" />
+            </div>
+            <div className="fp fp3">
+              <Image src={photos.moversRoom.src} alt="" fill sizes="300px" className="object-cover" />
+            </div>
+            <div className="spin">
+              <svg viewBox="0 0 128 128">
+                <defs>
+                  <path id="spin-circle" d="M64 64m-48 0a48 48 0 1 1 96 0a48 48 0 1 1-96 0" />
+                </defs>
+                <text>
+                  <textPath href="#spin-circle">SEND A PHOTO · GET A FIXED PRICE · </textPath>
+                </text>
+              </svg>
+              <b>
+                <Icon name="arrow" className="size-6 -rotate-45" />
+              </b>
+            </div>
+          </div>
+
+          <div className="fc-tiles">
+            <a href={whatsappUrl(defaultMessage)} target="_blank" rel="noopener">
+              <span className="ic">
+                <WhatsAppIcon className="size-5" />
+              </span>
+              <span>
+                <b>WhatsApp</b>
+                <em>Fastest way to a price</em>
+              </span>
+            </a>
+            <a href={telUrl}>
+              <span className="ic">
+                <Icon name="phone" className="size-5" />
+              </span>
+              <span>
+                <b>Call us</b>
+                <em>{site.phoneDisplay}</em>
+              </span>
+            </a>
+            <div>
+              <span className="ic">
+                <Icon name="clock" className="size-5" />
+              </span>
+              <span>
+                <b>Open 7 days</b>
+                <em>{site.hoursLabel}</em>
+              </span>
+            </div>
+          </div>
+
+          <div className="fc-mq" aria-hidden="true">
+            <div>
+              {[0, 1, 2, 3].flatMap((round) => ribbon.map((word) => <span key={`${round}-${word}`}>{word}</span>))}
+            </div>
+          </div>
         </div>
-        <FooterList title="Services">
-          {services.slice(0, 8).map((service) => (
-            <FooterLink key={service.slug} href={`/services/${service.slug}`}>
-              {service.name}
-            </FooterLink>
-          ))}
-          <FooterLink href="/services">All services</FooterLink>
-        </FooterList>
-        <FooterList title="Popular areas">
-          {popularAreas.map((slug) => {
-            const area = areas.find((a) => a.slug === slug);
-            return area ? (
-              <FooterLink key={slug} href={`/areas/${slug}`}>
-                {area.name}
-              </FooterLink>
-            ) : null;
-          })}
-          <FooterLink href="/areas">All areas</FooterLink>
-        </FooterList>
-        <FooterList title="Company">
-          {company.map((item) => (
-            <FooterLink key={item.href} href={item.href}>
-              {item.label}
-            </FooterLink>
-          ))}
-        </FooterList>
-      </div>
-      <div className="border-t border-white/10">
-        <div className="wrap flex flex-col gap-2 py-6 text-sm sm:flex-row sm:justify-between">
+
+        <div className="foot-cols">
+          <div>
+            <Logo />
+            <p className="mutD mt-[18px] max-w-[22em] text-[15.5px]">Lifting, loading and clearing junk from homes and businesses across Dubai.</p>
+            <ul className="mt-5 space-y-1 text-[15px]">
+              <li>
+                <a href={telUrl} className="inline-flex items-center gap-2.5 font-bold text-white hover:text-amb">
+                  <Icon name="phone" className="size-4 text-amb" />
+                  {site.phoneDisplay}
+                </a>
+              </li>
+              <li>
+                <a href={`mailto:${site.email}`} className="inline-flex items-center gap-2.5 break-all text-soft hover:text-amb">
+                  <Icon name="mail" className="size-4 shrink-0 text-amb" />
+                  {site.email}
+                </a>
+              </li>
+              <li className="flex items-center gap-2.5 text-soft">
+                <Icon name="clock" className="size-4 shrink-0 text-amb" />
+                {site.hoursLabel}
+              </li>
+              {site.streetAddress && (
+                <li className="flex items-center gap-2.5 text-soft">
+                  <Icon name="pin" className="size-4 shrink-0 text-amb" />
+                  {site.streetAddress}
+                </li>
+              )}
+            </ul>
+          </div>
+          <FooterList title="Services">
+            {services.map((service) => (
+              <li key={service.slug}>
+                <Link href={`/services/${service.slug}`}>{service.name}</Link>
+              </li>
+            ))}
+          </FooterList>
+          <FooterList title="Popular areas">
+            {popularAreas.map((slug) => {
+              const area = areas.find((a) => a.slug === slug);
+              return area ? (
+                <li key={slug}>
+                  <Link href={`/areas/${slug}`}>{area.name}</Link>
+                </li>
+              ) : null;
+            })}
+            <li>
+              <Link href="/areas">All areas</Link>
+            </li>
+          </FooterList>
+          <FooterList title="Company">
+            {company.map((item) => (
+              <li key={item.href}>
+                <Link href={item.href}>{item.label}</Link>
+              </li>
+            ))}
+          </FooterList>
+        </div>
+
+        <div className="foot-bot">
           <p>
             © {new Date().getFullYear()} {site.name}
             {site.tradeLicence && ` · Trade licence ${site.tradeLicence}`}
           </p>
           <p className="flex gap-5">
-            <Link href="/privacy" className="hover:text-white hover:underline">
-              Privacy
-            </Link>
-            <Link href="/terms" className="hover:text-white hover:underline">
-              Terms
-            </Link>
+            <Link href="/privacy">Privacy</Link>
+            <Link href="/terms">Terms</Link>
           </p>
         </div>
       </div>
@@ -107,18 +191,8 @@ export function Footer() {
 function FooterList({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <div>
-      <h2 className="text-sm font-bold tracking-[0.12em] text-white uppercase">{title}</h2>
-      <ul className="mt-5 space-y-2.5 text-[0.95rem]">{children}</ul>
+      <h2>{title}</h2>
+      <ul>{children}</ul>
     </div>
-  );
-}
-
-function FooterLink({ href, children }: { href: string; children: React.ReactNode }) {
-  return (
-    <li>
-      <Link href={href} className="transition-colors hover:text-white">
-        {children}
-      </Link>
-    </li>
   );
 }

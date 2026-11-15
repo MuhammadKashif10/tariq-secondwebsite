@@ -6,13 +6,16 @@ import { Icon, WhatsAppIcon } from "./Icon";
 
 export function WhatsAppButton({
   label = "Send a photo on WhatsApp",
-  className = "",
+  className = "btn-amb",
+  message = defaultMessage,
 }: {
   label?: string;
+  /** Button style, e.g. btn-amb, btn-ink. Extra classes can be appended. */
   className?: string;
+  message?: string;
 }) {
   return (
-    <a href={whatsappUrl(defaultMessage)} target="_blank" rel="noopener" className={`btn btn-wa ${className}`}>
+    <a href={whatsappUrl(message)} target="_blank" rel="noopener" className={`btn ${className}`}>
       <WhatsAppIcon />
       {label}
     </a>
@@ -21,13 +24,14 @@ export function WhatsAppButton({
 
 export function CallButton({ dark = false, className = "" }: { dark?: boolean; className?: string }) {
   return (
-    <a href={telUrl} className={`btn ${dark ? "btn-ghost-dark" : "btn-ghost"} ${className}`}>
+    <a href={telUrl} className={`btn ${dark ? "btn-ghost" : "btn-line"} ${className}`}>
       <Icon name="phone" className="size-5" />
-      {site.phoneDisplay}
+      Call {site.phoneDisplay}
     </a>
   );
 }
 
+/** Closing call to action with the drifting colour blobs and photo pair. */
 export function CtaBand({
   title = "Got a pile that needs to go?",
   text = "Take a photo, send it over, and you'll have a fixed price to say yes or no to. No forms, no site visit.",
@@ -36,20 +40,39 @@ export function CtaBand({
   text?: string;
 }) {
   return (
-    <section className="bg-sand py-16 md:py-24">
-      <div className="wrap">
-        <div className="reveal relative isolate overflow-hidden rounded-[2rem] bg-ink text-white shadow-lift">
-          <Image src={photos.burjKhalifa.src} alt="" fill sizes="(min-width: 1280px) 1200px, 100vw" className="-z-20 object-cover" />
-          <div className="absolute inset-0 -z-10 bg-gradient-to-r from-ink via-ink/90 to-ink/40" />
-          <div className="grid gap-8 p-8 sm:p-12 md:p-16 lg:grid-cols-[1.5fr_1fr] lg:items-center">
-            <div>
-              <h2 className="text-4xl md:text-5xl">{title}</h2>
-              <p className="mt-4 max-w-xl text-lg text-mist">{text}</p>
-            </div>
-            <div className="flex flex-col gap-3">
-              <WhatsAppButton />
-              <CallButton dark />
-            </div>
+    <section className="cta sec sheet">
+      <div className="blob k1" />
+      <div className="blob k2" />
+      <div className="blob k3" />
+      <div className="wrap cta-in">
+        <div className="rv">
+          <p className="eyebrow">Ready when you are</p>
+          <h2 className="h-lg mt-[18px] max-w-[13em]">{title}</h2>
+          <p className="lead text-soft">{text}</p>
+          <div className="mt-[34px] flex flex-wrap gap-3">
+            <WhatsAppButton />
+            <CallButton dark />
+          </div>
+          <div className="pill-stats mt-7">
+            <span>Fixed price</span>
+            <span>We do the carrying</span>
+            <span>Open 7 days</span>
+          </div>
+        </div>
+        <div className="cphotos rv" style={{ "--d": ".15s" } as React.CSSProperties} aria-hidden="true">
+          <figure className="cph cph1">
+            <Image src={photos.junkBags.src} alt="" fill sizes="300px" className="object-cover" />
+            <figcaption>Before</figcaption>
+          </figure>
+          <figure className="cph cph2">
+            <Image src={photos.emptyRoom.src} alt="" fill sizes="300px" className="object-cover" />
+            <figcaption>After</figcaption>
+          </figure>
+          <div className="fchip" style={{ left: -10, bottom: 40 }}>
+            <b className="bg-mint">
+              <Icon name="check" className="size-4" />
+            </b>
+            Photo in, fixed price back
           </div>
         </div>
       </div>

@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { FaqList, JsonLd, PageHero, ServiceCard } from "@/components/Blocks";
-import { CtaBand } from "@/components/Cta";
+import { CheckList, FaqSection, JsonLd, PageHero, SectionHead, ServiceGrid, TipCards } from "@/components/Blocks";
+import { CallButton, CtaBand, WhatsAppButton } from "@/components/Cta";
 import { Icon } from "@/components/Icon";
 import { LoadBuilder } from "@/components/LoadBuilder";
 import { areas, getArea, zones } from "@/data/areas";
@@ -56,79 +56,66 @@ export default async function AreaPage({ params }: Props) {
         title={title}
         lead={area.intro}
         photo={areaPhotos[area.slug] ?? zonePhotos[area.zone]}
-      />
+      >
+        <WhatsAppButton label="Get a price on WhatsApp" message={`Hi, I need junk removal service in ${area.name}, Dubai.`} />
+        <CallButton dark />
+      </PageHero>
 
-      <section className="py-16 md:py-24">
-        <div className="wrap grid gap-12 lg:grid-cols-[1.2fr_1fr]">
-          <div>
+      <section className="sec sec-light sheet">
+        <div className="wrap split !items-start">
+          <div className="rv">
             <p className="eyebrow">On the ground</p>
-            <h2 className="mt-4 text-3xl md:text-[2.75rem]">Homes and workplaces in {area.name}</h2>
-            <p className="mt-4 text-lg leading-relaxed">{area.profile}</p>
-            <p className="eyebrow mt-12">Local know-how</p>
-            <h2 className="mt-4 text-3xl md:text-[2.75rem]">Getting in and out of {area.name}</h2>
-            <p className="mt-4 text-lg leading-relaxed">{area.access}</p>
-            <h2 className="mt-12 text-3xl md:text-4xl">Common jobs here</h2>
-            <ul className="mt-5 space-y-3 text-lg font-medium">
-              {area.jobs.map((job) => (
-                <li key={job} className="flex items-center gap-3">
-                  <span className="grid size-6 shrink-0 place-items-center rounded-full bg-signal text-ink">
-                    <Icon name="check" className="size-3.5" />
-                  </span>
-                  {job}
-                </li>
-              ))}
-            </ul>
+            <h2 className="h-md mt-[18px]">Homes and workplaces in {area.name}</h2>
+            <p className="mt-5 text-[18px] leading-[1.7]">{area.profile}</p>
+            <h2 className="h-md mt-14">Common jobs here</h2>
+            <CheckList items={area.jobs} />
           </div>
+          <div className="glass-ink rv" style={{ "--d": ".1s" } as React.CSSProperties}>
+            <p className="eyebrow">Local know-how</p>
+            <h2 className="h-md mt-[18px]">Getting in and out of {area.name}</h2>
+            <p className="mt-5 text-[17px] leading-[1.7] text-soft">{area.access}</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="sec sec-white sheet">
+        <div className="wrap">
+          <SectionHead eyebrow="Good to know" title={`Tips for ${area.name}`} />
+          <div className="mt-12">
+            <TipCards tips={area.tips} />
+          </div>
+        </div>
+      </section>
+
+      <section className="sec sec-dark2 sheet">
+        <div className="wrap">
+          <SectionHead eyebrow="Instant load check" title="Build your load." dark />
           <LoadBuilder />
         </div>
       </section>
 
-      <section className="bg-white py-16 md:py-24">
+      <section className="sec sec-light sheet">
         <div className="wrap">
-          <p className="eyebrow">Good to know</p>
-          <h2 className="mt-4 text-3xl md:text-[2.75rem]">Tips for {area.name}</h2>
-          <ul className="mt-9 grid gap-5 md:grid-cols-2">
-            {area.tips.map((tip) => (
-              <li key={tip.title} className="rounded-3xl bg-sand p-7">
-                <h3 className="text-xl">{tip.title}</h3>
-                <p className="mt-2 text-muted">{tip.body}</p>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
-
-      <section className="py-16 md:py-24">
-        <div className="wrap">
-          <h2 className="text-3xl md:text-[2.75rem]">Popular in {area.name}</h2>
-          <ul className="mt-9 grid grid-cols-2 gap-3 sm:gap-5 md:grid-cols-3">
-            {areaServices.map((service) => (
-              <li key={service.slug}>
-                <ServiceCard service={service} />
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
-
-      <section className="py-16 md:py-24">
-        <div className="wrap grid gap-10 lg:grid-cols-[1fr_1.8fr]">
-          <div>
-            <h2 className="text-3xl md:text-[2.75rem]">{area.name} questions</h2>
-            <h3 className="mt-8 text-lg">Nearby areas</h3>
-            <ul className="mt-2 space-y-1">
-              {nearby.map((item) => (
-                <li key={item.slug}>
-                  <Link href={`/areas/${item.slug}`} className="link">
-                    {item.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+          <SectionHead eyebrow="Services" title={`Popular in ${area.name}`} />
+          <div className="mt-12">
+            <ServiceGrid list={areaServices} />
           </div>
-          <FaqList faqs={faqs} />
         </div>
       </section>
+
+      <FaqSection title={`${area.name} questions`} faqs={faqs} className="sec sec-white sheet">
+        <h3 className="h-sm">Nearby areas</h3>
+        <ul className="item-chips mt-4">
+          {nearby.map((item) => (
+            <li key={item.slug}>
+              <Link href={`/areas/${item.slug}`}>
+                <Icon name="pin" className="size-4" />
+                {item.name}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </FaqSection>
 
       <CtaBand title={`Clearing something in ${area.name}?`} />
     </>

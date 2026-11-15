@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
-import { AreaDirectory, JsonLd, PageHero } from "@/components/Blocks";
+import { AreaCheck, AreaMap } from "@/components/AreaFinder";
+import { AreaDirectory, JsonLd, PageHero, SectionHead } from "@/components/Blocks";
 import { CtaBand, WhatsAppButton } from "@/components/Cta";
 import { areas } from "@/data/areas";
 import { photos } from "@/data/images";
+import { areaLinks, mapPins } from "@/data/map-pins";
 import { itemListSchema } from "@/lib/schema";
 import { pageMetadata } from "@/lib/seo";
 
@@ -26,12 +28,26 @@ export default function AreasPage() {
       >
         <WhatsAppButton />
       </PageHero>
-      <section className="py-16 md:py-24">
+
+      <section className="sec sec-dark2 sheet">
         <div className="wrap">
-          <AreaDirectory />
-          <p className="mt-12 text-lg text-muted">Not on the list? We cover the rest of Dubai as well, so just ask.</p>
+          <SectionHead eyebrow="Check your area" title="Is your area covered?" lead="Not on the list? We cover the rest of Dubai as well, so just ask." dark />
+          <div className="rv">
+            <AreaCheck areas={areaLinks} />
+          </div>
+          <AreaMap pins={mapPins} />
         </div>
       </section>
+
+      <section className="sec sec-light sheet">
+        <div className="wrap">
+          <SectionHead eyebrow="All areas" title={`${areas.length} areas, grouped by type`} />
+          <div className="mt-12">
+            <AreaDirectory />
+          </div>
+        </div>
+      </section>
+
       <CtaBand />
     </>
   );

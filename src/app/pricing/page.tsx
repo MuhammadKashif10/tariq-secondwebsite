@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { PageHero, PriceTiers } from "@/components/Blocks";
+import { CheckList, PageHero, PriceTiers, SectionHead, TipCards } from "@/components/Blocks";
 import { CtaBand, WhatsAppButton } from "@/components/Cta";
 import { Icon } from "@/components/Icon";
 import { photos } from "@/data/images";
@@ -14,10 +14,10 @@ export const metadata: Metadata = pageMetadata({
 });
 
 const factors = [
-  { title: "Volume", text: "How much truck space your items take up. This is the biggest factor." },
-  { title: "Weight", text: "Soil, tiles and marble need more effort and cost more to dispose of than their size suggests." },
-  { title: "Access", text: "Floor, lift, carrying distance and parking all affect the crew size and time." },
-  { title: "Timing", text: "Same-day, evening and peak-season slots can cost more. Your quote will say if so." },
+  { title: "Volume", body: "How much truck space your items take up. This is the biggest factor." },
+  { title: "Weight", body: "Soil, tiles and marble need more effort and cost more to dispose of than their size suggests." },
+  { title: "Access", body: "Floor, lift, carrying distance and parking all affect the crew size and time." },
+  { title: "Timing", body: "Same-day, evening and peak-season slots can cost more. Your quote will say if so." },
 ];
 
 const included = ["Carrying from where the items are", "Loading and transport", "Standard dismantling", "Disposal", "A sweep of the cleared space"];
@@ -36,58 +36,49 @@ export default function PricingPage() {
         <WhatsAppButton label="Get my price" />
       </PageHero>
 
-      <section className="py-16 md:py-24">
+      <section className="sec sec-light sheet">
         <div className="wrap">
-          <h2 className="text-3xl md:text-[2.75rem]">Roughly how much truck do you need?</h2>
-          <div className="mt-8">
+          <SectionHead eyebrow="Truck space" title="Roughly how much truck do you need?" />
+          <div className="mt-12">
             <PriceTiers />
           </div>
         </div>
       </section>
 
-      <section className="bg-white py-16 md:py-24">
+      <section className="sec sec-white sheet">
         <div className="wrap">
-          <h2 className="text-3xl md:text-[2.75rem]">Four things set your price</h2>
-          <ul className="mt-9 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-            {factors.map((factor) => (
-              <li key={factor.title} className="rounded-3xl bg-sand p-6">
-                <h3 className="text-xl">{factor.title}</h3>
-                <p className="mt-2 text-muted">{factor.text}</p>
-              </li>
-            ))}
-          </ul>
+          <SectionHead eyebrow="What sets it" title="Four things set your price" />
+          <div className="mt-12">
+            <TipCards tips={factors} />
+          </div>
         </div>
       </section>
 
-      <section className="py-16 md:py-24">
+      <section className="sec sec-light sheet">
         <div className="wrap grid gap-5 md:grid-cols-2">
-          <div className="card p-8">
-            <h2 className="text-2xl">Included in your quote</h2>
-            <ul className="mt-4 space-y-3">
-              {included.map((item) => (
-                <li key={item} className="flex gap-2.5">
-                  <Icon name="check" className="mt-0.5 size-5 shrink-0 text-signal-deep" />
+          <div className="cd rv">
+            <h2 className="h-sm">Included in your quote</h2>
+            <CheckList items={included} />
+          </div>
+          <div className="glass-ink rv" style={{ "--d": ".1s" } as React.CSSProperties}>
+            <h2 className="h-sm">What could change it</h2>
+            <ul className="inc">
+              {extras.map((item) => (
+                <li key={item}>
+                  <Icon name="plus" className="size-5" />
                   {item}
                 </li>
               ))}
             </ul>
+            <p className="mt-6 font-bold">If something changes, you'll agree the new price before the crew loads anything.</p>
           </div>
-          <div className="rounded-3xl bg-ink p-8 text-white">
-            <h2 className="text-2xl">What could change it</h2>
-            <ul className="mt-4 list-disc space-y-3 pl-5 text-mist marker:text-signal">
-              {extras.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-            <p className="mt-4 font-semibold">If something changes, you'll agree the new price before the crew loads anything.</p>
-          </div>
+          <p className="rv mt-6 text-[18px] md:col-span-2">
+            On a tight budget? If you qualify, Dubai Municipality's bulky waste pickup is free.{" "}
+            <Link href="/blog/dubai-municipality-free-bulky-waste-vs-private-junk-removal" className="link">
+              See when it's the better choice
+            </Link>
+          </p>
         </div>
-        <p className="wrap mt-10 text-lg">
-          On a tight budget? If you qualify, Dubai Municipality's bulky waste pickup is free.{" "}
-          <Link href="/blog/dubai-municipality-free-bulky-waste-vs-private-junk-removal" className="link">
-            See when it's the better choice
-          </Link>
-        </p>
       </section>
 
       <CtaBand title="Find out your exact price" text="Quotes by photo are free, and there's no obligation to book." />

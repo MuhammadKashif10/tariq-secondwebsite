@@ -8,15 +8,7 @@ export function uniquePostTags(): string[] {
   return [...new Set(posts.map((p) => p.tag))].sort();
 }
 
-/** en-GB long date in UTC, e.g. "4 November 2026". */
-export function formatPostDate(iso: string): string {
-  return new Date(iso).toLocaleDateString("en-GB", {
-    day: "numeric",
-    month: "long",
-    year: "numeric",
-    timeZone: "UTC",
-  });
-}
+export { formatPostDate } from "./date";
 
 export function slugifyHeading(text: string): string {
   return text
