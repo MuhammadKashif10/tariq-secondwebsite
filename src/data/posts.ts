@@ -1152,6 +1152,265 @@ export const posts: Post[] = [
       { label: "Dubai Legislation Portal: Executive Council Resolution No. 14 of 2015", url: "https://dlp.dubai.gov.ae/Legislation%20Reference/2015/Executive%20Council%20Resolution%20No.%20(14)%20of%202015.html" },
     ],
   },
+  {
+    slug: "leaving-dubai-for-good-furniture-and-appliances",
+    title: "Leaving Dubai for good: what to do with your furniture",
+    description:
+      "Leaving Dubai for good? How to decide what to ship, sell, give away or clear, an eight-week plan for your furniture, and what to do if you've already gone.",
+    date: "2026-11-16",
+    readMinutes: 6,
+    tag: "Moving",
+    relatedService: "move-out-clearance",
+    blocks: [
+      {
+        type: "p",
+        text: "If you're leaving Dubai for good, sort every piece of furniture and every appliance into one of four groups about eight weeks before you fly: ship it, sell it, give it away or have it cleared. Then work backwards from your flight, so the selling happens early and the clearance happens last.",
+      },
+      {
+        type: "p",
+        text: "Leaving the country is different from moving across town. You can't drop the leftovers at a friend's flat next week, and there's no second trip to fix what you forgot. This guide covers what to do with your household contents. For the general move-out timeline, permits and the handover itself, see our move-out guides.",
+      },
+      { type: "h2", text: "A countdown for your household contents (8 weeks to final day)" },
+      {
+        type: "ol",
+        items: [
+          "Eight weeks out: walk through every room, the storeroom, the balcony and the parking space, and put each item in one of the four groups",
+          "Seven weeks out: get shipping quotes for what's going, based on volume. Seeing the cost often moves items from \"ship\" to \"sell\"",
+          "Six weeks out: list the things you're selling, starting with large and valuable pieces, which take longest to sell",
+          "Four weeks out: offer what didn't sell to friends, colleagues or community groups",
+          "Three weeks out: book the shipping company's packing day and the clearance for the days after it",
+          "Final week: live with the essentials, a bed, a kettle and a few plates, and have the rest gone",
+          "Final day: walk the empty home, take dated photos and hand over the keys",
+        ],
+      },
+      {
+        type: "p",
+        text: "If your notice is shorter than eight weeks, keep the order and compress the gaps. Selling is the step that suffers most from a short timeline, so decide early what you'll accept for each piece.",
+      },
+      { type: "h2", text: "Ship, sell, give away or clear: decision framework" },
+      {
+        type: "p",
+        text: "For each item, ask four questions in this order:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Would I buy this again at the other end? If yes, and it isn't cheap to replace, it's a shipping candidate",
+          "Will someone pay a fair price for it within a few weeks? If yes, list it now",
+          "Is it clean and working, but not worth the effort of selling? Give it away",
+          "Is it broken, worn out or unlikely to find a buyer in time? Add it to the clearance list",
+        ],
+      },
+      {
+        type: "p",
+        text: "Be realistic about the second question. Second-hand furniture in Dubai sells well when it's in good condition and priced to move, but slowly when it's dated, heavy or hard to transport. Anything still listed two weeks before you fly should drop to \"give away\" or \"clear\".",
+      },
+      {
+        type: "callout",
+        title: "Know the clearance cost early",
+        body: "Send us photos of everything on your clearance list on WhatsApp. We reply with a fixed price, so you know the cost before you decide how hard to chase a sale.",
+      },
+      { type: "h2", text: "Shipping vs replacing: what's rarely worth shipping" },
+      {
+        type: "p",
+        text: "International shipping is priced mainly by volume, so bulky, low-value furniture costs far more to send than it's worth. These are the usual candidates to leave behind:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Large appliances. Fridges, washing machines and ovens bought in the UAE are built for its electricity supply and plugs, which differ from those in North America and some other countries",
+          "Flat-pack furniture, which rarely survives being taken apart and rebuilt twice",
+          "Mattresses and upholstered pieces that are a few years old",
+          "Outdoor furniture and garden items from a villa, which take a lot of space for little value",
+          "Anything sized for a Dubai home that won't fit the place you're moving to",
+        ],
+      },
+      {
+        type: "p",
+        text: "What usually is worth shipping: solid wood pieces you love, items with sentimental value, artwork, and quality furniture that would be expensive to replace where you're going.",
+      },
+      { type: "h2", text: "Final-week clearance and handover" },
+      {
+        type: "p",
+        text: "The final week has a set order. The shipping company packs and takes what's going first. The clearance comes after, so nothing that should travel ends up on the wrong truck. Then the home is swept, photographed and handed over.",
+      },
+      {
+        type: "p",
+        text: "A tower flat in Dubai Marina or Business Bay needs the most planning, because both the packers and the clearance crew may need a service lift slot and a move-out permit from the building. A villa in Arabian Ranches is simpler to load, but check your community's rules for vehicle passes and working hours. In older buildings, such as those in Al Nahda, ask the watchman where a truck can stop.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Check the landlord's inventory if the home came furnished, and leave everything that belongs to it",
+          "Book the clearance for one or two days after the packers, not the same morning",
+          "Keep a bag of cleaning supplies and bin bags back until the very end",
+          "Empty and defrost the fridge the day before it goes, whether it's sold, given away or cleared",
+          "Take dated photos of every empty room for your records",
+        ],
+      },
+      { type: "h2", text: "If you have already left: clearing remotely" },
+      {
+        type: "p",
+        text: "Plans change, and sometimes you're on the plane before the flat is empty. A home can still be cleared without you there, as long as someone can open the door.",
+      },
+      {
+        type: "ol",
+        items: [
+          "Leave the keys with someone you trust, your agent or the building's management, and tell them who will collect them",
+          "Send photos or a video of every room, so the clearance can be priced without a visit",
+          "Make clear what stays: landlord-owned furniture, appliances and anything on the inventory",
+          "Arrange any building permit or gate pass the crew will need",
+          "Ask for photos of the empty home when the clearance is finished, before the keys go back",
+        ],
+      },
+      { type: "h2", text: "FAQs" },
+      { type: "h3", text: "Can someone else hand over the flat for me?" },
+      {
+        type: "p",
+        text: "Usually, yes, if your landlord or agent agrees. Ask them what they'll accept before you leave, such as a signed letter naming the person or a power of attorney, and agree the handover date in writing.",
+      },
+      { type: "h3", text: "What if a buyer pulls out in the last week?" },
+      {
+        type: "p",
+        text: "It happens often, especially with large items. Keep your clearance booking flexible enough to add a piece or two, and send a photo of anything extra as soon as you know. A crew can price changes from a photo, so you're not left with a sofa in an empty flat on your last night.",
+      },
+    ],
+  },
+  {
+    slug: "garden-waste-collection-dubai",
+    title: "Garden waste collection in Dubai: what the bins take",
+    description:
+      "How garden waste collection works in Dubai villa communities: what goes in the bins, the municipal and community options, and when a pile needs a pickup.",
+    date: "2026-11-16",
+    readMinutes: 5,
+    tag: "Dubai guide",
+    relatedService: "garden-waste-removal",
+    blocks: [
+      {
+        type: "p",
+        text: "Garden waste collection in Dubai depends on where you live. In many villa communities, small amounts of bagged cuttings go out with the household waste, while large piles are the resident's job to arrange. Above a few bags, you'll need your gardener, a municipal or community service, or a removal crew.",
+      },
+      {
+        type: "p",
+        text: "What you can't do is leave cuttings on the verge or in a common area. Community rules forbid it, and a pile of palm fronds by the road is the kind of thing that brings a violation notice.",
+      },
+      { type: "h2", text: "What counts as green waste" },
+      {
+        type: "p",
+        text: "Green waste is anything that grew in the garden and has been cut, pulled or has died:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Grass clippings and leaves",
+          "Hedge and shrub trimmings",
+          "Palm fronds and branches",
+          "Dead plants and flowers",
+          "Weeds pulled from beds and paving",
+        ],
+      },
+      {
+        type: "p",
+        text: "Soil, sand, stones, turf, pots and old garden furniture aren't green waste in the same sense. They're heavier, don't break down the same way and usually can't go in a household bin. They're covered below.",
+      },
+      { type: "h2", text: "Community and municipal options (verify per community)" },
+      {
+        type: "p",
+        text: "There's no single Dubai-wide rule for garden waste. Your community's rules decide what goes in the bins, and they differ between master developers and even between phases of the same community.",
+      },
+      { type: "h3", text: "Community rules" },
+      {
+        type: "p",
+        text: "Emaar's community rules for villas in Arabian Ranches are a typical example. They say residents are responsible for removing garden refuse and green waste, which must be packed in designated waste bags for collection by authorised contractors. Large or heavy items must be arranged separately, at the resident's own cost. The same rules prohibit dumping grass and landscape cuttings anywhere in the community.",
+      },
+      {
+        type: "p",
+        text: "Other villa areas, such as Jumeirah, Al Mizhar, JVT and DAMAC Hills, have their own arrangements. Ask your community management office or check the residents' portal for three things: whether bagged cuttings go in the household bin, how many bags count as too many, and whether there's a set collection day.",
+      },
+      { type: "h3", text: "Your gardener or landscaper" },
+      {
+        type: "p",
+        text: "If someone maintains your garden, check whether removing the cuttings is in their contract. Many maintenance agreements include it. A one-off landscaping job often doesn't, so ask before the work starts, not when the pile is already in the driveway.",
+      },
+      { type: "h3", text: "Dubai Municipality" },
+      {
+        type: "p",
+        text: "In 2018 Dubai Municipality announced a free service for bulk removal of green household waste, such as grass and hedge trimmings, booked on 800900. Its bulky waste service doesn't cover free zones or real estate development zones, which include many master communities. Call 800900 to check whether green waste collection is still offered at your address before you rely on it.",
+      },
+      { type: "h2", text: "Bagging cuttings so they get collected" },
+      {
+        type: "p",
+        text: "Where bagged garden waste is allowed, how you bag it decides whether it's taken. A split bag or a branch sticking out of the lid is easy for a collection crew to leave behind.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Use heavy-duty bags, or the designated bags your community specifies",
+          "Cut branches and fronds into short lengths so they sit fully inside the bag",
+          "Point palm frond spines inwards, so nobody is cut lifting the bag",
+          "Fill bags to a weight one person can lift, and tie them closed",
+          "Put them out on your community's collection day, not days early, so they don't attract pests in the heat",
+        ],
+      },
+      { type: "h2", text: "When a pile is too big for the bins" },
+      {
+        type: "p",
+        text: "A full hedge trim, a palm tidy-up or clearing a neglected garden fills far more than a few bags. Signs that the bins won't cope:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Branches and fronds too long or spiky to bag",
+          "More bags than your community allows in one collection",
+          "A deadline, such as a party, a sale or the end of a tenancy",
+          "Green waste mixed with broken pots, old furniture or building materials",
+        ],
+      },
+      {
+        type: "p",
+        text: "Gather everything into one pile near vehicle access, keeping it off the road and away from neighbours' walls. Then take one wide photo of the pile and one close-up of anything heavy.",
+      },
+      {
+        type: "callout",
+        title: "Price the pile",
+        body: "Send that photo to us on WhatsApp with your community name. We reply with a fixed price, and bag and load everything when we arrive.",
+      },
+      { type: "h2", text: "Soil, turf and planters: heavy loads" },
+      {
+        type: "p",
+        text: "Relandscaping produces waste that's much heavier than it looks. A few square metres of old turf, a bed of sandy soil or a row of concrete planters can weigh more than a full load of cuttings.",
+      },
+      {
+        type: "p",
+        text: "Keep heavy material separate from green waste. Don't put soil or stones in household bins, because they can split the bin and be left uncollected. Bag soil in strong, half-filled sacks so they can be carried, and tell whoever is collecting roughly how much there is.",
+      },
+      { type: "h2", text: "Tree felling vs waste removal" },
+      {
+        type: "p",
+        text: "Removing garden waste and cutting down trees are separate jobs. Felling a tall palm or a large tree needs a tree specialist with the right equipment, and your community may need to approve it first.",
+      },
+      {
+        type: "p",
+        text: "We don't cut trees. We clear what has already been cut. The usual way to handle a big job is to book the tree specialist first, then have the waste collected straight after, so the cut material isn't left lying in the garden.",
+      },
+      { type: "h2", text: "FAQs" },
+      { type: "h3", text: "Can you collect the same day the tree surgeon finishes?" },
+      {
+        type: "p",
+        text: "Often, if you book ahead and send a photo of the expected pile. Same-day slots depend on availability, so the easiest way is to agree a collection for the afternoon or the morning after the cutting.",
+      },
+      { type: "h3", text: "Can I leave cuttings outside my gate for collection?" },
+      {
+        type: "p",
+        text: "Only if your community's collection arrangements say so. Many community rules prohibit dumping cuttings in shared areas, and a loose pile on the verge can blow into the road. Keep it inside your plot until it's collected.",
+      },
+    ],
+    sources: [
+      { label: "Emaar Community Management: Master Community Rules, Villas, Arabian Ranches I (section 9, waste and trash management)", url: "https://www.ecm.ae/wp-content/uploads/2025/12/Emaar-Master-Community-Rules-Villas-Arabian-Ranches-I-1.pdf" },
+      { label: "Gulf News (2018): Dubai Municipality will remove home garden or park trimmings", url: "https://gulfnews.com/uae/free-pick-up-for-green-waste-1.1404682" },
+      { label: "Dubai Municipality: bulky waste disposal service (not available in development and free zones)", url: "https://www.dm.gov.ae/35-increase-in-requests-for-dubai-municipality-bulky-waste-disposal-service/" },
+    ],
+  },
 ];
 
 export const getPost = (slug: string) => posts.find((p) => p.slug === slug);

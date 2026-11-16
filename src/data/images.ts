@@ -50,6 +50,9 @@ export const photos = {
   // Pexels 5483236 and 8032016, used under the Pexels licence.
   emptyOffice: photo("empty-office-workstations", "Rows of empty office workstations and chairs beside floor-to-ceiling windows"),
   stainlessFridge: photo("stainless-fridge-kitchen", "A stainless steel double-door fridge between white kitchen cabinets"),
+  // Pexels 3616736 and 17577525, used under the Pexels licence.
+  wrappedChair: photo("bubble-wrapped-chair", "A chair wrapped in bubble wrap beside a bright window"),
+  gardenBin: photo("garden-waste-bin", "A wheelie bin overflowing with garden cuttings and branches beside a hedge"),
   renovationRoom: photo("renovation-room-bags", "Room stripped back to brick during a renovation, with bags of material on the floor"),
   // Illustrative pair for the before and after slider, from the redesign prototype.
   clutteredRoom: photo("cluttered-bedroom-before", "A cluttered bedroom with clothes piled on the bed and rails"),
@@ -145,4 +148,6 @@ export const postPhotos: Record<string, Photo> = {
   "renovation-waste-rules-dubai": photos.renovationRoom,
   "office-relocation-clearance-checklist-dubai": photos.emptyOffice,
   "how-to-dispose-of-a-fridge-in-dubai": photos.stainlessFridge,
+  "leaving-dubai-for-good-furniture-and-appliances": photos.wrappedChair,
+  "garden-waste-collection-dubai": photos.gardenBin,
 };
