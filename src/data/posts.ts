@@ -1411,6 +1411,286 @@ export const posts: Post[] = [
       { label: "Dubai Municipality: bulky waste disposal service (not available in development and free zones)", url: "https://www.dm.gov.ae/35-increase-in-requests-for-dubai-municipality-bulky-waste-disposal-service/" },
     ],
   },
+  {
+    slug: "villa-clearance-checklist-dubai",
+    title: "House clearance checklist for a Dubai villa, room by room",
+    description:
+      "A house clearance checklist for Dubai villas: tag what stays, clear each room in order, sweep for documents, arrange gate passes and run the day smoothly.",
+    date: "2026-11-17",
+    readMinutes: 6,
+    tag: "Moving",
+    relatedService: "house-villa-clearance",
+    blocks: [
+      {
+        type: "p",
+        text: "A house clearance goes smoothly when every decision is made before the crew arrives. Two weeks ahead, tag what stays, go through the villa room by room, take out documents and valuables, and arrange access with your community. On the day, the crew then only has to carry, load and sweep.",
+      },
+      {
+        type: "p",
+        text: "A villa holds far more than a flat. There's a majlis, a maid's room, a garage, a roof and a garden, and each fills up in its own way. This checklist takes them one at a time.",
+      },
+      { type: "h2", text: "Two weeks out: decide, tag and book" },
+      {
+        type: "p",
+        text: "Start by deciding what the clearance is for. Emptying a villa for a sale, a tenancy handover or a family estate changes what has to stay. A rented villa may come with furniture listed on the landlord's inventory. A villa being sold may need to stay furnished for viewings until the last week.",
+      },
+      {
+        type: "ol",
+        items: [
+          "Agree who makes the final call on each item, especially if the villa belonged to a relative",
+          "Walk every room with a notepad or your phone and list the large pieces",
+          "Tag each item using the sticker system below",
+          "Photograph each room once it's tagged, and send the photos for a clearance price",
+          "Book the date, leaving a day or two before any handover or inspection",
+        ],
+      },
+      { type: "h3", text: "The coloured sticker system" },
+      {
+        type: "p",
+        text: "Coloured stickers remove doubt on the day, especially if you won't be there. Buy two or three colours of round stickers and use them consistently:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Green: keep. This stays in the villa or goes with you",
+          "Yellow: give away or sell. Someone is collecting it separately",
+          "No sticker: clear. Everything untagged goes",
+        ],
+      },
+      {
+        type: "p",
+        text: "Tag the item you mean, not the room. A green sticker on a wardrobe door doesn't tell anyone whether the clothes inside are staying. If the contents of a cupboard stay, put a sticker inside as well.",
+      },
+      { type: "h2", text: "Room-by-room checklist" },
+      { type: "h3", text: "Bedrooms and wardrobes" },
+      {
+        type: "ul",
+        items: [
+          "Empty every drawer, including bedside tables and under-bed storage",
+          "Check the tops of wardrobes and the backs of built-in cupboards",
+          "Say whether beds and wardrobes are freestanding or fixed to the wall",
+          "Bag clothes you're donating separately, and label the bags",
+        ],
+      },
+      { type: "h3", text: "Kitchen and appliances" },
+      {
+        type: "ul",
+        items: [
+          "Empty the fridge and freezer, switch them off and leave them to defrost about a day before",
+          "Have a technician disconnect anything plumbed in or gas-fed, such as a washing machine, dishwasher or cooker. Our crews move appliances but don't disconnect them",
+          "Clear cupboards of food, cleaning products and anything that could leak",
+          "Decide whether built-in appliances stay with the villa",
+        ],
+      },
+      { type: "h3", text: "Majlis and living areas" },
+      {
+        type: "p",
+        text: "The majlis and living rooms hold the heaviest furniture: long sofas and floor seating, large rugs, dining sets, display cabinets and wall units. Tell the crew which pieces are solid wood, marble or glass, and whether any have to come apart to fit through the doors. Leave curtain rails, light fittings and anything screwed into the wall unless you're sure they're yours to remove.",
+      },
+      { type: "h3", text: "Garage, roof and storeroom" },
+      {
+        type: "p",
+        text: "These are the spaces most often forgotten and most often full. Open them early, because they can double the size of the job.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Gather paint tins, chemicals, gas cylinders and fuel in one place. They're hazardous and can't go with a general clearance, so arrange a separate disposal",
+          "Check the maid's room, the laundry and any rooftop storage",
+          "Look in the car park space and behind the garage door for bikes, tyres and boxes",
+          "Note anything heavy, such as gym equipment or tools, and how far it is from the truck",
+        ],
+      },
+      { type: "h3", text: "Garden" },
+      {
+        type: "p",
+        text: "Gardens collect broken furniture, old planters, play equipment and green waste. Pile what's going near the gate if you can, and keep soil and stones apart from cuttings. Our guide to garden waste collection covers what community bins take.",
+      },
+      {
+        type: "callout",
+        title: "Price the whole villa at once",
+        body: "Send photos of each room, the garage and the garden on WhatsApp, with your community name. We reply with one fixed price for the whole clearance.",
+      },
+      { type: "h2", text: "Documents and valuables sweep" },
+      {
+        type: "p",
+        text: "Do this yourself, before the clearance, even in rooms you think are empty. Passports, tenancy contracts, title deeds, bank papers, jewellery and keys turn up in coat pockets, books, suitcases and the backs of drawers.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Check every pocket, bag and suitcase that's going",
+          "Flick through books and folders before they're tagged to go",
+          "Look inside sofa cushions and under mattresses",
+          "Collect remote controls, spare keys and access cards for the handover",
+        ],
+      },
+      {
+        type: "p",
+        text: "Once items are collected, they usually can't be recovered. A careful sweep is the only real protection.",
+      },
+      { type: "h2", text: "Community access and gate passes" },
+      {
+        type: "p",
+        text: "Gated communities such as Arabian Ranches and Dubai Hills Estate usually control which vehicles can enter and when. Ask your community management office what it needs for a contractor's truck, such as crew and vehicle details or a pass booked in advance, and whether there are set hours for removals.",
+      },
+      {
+        type: "p",
+        text: "Open neighbourhoods like Jumeirah and Mirdif have no gate, but street parking can be tight. Tell the crew whether the truck can use your driveway or has to park on the road, and let neighbours know if their access might be blocked for a short time.",
+      },
+      { type: "h2", text: "On the day" },
+      {
+        type: "ul",
+        items: [
+          "Walk the villa with the crew lead before anything is moved, room by room",
+          "Point out every green sticker, and anything fragile or fixed",
+          "Keep a clear path from the front door to the truck",
+          "Keep pets and children away from the loading route",
+          "Do a final walk-through once the rooms are empty and swept",
+          "Take dated photos of every room for your records",
+        ],
+      },
+      { type: "h2", text: "FAQs" },
+      { type: "h3", text: "Can I change my mind about an item on the day?" },
+      {
+        type: "p",
+        text: "Yes, as long as you tell the crew lead before it's loaded. Once items are on the truck and collected, they usually can't be recovered, so check the tags carefully during the walk-through.",
+      },
+      { type: "h3", text: "What about furniture that belongs to the landlord?" },
+      {
+        type: "p",
+        text: "If you're renting, anything on the landlord's inventory stays, even if it's worn or broken. Mark it with a green sticker and keep a copy of the inventory to hand. If you'd like something of the landlord's removed, get their agreement in writing first.",
+      },
+    ],
+  },
+  {
+    slug: "skip-hire-vs-junk-removal-dubai",
+    title: "Skip hire or a junk removal truck in Dubai: which fits?",
+    description:
+      "Skip hire in Dubai compared with a hand-loaded junk removal truck: how each works, what space and permissions they need, and which suits your job.",
+    date: "2026-11-17",
+    readMinutes: 6,
+    tag: "Dubai guide",
+    relatedService: "construction-debris-removal",
+    blocks: [
+      {
+        type: "p",
+        text: "Skip hire in Dubai suits long renovations that produce a steady stream of loose rubble, at a property with space to keep a container on site. A hand-loaded junk removal truck suits one-off clear-outs, bagged waste, mixed items and buildings where a skip can't be placed.",
+      },
+      {
+        type: "p",
+        text: "We don't supply skips. We run trucks and load by hand. So this comparison is meant to help you pick the right one, including when that's a skip from someone else.",
+      },
+      { type: "h2", text: "How skip hire works" },
+      {
+        type: "p",
+        text: "A skip is an open steel container left at your property for an agreed period. Your contractor or you fill it, and the provider collects it and takes the waste for disposal. For a long job, the full skip is swapped for an empty one.",
+      },
+      {
+        type: "p",
+        text: "In Dubai, collecting and transporting construction and demolition waste is a licensed activity. Dubai Municipality's technical guidelines say the companies doing it need a licence for that activity, and that their vehicles must be registered in the company's name. Before you book, ask the provider to confirm it holds that licence.",
+      },
+      {
+        type: "p",
+        text: "The same guidelines set out how containers are handled. The contract should state the number, type and size of containers and who provides and maintains them. The client is responsible for preparing the containers at the agreed collection point. Containers must not obstruct pedestrians or traffic, and open containers must be covered while they're transported.",
+      },
+      {
+        type: "p",
+        text: "Placement is usually the deciding factor. A skip needs a firm, level spot the collection truck can reach, such as a driveway or a site compound. If it can't sit on your own plot, ask your community or building management where it may go before you book.",
+      },
+      { type: "h2", text: "How a hand-loaded truck clearance works" },
+      {
+        type: "p",
+        text: "With a truck clearance, nothing sits on site. You send photos, agree a fixed price, and the crew arrives with a truck at a set time. They carry the waste from wherever it is, load it and leave in the same visit.",
+      },
+      {
+        type: "p",
+        text: "Because the crew does the carrying, a truck suits waste that's spread through a property, items that have to come down from upper floors, and mixed loads of furniture, boxes and bagged debris. In towers, rubble is best bagged before collection, so it can be carried through corridors and lifts.",
+      },
+      { type: "h2", text: "Comparison: space, permits, loading labour, volume" },
+      { type: "h3", text: "Space" },
+      {
+        type: "p",
+        text: "A skip needs somewhere to stand for days or weeks. A truck needs a place to stop while it's loaded, usually for a few hours at most. In a tower in Business Bay or JVC, there's rarely anywhere for a skip. A villa in Dubai Hills Estate with a driveway may have room for one, subject to community rules.",
+      },
+      { type: "h3", text: "Permissions" },
+      {
+        type: "p",
+        text: "Whoever collects construction waste must be authorised to transport it. With a skip, also check whether your community or building allows a container on the property, and for how long. With a truck, you may need a gate pass or a lift booking for the day.",
+      },
+      { type: "h3", text: "Loading labour" },
+      {
+        type: "p",
+        text: "A skip is only a container. Someone still has to carry the waste to it and load it, usually your contractor's labourers. With a truck clearance, the crew's loading is part of the job.",
+      },
+      { type: "h3", text: "Volume and timing" },
+      {
+        type: "p",
+        text: "A skip absorbs waste as it's produced over weeks of work. A truck takes what's there on the day. For a renovation that generates rubble daily, that difference often decides it.",
+      },
+      {
+        type: "callout",
+        title: "Not sure which you need?",
+        body: "Send a photo of the waste and tell us the floor and access. If a skip would suit the job better, we'll say so.",
+      },
+      { type: "h2", text: "Questions to ask before you book a skip" },
+      {
+        type: "p",
+        text: "If a skip suits your job, a few questions up front prevent most problems:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Do you hold a licence for construction waste collection and transport in Dubai?",
+          "What sizes do you offer, and is there a weight limit for heavy material such as tiles and concrete?",
+          "What can't go in the skip? Hazardous items such as paint, chemicals and gas cylinders usually need separate disposal",
+          "How long is the hire period, and how quickly can a full skip be swapped?",
+          "Where exactly will it stand, and who checks that the community or building allows it there?",
+          "Is the skip covered when it's taken away, and where does the waste go?",
+        ],
+      },
+      {
+        type: "p",
+        text: "Get the answers in writing, along with the price, before the skip arrives.",
+      },
+      { type: "h2", text: "When a skip is the better choice" },
+      {
+        type: "ul",
+        items: [
+          "A villa renovation lasting weeks, producing rubble every day",
+          "Large volumes of loose, heavy material such as broken tiles, concrete and sand",
+          "A contractor on site whose labourers can load as they work",
+          "A driveway or site area where a container can stand without blocking anyone",
+        ],
+      },
+      { type: "h2", text: "When a truck clearance is the better choice" },
+      {
+        type: "ul",
+        items: [
+          "A one-off clear-out after a small renovation or before a handover",
+          "An apartment, where there's nowhere to put a skip",
+          "Bagged debris mixed with old furniture, fittings and boxes",
+          "Waste on upper floors or spread around the property, which needs carrying",
+          "A deadline, when you'd rather have it gone in one visit",
+        ],
+      },
+      { type: "h2", text: "FAQs" },
+      { type: "h3", text: "Is a skip cheaper than a truck?" },
+      {
+        type: "p",
+        text: "It depends on the job, so compare quotes for your own situation. A skip can work out cheaper for large volumes of loose rubble when your contractor does the loading. A truck can work out cheaper for smaller or mixed loads, because you only pay for one visit and the carrying is included.",
+      },
+      { type: "h3", text: "Can I use both on the same renovation?" },
+      {
+        type: "p",
+        text: "Yes, and it's common. The skip takes the daily rubble while the work goes on, and a truck clears the old furniture, fittings and leftovers at the start or the end of the job.",
+      },
+    ],
+    sources: [
+      { label: "Dubai Municipality: Technical Guidelines on Construction and Demolition Waste Collection and Transportation (2024)", url: "https://dmpmedia.dm.gov.ae/uploads/2026/06/3-CD-Waste-Collection-and-Transportation.pdf" },
+      { label: "Dubai Legislation Portal: Law No. 18 of 2024 Regulating Waste Management", url: "https://dlp.dubai.gov.ae/Legislation%20Reference/2024/Law%20No.%20%2818%29%20of%202024%20Regulating%20Waste%20Management.html" },
+    ],
+  },
 ];
 
 export const getPost = (slug: string) => posts.find((p) => p.slug === slug);
