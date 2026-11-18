@@ -56,6 +56,9 @@ export const photos = {
   // Pexels 7203788 and 31868429, used under the Pexels licence.
   boxesEmptyRoom: photo("boxes-empty-room", "Cardboard boxes scattered across the floor of an empty white room"),
   skipContainer: photo("skip-container-street", "A green skip container standing on paving outside an office building"),
+  // Pexels 36126272 and 6970027, used under the Pexels licence.
+  emptyRacking: photo("empty-warehouse-racking", "Tall steel warehouse racking, mostly empty, with a wooden pallet on a lower shelf"),
+  lShapedSofa: photo("l-shaped-sofa", "A grey L-shaped sofa with cushions against a brick feature wall"),
   renovationRoom: photo("renovation-room-bags", "Room stripped back to brick during a renovation, with bags of material on the floor"),
   // Illustrative pair for the before and after slider, from the redesign prototype.
   clutteredRoom: photo("cluttered-bedroom-before", "A cluttered bedroom with clothes piled on the bed and rails"),
@@ -155,4 +158,6 @@ export const postPhotos: Record<string, Photo> = {
   "garden-waste-collection-dubai": photos.gardenBin,
   "villa-clearance-checklist-dubai": photos.boxesEmptyRoom,
   "skip-hire-vs-junk-removal-dubai": photos.skipContainer,
+  "warehouse-clearance-dubai": photos.emptyRacking,
+  "how-to-dispose-sofa-in-dubai": photos.lShapedSofa,
 };

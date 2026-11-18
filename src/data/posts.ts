@@ -1691,6 +1691,249 @@ export const posts: Post[] = [
       { label: "Dubai Legislation Portal: Law No. 18 of 2024 Regulating Waste Management", url: "https://dlp.dubai.gov.ae/Legislation%20Reference/2024/Law%20No.%20%2818%29%20of%202024%20Regulating%20Waste%20Management.html" },
     ],
   },
+  {
+    slug: "warehouse-clearance-dubai",
+    title: "Warehouse clearance in Dubai: racking, pallets and stock",
+    description:
+      "How to plan a warehouse clearance in Dubai: scoping and access, racking and pallets, old stock, what needs a licensed specialist and your waste duties.",
+    date: "2026-11-18",
+    readMinutes: 6,
+    tag: "Dubai guide",
+    relatedService: "office-clearance",
+    blocks: [
+      {
+        type: "p",
+        text: "A warehouse clearance in Dubai starts with a scope: what's leaving, how much of it there is, and how a truck reaches it. Racking, pallets, old stock and packaging can usually go in one planned clearance. Chemicals, oils and other hazardous materials can't, and need a licensed specialist.",
+      },
+      {
+        type: "p",
+        text: "Warehouses in Al Quoz, Dubai Investments Park, Jebel Ali, Al Qusais and Dubai South get cleared for the same few reasons: a lease ending, a move to a bigger unit, a business closing or a backlog of dead stock. The steps are the same in each case.",
+      },
+      { type: "h2", text: "Scoping a warehouse clearance" },
+      {
+        type: "p",
+        text: "An accurate scope is what turns a warehouse clearance into a fixed price rather than an estimate. It needs three things: photos, rough volumes and access details.",
+      },
+      { type: "h3", text: "Photos, volumes and access" },
+      {
+        type: "ul",
+        items: [
+          "Wide photos of each bay or aisle, taken from the end so the depth shows",
+          "Close-ups of anything heavy, such as machinery, metal stock or full pallets",
+          "A rough count: bays of racking, number of pallets, shelving units, desks in the office area",
+          "A note of anything staying, such as racking the landlord owns or stock you're moving",
+          "The mezzanine, office and staff areas, which are easy to forget",
+        ],
+      },
+      { type: "h3", text: "Loading docks and vehicle size" },
+      {
+        type: "p",
+        text: "Tell whoever is clearing the unit how vehicles get in. Is there a loading dock or a roller shutter at ground level? Is there a forklift on site, and someone to drive it? Are there height or width limits at the gate, and set hours for heavy vehicles in your industrial area? A dock and a forklift make heavy pallets much quicker to load.",
+      },
+      { type: "h2", text: "Racking, shelving and pallets" },
+      {
+        type: "p",
+        text: "Racking is often the biggest single item in a warehouse clearance. Our crew can take down freestanding pallet racking and shelving, then load and remove it. Tell us the number of bays, the height and whether the uprights are bolted to the floor.",
+      },
+      {
+        type: "p",
+        text: "Before the racking comes down, check your lease. Floor anchors leave holes, and some landlords expect the floor made good at handover. That repair is a job for a contractor, so agree it with the landlord early.",
+      },
+      {
+        type: "p",
+        text: "Pallets come in two kinds. Sound wooden and plastic pallets often have value to pallet traders and other businesses, so it's worth offering them before the clearance. Broken pallets are waste. Stack them neatly in one place, because a loose heap takes far longer to load.",
+      },
+      {
+        type: "callout",
+        title: "Get the clearance priced",
+        body: "Send photos of each bay and a rough count of racking and pallets on WhatsApp, with the area and loading access. We reply with a fixed price for the clearance.",
+      },
+      { type: "h2", text: "Old stock and packaging" },
+      {
+        type: "p",
+        text: "Dead stock is the hardest part to plan, because it's tied up with decisions about money. Sort it into three groups before anyone quotes:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Stock to sell, return to the supplier or move to another site",
+          "Stock to donate, if it's usable and you're allowed to give it away",
+          "Stock for disposal: damaged, expired or obsolete goods",
+        ],
+      },
+      {
+        type: "p",
+        text: "Check supplier and brand agreements first. Some require branded or returned goods to be destroyed in a set way, with a certificate. We remove and dispose of stock, but we don't issue destruction certificates, so use a specialist for anything that needs one.",
+      },
+      {
+        type: "p",
+        text: "Packaging adds up quickly. Flatten and bale cardboard where you can, and keep shrink wrap, strapping and polystyrene apart from it. Clean, sorted cardboard is easier to recycle than a mixed pile.",
+      },
+      { type: "h2", text: "What needs a licensed specialist" },
+      {
+        type: "p",
+        text: "Hazardous materials don't belong in a general clearance. That includes chemicals, solvents, paints in bulk, used oils and lubricants, fuel, gas cylinders, batteries in quantity and anything with a hazard label. In Dubai, these go through companies licensed for hazardous waste collection and transport.",
+      },
+      {
+        type: "p",
+        text: "Identify hazardous items during the scope and keep them apart from everything else. A clearance crew can then work around them while the specialist handles their removal.",
+      },
+      { type: "h2", text: "Business waste obligations: approved collectors" },
+      {
+        type: "p",
+        text: "As a business, you're responsible for how your waste is handled, not only for getting it out of the unit. Dubai's waste law, Law No. 18 of 2024, requires a waste producer to transport the waste from its activities to disposal sites using authorised vehicles.",
+      },
+      {
+        type: "p",
+        text: "For hazardous waste, Dubai Municipality's technical guidelines go further. They make it the waste generator's responsibility to check the transporter's credentials against the municipality's published list of approved hazardous waste transporters. They also require businesses that generate hazardous waste to get a permit or NOC from the municipality before it's transported, disposed of or recycled.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Ask any collector which waste types its licence covers",
+          "Check hazardous waste transporters against the municipality's approved list",
+          "Keep records of what was removed, when and by whom",
+          "Don't let anyone leave waste on vacant land or beside the building",
+        ],
+      },
+      { type: "h2", text: "Handing the unit back" },
+      {
+        type: "p",
+        text: "Once the clearance is done, walk the unit before you return the keys. Check the mezzanine, the office, the toilets and the yard, as well as the main floor. Sweep the floor, note any damage from racking or forklifts, and take dated photos of every area. If the lease requires repairs, such as filling anchor holes or removing signage, book a contractor for the days after the clearance, not the same day.",
+      },
+      { type: "h2", text: "FAQs" },
+      { type: "h3", text: "Can you clear over several days?" },
+      {
+        type: "p",
+        text: "Yes. Large warehouses are often cleared in phases, bay by bay, so the business can keep working or move stock out in stages. Tell us your deadline and any days the unit is unavailable, and we'll plan the visits around them.",
+      },
+      { type: "h3", text: "Do you take pallets that are broken?" },
+      {
+        type: "p",
+        text: "Yes, as part of the clearance. Stack them in one place and include them in your photos, so they're counted in the price. Sound pallets are worth offering to a pallet trader first.",
+      },
+    ],
+    sources: [
+      { label: "Dubai Legislation Portal: Law No. 18 of 2024 Regulating Waste Management", url: "https://dlp.dubai.gov.ae/Legislation%20Reference/2024/Law%20No.%20%2818%29%20of%202024%20Regulating%20Waste%20Management.html" },
+      { label: "Dubai Municipality: Technical Guidelines on Hazardous Waste Collection and Transport", url: "https://dmpmedia.dm.gov.ae/uploads/2026/06/22-Technical-Guidelines-on-Hazardous-Waste-Collection-Transport.pdf" },
+    ],
+  },
+  {
+    slug: "how-to-dispose-sofa-in-dubai",
+    title: "How to dispose of a sofa in Dubai, L-shapes included",
+    description:
+      "How to dispose of a sofa in Dubai: timing it around a new delivery, handling L-shapes, sofa beds and majlis seating, and what to do when it won't fit the lift.",
+    date: "2026-11-18",
+    readMinutes: 6,
+    tag: "How-to",
+    relatedService: "sofa-removal",
+    blocks: [
+      {
+        type: "p",
+        text: "To dispose of a sofa in Dubai, sell or give it away if it's in good condition, book Dubai Municipality's free bulky waste pickup if your address qualifies, or have a crew carry it out. Plan the removal for the day before your new sofa arrives, and check before then how it will get through your doors and lift.",
+      },
+      {
+        type: "p",
+        text: "That last part is where most sofa removals go wrong. This guide covers the timing, the different kinds of sofa, and what to do when one simply won't fit.",
+      },
+      { type: "h2", text: "Why sofas are the hardest everyday item to get rid of" },
+      {
+        type: "p",
+        text: "A sofa is big, heavy and awkward all at once. It's too long for most cars, too heavy for one person, and often too wide for a door once it's assembled. Many sofas came into the flat before the walls, doors or lift rules were what they are now, so the way in isn't always the way out.",
+      },
+      {
+        type: "p",
+        text: "It's also the item most likely to be replaced on a deadline. A new sofa is usually booked for a fixed delivery slot, and the old one has to be gone first.",
+      },
+      { type: "h2", text: "Timing removal around a new delivery" },
+      {
+        type: "p",
+        text: "Aim to have the old sofa removed the day before the delivery, or early on the morning of it. That leaves room for the new one and avoids two teams competing for the same lift slot.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Confirm your delivery date before you book the removal",
+          "Book the service lift for the removal if your building requires it",
+          "Clear the route from the living room to the door",
+          "Keep the old sofa's legs and any loose cushions together for collection",
+        ],
+      },
+      { type: "h3", text: "Why delivery teams rarely take the old one" },
+      {
+        type: "p",
+        text: "A delivery team is booked to drop off and place your new sofa, not to dispose of the old one. Some retailers offer to take an old piece away, sometimes for a fee, so ask when you order. If they don't, plan the removal separately, or the old sofa may still be in the way when the new one arrives.",
+      },
+      { type: "h2", text: "Sofa types and what each needs" },
+      { type: "h3", text: "L-shaped sectionals" },
+      {
+        type: "p",
+        text: "Most L-shaped sofas come apart into two or three sections, joined by brackets or clips underneath. Separating them makes each piece easier to carry and turn through doors. Check underneath before collection day, and keep any brackets with the sofa.",
+      },
+      { type: "h3", text: "Sofa beds and recliners (mechanisms)" },
+      {
+        type: "p",
+        text: "Sofa beds hide a folding steel frame, and recliners have a metal mechanism inside. Both are much heavier than they look. Fold the bed away and close the recliner fully before moving them, so the mechanism can't spring open on the stairs. Electric recliners need unplugging, and their cables tying up.",
+      },
+      { type: "h3", text: "Majlis floor seating" },
+      {
+        type: "p",
+        text: "Majlis seating is made up of long floor cushions, back cushions and sometimes low wooden bases. The cushions are light but bulky, and the bases can be heavy. Count the pieces, stack the cushions together and say whether there's a base or frame underneath when you send photos.",
+      },
+      {
+        type: "callout",
+        title: "Get a price from a photo",
+        body: "Send us a photo of the sofa on WhatsApp, with your area, the floor and your delivery date. We reply with a fixed price and work around the delivery.",
+      },
+      { type: "h2", text: "When a sofa will not fit the lift" },
+      {
+        type: "p",
+        text: "Measure before collection day: the sofa's length, depth and height, the inside of the lift, and the narrowest door or corridor on the way out. A sofa that won't fit standing up may still fit on its end in a taller service lift.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Remove the legs, which can save several centimetres",
+          "Separate any sections or detachable arms",
+          "Ask building management whether the service lift is larger than the passenger lift",
+          "Ask whether the stairs can be used for bulky items, and how many floors that means",
+        ],
+      },
+      {
+        type: "p",
+        text: "Many buildings also want the lift walls and door frames protected while bulky furniture passes through, so ask whether they supply lift pads or expect the crew to bring them. If none of that works, a sofa can be cut down so it fits, but agree that first. Never lower furniture from a balcony.",
+      },
+      { type: "h2", text: "Where an old sofa can go" },
+      {
+        type: "p",
+        text: "In a tower in Downtown Dubai, getting the sofa to the ground floor is the hard part. In a townhouse in Town Square or a villa in Jumeirah or Al Mizhar, it's usually getting it out of the room and into a vehicle.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Sell it: worth it for good-condition, well-known brands. Expect the buyer to want help carrying it",
+          "Give it away: clean, sound sofas can find a taker through community groups, but collection dates slip",
+          "Municipal bulky waste pickup: free where eligible, but you'll usually need to get the sofa to an accessible point yourself",
+          "A removal crew: carries it from the room, dismantles it if needed and works to your delivery date",
+        ],
+      },
+      { type: "h2", text: "FAQs" },
+      { type: "h3", text: "Can I sell or donate a stained sofa?" },
+      {
+        type: "p",
+        text: "Usually not. Buyers and donation groups want sofas that are clean and free of damage. A stained, torn or sagging sofa is better treated as waste. If it has bed bugs, don't offer it to anyone, and tell whoever collects it so it can be wrapped before it's carried through the building.",
+      },
+      { type: "h3", text: "Can I put a sofa out for municipal pickup from a tower?" },
+      {
+        type: "p",
+        text: "Possibly, but check first. Dubai Municipality's bulky waste service has access limits for high-rise buildings and doesn't cover free zones or real estate development zones. Where it does apply, you may need to bring the sofa down to an accessible point yourself. Never leave a sofa in a corridor or bin room while you wait.",
+      },
+    ],
+    sources: [
+      { label: "Dubai Municipality: bulky waste disposal service (not available in development and free zones)", url: "https://www.dm.gov.ae/35-increase-in-requests-for-dubai-municipality-bulky-waste-disposal-service/" },
+      { label: "Khaleej Times: free bulk waste removal via WhatsApp", url: "https://www.khaleejtimes.com/uae/dubai-offers-free-bulk-waste-removal-service-via-whatsapp" },
+    ],
+  },
 ];
 
 export const getPost = (slug: string) => posts.find((p) => p.slug === slug);

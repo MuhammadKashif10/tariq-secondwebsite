@@ -73,6 +73,7 @@ The site currently states these as service promises. Confirm they stay true befo
 - reuse and recycling where possible, with nothing dumped
 - open Saturday to Thursday 7am–10pm, Friday 9am–10pm
 - same-day **when available**, never guaranteed
+- crews take down freestanding pallet racking and shelving, then load and remove it (owner confirmed 18 November 2026)
 
 ## Words to avoid
 
