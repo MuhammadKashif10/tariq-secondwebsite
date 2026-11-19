@@ -1934,6 +1934,292 @@ export const posts: Post[] = [
       { label: "Khaleej Times: free bulk waste removal via WhatsApp", url: "https://www.khaleejtimes.com/uae/dubai-offers-free-bulk-waste-removal-service-via-whatsapp" },
     ],
   },
+  {
+    slug: "how-to-choose-junk-removal-company-dubai",
+    title: "How to choose a junk removal company in Dubai: 10 checks",
+    description:
+      "How to choose a junk removal company in Dubai: ten checks before you book, the red flags to walk away from, and the questions to ask on WhatsApp.",
+    date: "2026-11-19",
+    readMinutes: 7,
+    tag: "How-to",
+    relatedService: "junk-removal",
+    blocks: [
+      {
+        type: "p",
+        text: "To choose a junk removal company in Dubai, check that it's a real, licensed business, that it gives a fixed price from your photos, and that it tells you plainly what's included, where the waste goes and when you pay. A company that answers those questions clearly before the job is likely to handle the job well too.",
+      },
+      {
+        type: "p",
+        text: "Most bad experiences come from booking on price alone, through a number found on a flyer or a classified ad. These ten checks take a few minutes and filter out most of the problems.",
+      },
+      { type: "h2", text: "Ten checks" },
+      { type: "h3", text: "1. Trade licence and business identity" },
+      {
+        type: "p",
+        text: "Ask for the company's trade name and licence number. For a Dubai mainland company, you can look it up on the Department of Economy and Tourism website, under e-services and licence information. The record shows whether the licence is active, when it expires and which business activities it covers. A company that won't share its licence number is a company to skip.",
+      },
+      { type: "h3", text: "2. A fixed price from photos, not a vague range" },
+      {
+        type: "p",
+        text: "A good company prices the job from clear photos and a few details about access. \"Between 200 and 800\" isn't a quote. Ask for one number, and ask what would change it.",
+      },
+      { type: "h3", text: "3. What's included: carrying, dismantling, sweep-up" },
+      {
+        type: "p",
+        text: "Check whether the price covers carrying from the room, dismantling large pieces, loading, transport, disposal and a sweep of the space afterwards. Some quotes assume you'll bring everything down to the lobby yourself.",
+      },
+      { type: "h3", text: "4. Where the waste goes" },
+      {
+        type: "p",
+        text: "Ask what happens after collection. A reasonable answer mentions reuse, recycling where possible and disposal through proper channels. Dubai's waste law forbids dumping waste in public places, including vacant land, so a vague answer here matters.",
+      },
+      { type: "h3", text: "5. Building access experience" },
+      {
+        type: "p",
+        text: "In a tower in Dubai Marina or Business Bay, the job depends on service lift bookings, move permits and loading bay rules. In a community like JVC or an older building in Deira, it might be parking or stairs. Ask whether the company has worked in buildings like yours and what it needs from you.",
+      },
+      { type: "h3", text: "6. Payment timing" },
+      {
+        type: "p",
+        text: "Find out when and how you pay. Paying once the job is finished and you've checked the space is a reasonable standard. Be wary of a large deposit for a small household job.",
+      },
+      { type: "h3", text: "7. Written confirmation" },
+      {
+        type: "p",
+        text: "Before the day, get the price, date, time window and a list of what's going in writing. A WhatsApp message counts. It settles most disagreements before they start.",
+      },
+      { type: "h3", text: "8. Changes agreed before loading" },
+      {
+        type: "p",
+        text: "Ask what happens if you add items on the day or the access turns out to be different. The answer should be that any change in price is agreed with you before anything extra is loaded.",
+      },
+      { type: "h3", text: "9. Honesty about what they won't take" },
+      {
+        type: "p",
+        text: "A trustworthy company tells you what it can't take, such as chemicals, gas cylinders or medical waste, rather than accepting everything and dealing with it later.",
+      },
+      { type: "h3", text: "10. Realistic promises on timing" },
+      {
+        type: "p",
+        text: "Same-day collection is often possible, but it depends on crews, traffic and your building's rules. A company that guarantees an exact time without asking about your building is guessing.",
+      },
+      {
+        type: "callout",
+        title: "Put us through the same checks",
+        body: "Ask us any of these questions on WhatsApp. Send a photo and you'll get a fixed price, what's included, and when you pay, before you decide anything.",
+      },
+      { type: "h2", text: "Red flags before you book" },
+      {
+        type: "ul",
+        items: [
+          "No company name, only a first name and a mobile number",
+          "Refusing to look at photos and insisting on cash in hand",
+          "A price far below everyone else's, with no detail on what's included",
+          "No answer on where the waste goes, or an offer to leave it somewhere nearby",
+          "Pressure to decide on the phone before you've seen anything in writing",
+          "An unmarked vehicle and a crew who don't know what job they're on",
+        ],
+      },
+      {
+        type: "p",
+        text: "One red flag isn't always a reason to walk away, but two or three together usually are.",
+      },
+      { type: "h2", text: "Comparing two or three quotes fairly" },
+      {
+        type: "p",
+        text: "Quotes are only comparable if every company sees the same job. Send each one the same photos, the same list of items and the same details about the floor, lift and parking. Then compare more than the final number:",
+      },
+      {
+        type: "ul",
+        items: [
+          "What each price includes, line by line",
+          "The date and time window offered",
+          "When you pay, and whether a deposit is asked for",
+          "How quickly and clearly each company answered your questions",
+        ],
+      },
+      {
+        type: "p",
+        text: "A slightly higher quote that includes dismantling and carrying from the room is often better value than a lower one that leaves you to bring everything down to the lobby.",
+      },
+      { type: "h2", text: "Questions to ask on WhatsApp" },
+      {
+        type: "p",
+        text: "Send your photos with these questions, and compare the answers side by side:",
+      },
+      {
+        type: "ol",
+        items: [
+          "What's your company name and trade licence number?",
+          "Is this a fixed price for everything in the photos?",
+          "Does it include carrying from the room, dismantling and a sweep-up?",
+          "What do you need from me for the lift, permit or gate pass?",
+          "Where does the waste go after collection?",
+          "When do I pay, and how?",
+          "What happens to the price if I add something on the day?",
+        ],
+      },
+      { type: "h2", text: "FAQs" },
+      { type: "h3", text: "Should I pay upfront?" },
+      {
+        type: "p",
+        text: "For a household clear-out, you shouldn't need to. Paying after the job, once you've checked the space, protects you if something isn't done. For very large commercial jobs, a deposit can be normal, but get the terms in writing.",
+      },
+      { type: "h3", text: "Is the cheapest quote a bad sign?" },
+      {
+        type: "p",
+        text: "Not always. A low price can simply mean a crew is already nearby. It's a bad sign when it comes with no detail, no business name and no answer about where the waste goes. Compare what's included, not only the number.",
+      },
+    ],
+    sources: [
+      { label: "Khaleej Times (March 2025): Dubai trade licence types, application and verification", url: "https://www.khaleejtimes.com/life-and-living/dubai-trade-licence" },
+      { label: "Dubai Legislation Portal: Law No. 18 of 2024 Regulating Waste Management", url: "https://dlp.dubai.gov.ae/Legislation%20Reference/2024/Law%20No.%20%2818%29%20of%202024%20Regulating%20Waste%20Management.html" },
+    ],
+  },
+  {
+    slug: "it-asset-disposal-dubai",
+    title: "IT asset disposal in Dubai: a guide for office IT teams",
+    description:
+      "IT asset disposal in Dubai for office IT teams: plan the inventory, deal with data first, manage collection in commercial towers and keep e-waste separate.",
+    date: "2026-11-19",
+    readMinutes: 6,
+    tag: "Recycling",
+    relatedService: "e-waste-removal",
+    blocks: [
+      {
+        type: "p",
+        text: "IT asset disposal in Dubai comes down to two separate jobs: dealing with the data, and moving the hardware. Do them in that order. Wipe or remove every drive, or hand them to a certified data destruction specialist, before any laptops, servers or printers leave the building.",
+      },
+      {
+        type: "p",
+        text: "This guide is for IT and facilities teams running a refresh, a downsizing or an office exit. It covers planning, data, the logistics of moving equipment out of a commercial tower, and keeping e-waste out of the general office waste.",
+      },
+      { type: "h2", text: "Plan the refresh: inventory, data and asset tags" },
+      {
+        type: "p",
+        text: "Start with a list. A spreadsheet with one row per device makes every later step easier: who signs off, what gets wiped, what's collected and what's written off.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Asset tag or serial number, device type and location",
+          "Whether it stores data: laptops, desktops, servers, network storage, phones, and printers or copiers with internal drives",
+          "Whether it's leased, owned or due back to a supplier",
+          "Its fate: redeploy, sell, donate, return or dispose",
+          "The date it was wiped or its drive removed, and by whom",
+        ],
+      },
+      {
+        type: "p",
+        text: "Check leases before anything else. Leased equipment usually goes back to the leasing company, and disposing of it by mistake is an expensive error.",
+      },
+      { type: "h2", text: "Data handling first" },
+      {
+        type: "p",
+        text: "Removal isn't data destruction. A crew that collects your hardware moves it; it doesn't make the data on it unreadable. That step is yours, or a specialist's.",
+      },
+      {
+        type: "p",
+        text: "The UAE's personal data protection law, Federal Decree-Law No. 45 of 2021, expects companies that hold personal data to secure it and keep it confidential. Companies in DIFC are covered by the DIFC Data Protection Law No. 5 of 2020. Old drives full of staff and customer records are exactly the kind of data these laws are about.",
+      },
+      {
+        type: "p",
+        text: "For most devices, your IT team can wipe drives using the manufacturer's tools or remove them for separate destruction. Phones and tablets also need removing from any device-management system and the company's accounts, or the next user can't set them up. Keep a record of what was wiped, how and when, against each asset tag.",
+      },
+      { type: "h3", text: "When you need a certified data destruction specialist" },
+      {
+        type: "ul",
+        items: [
+          "Your policies, auditors or clients require a certificate of destruction",
+          "Drives are faulty and can't be wiped",
+          "Servers or storage held sensitive financial, health or client data",
+          "You have too many devices to wipe and document in-house",
+        ],
+      },
+      {
+        type: "p",
+        text: "In those cases, use a specialist that shreds or wipes drives and issues certificates. We don't issue data destruction certificates. We collect the hardware once the data has been dealt with.",
+      },
+      { type: "h2", text: "Collection logistics in commercial towers" },
+      {
+        type: "p",
+        text: "IT equipment is heavy for its size. A rack of servers, a few multifunction printers and fifty monitors take careful handling down corridors and through lifts, and offices in DIFC, Business Bay, JLT and Dubai Silicon Oasis each have building rules to work around.",
+      },
+      { type: "h3", text: "Loading bays, access passes and after-hours slots" },
+      {
+        type: "ul",
+        items: [
+          "Book the loading bay and goods lift, and ask whether IT kit counts as a standard goods move",
+          "Send crew and vehicle details for access passes early, because they can take days",
+          "Ask whether collections are allowed after hours or at weekends, when staff and lifts are free",
+          "Stage equipment near the lift on the day, labelled and with cables bundled",
+        ],
+      },
+      {
+        type: "callout",
+        title: "Price the collection",
+        body: "Once the data is dealt with, send us photos of the equipment and the building's loading rules on WhatsApp. We reply with a fixed price for collection.",
+      },
+      { type: "h2", text: "Reuse, resale and donation before disposal" },
+      {
+        type: "p",
+        text: "Not everything on the list has to be scrapped. Once data has been dealt with, working equipment can often be used again:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Redeploy: newer monitors, docks and peripherals often have a second life elsewhere in the business",
+          "Resell: IT resellers may buy recent laptops and network equipment in bulk",
+          "Donate: schools and charities sometimes accept working, wiped devices. Ask what they can use before you deliver",
+          "Return: leased devices and some vendor equipment go back to the supplier",
+        ],
+      },
+      {
+        type: "p",
+        text: "Printers and copiers deserve a separate check. Many multifunction devices have internal hard drives that store scanned and printed documents, and leased copiers often belong to the supplier. Ask the supplier how the drive is handled before the device leaves.",
+      },
+      { type: "h2", text: "Keeping e-waste separate from general office waste" },
+      {
+        type: "p",
+        text: "Electronics contain metals and components worth recovering, and batteries and some parts need careful handling. They shouldn't go into the office's general bins or skips.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Keep IT equipment in its own area, away from furniture and general waste",
+          "Remove batteries from devices where you can, and tape the terminals",
+          "Bundle cables and keep chargers with the devices they belong to",
+          "Ask any collector where the equipment goes after collection",
+        ],
+      },
+      { type: "h2", text: "Checklist for the day" },
+      {
+        type: "ol",
+        items: [
+          "Every device on the disposal list has a wipe or destruction record",
+          "Leased and returnable equipment has been set aside",
+          "The loading bay, lift and passes are confirmed",
+          "Equipment is staged, labelled and counted against the inventory",
+          "Someone from IT is on site to sign the equipment out",
+          "The final count is checked before the vehicle leaves",
+        ],
+      },
+      { type: "h2", text: "FAQs" },
+      { type: "h3", text: "Can you collect servers and racks?" },
+      {
+        type: "p",
+        text: "Yes, once the data has been dealt with and the equipment is powered down and disconnected. Tell us the number of racks, their height and whether they're bolted down, so the crew comes ready for the weight.",
+      },
+      { type: "h3", text: "Can we hand over drives that haven't been wiped?" },
+      {
+        type: "p",
+        text: "We'd ask you not to. Wipe or remove drives first, or use a specialist that certifies destruction. We collect hardware, but we can't take responsibility for the data on it.",
+      },
+    ],
+    sources: [
+      { label: "UAE Government portal (u.ae): data protection laws, including Federal Decree-Law No. 45 of 2021 and DIFC Law No. 5 of 2020", url: "https://u.ae/en/about-the-uae/digital-uae/data/data-protection-laws" },
+    ],
+  },
 ];
 
 export const getPost = (slug: string) => posts.find((p) => p.slug === slug);
