@@ -2220,6 +2220,266 @@ export const posts: Post[] = [
       { label: "UAE Government portal (u.ae): data protection laws, including Federal Decree-Law No. 45 of 2021 and DIFC Law No. 5 of 2020", url: "https://u.ae/en/about-the-uae/digital-uae/data/data-protection-laws" },
     ],
   },
+  {
+    slug: "clear-dubai-property-from-abroad",
+    title: "How to clear a Dubai property remotely from overseas",
+    description:
+      "How to clear a Dubai property remotely from overseas: who gives access, agreeing the job by photos or video call, keys and permits, and proof it's done.",
+    date: "2026-11-20",
+    readMinutes: 6,
+    tag: "Moving",
+    relatedService: "house-villa-clearance",
+    blocks: [
+      {
+        type: "p",
+        text: "You can clear a Dubai property remotely from overseas if three things are in place: someone in Dubai who can give the crew access, a clear agreement on what goes and what stays, and a way for you to see the result. Everything else, from the quote to payment, can be handled by message, photo and video call.",
+      },
+      {
+        type: "p",
+        text: "This is common for owners of apartments in Downtown Dubai or villas on Palm Jumeirah and in Jumeirah Golf Estates who live abroad, for families dealing with a relative's home, and for tenants whose plans changed after they flew. The steps below work whichever of those you are.",
+      },
+      { type: "h2", text: "Who can authorise and give access" },
+      {
+        type: "p",
+        text: "Two roles need filling, and they can be the same person. Someone has to authorise the clearance: the owner, the tenant, or someone acting with their authority. And someone has to let the crew in on the day.",
+      },
+      {
+        type: "ul",
+        items: [
+          "A property manager or letting agent who already holds keys",
+          "A relative or friend living in Dubai",
+          "The building's management or the community's security office, if they hold keys and agree to open up",
+          "A tenant who is still in the property, if the clearance is of the owner's items",
+        ],
+      },
+      {
+        type: "p",
+        text: "If someone other than you is giving instructions, make sure they really can. Building management and landlords may ask for proof, such as a signed letter from you naming that person, or a power of attorney for larger matters. Ask them what they'll accept before the day, not at the door.",
+      },
+      { type: "h2", text: "Agreeing scope by photos and video call" },
+      {
+        type: "p",
+        text: "Without you there, the scope has to be clear in advance. Ask the person with access to photograph every room, cupboard, balcony, storeroom and parking space, or walk through the property on a video call. For a large villa, a video walk-through before the quote is often easier than dozens of photos.",
+      },
+      {
+        type: "ul",
+        items: [
+          "List what stays: landlord-owned furniture, appliances on the inventory, and anything being kept or shipped",
+          "Mark items that stay with coloured stickers, if someone can do it for you",
+          "Say what should happen to documents and valuables found during the clearance",
+          "Agree a cut-off: anything not on the keep list goes",
+        ],
+      },
+      {
+        type: "callout",
+        title: "Get a quote without flying back",
+        body: "Send photos or book a video call on WhatsApp. We reply with a fixed price, and nothing is booked until you agree it.",
+      },
+      { type: "h2", text: "Keys, building access and permits" },
+      {
+        type: "p",
+        text: "Arrange the practical access a week or so before the clearance:",
+      },
+      {
+        type: "ol",
+        items: [
+          "Decide who holds the keys and access cards on the day, and who gets them back afterwards",
+          "Ask building management whether a move-out permit, service lift booking or contractor pass is needed, and who has to apply",
+          "In a gated community, check what the security office needs for the crew and vehicle",
+          "Share a contact number for the person with access, and make sure they know the time window",
+        ],
+      },
+      {
+        type: "p",
+        text: "Permits are often tied to the owner or the registered tenant, so the application may need your details or a signed form even if you're abroad. Our move-out permit guide explains how the NOC and gate pass usually work.",
+      },
+      { type: "h2", text: "Items you want to keep" },
+      {
+        type: "p",
+        text: "Decide what happens to anything you're keeping before the clearance day, because the crew will only take what's agreed. Small, valuable items such as documents, jewellery, photos and laptops are best collected by your contact in person. Larger pieces can go to a relative, a storage unit or a shipping company, but book that collection first, so the keep pile is gone before the clearance starts.",
+      },
+      {
+        type: "p",
+        text: "If something has to stay in the property, such as landlord-owned furniture, make it obvious. A sticker on each item, plus a written list shared with your contact and the crew, avoids any doubt.",
+      },
+      { type: "h2", text: "Timing it from another time zone" },
+      {
+        type: "ul",
+        items: [
+          "Work back from your deadline, such as a handover, a sale completion or a new tenant's move-in, and leave a spare day",
+          "Agree a time window that suits the person with access, not only the crew",
+          "Pick a time when you're awake and reachable in case a question comes up",
+          "Confirm the day before: access, permits and who's meeting the crew",
+        ],
+      },
+      { type: "h2", text: "Proof of completion: photos and handover" },
+      {
+        type: "p",
+        text: "When you can't walk through the property yourself, photos are your proof. After the clearance, we send photos of the cleared rooms, so you can see the result before the keys go back.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Ask the person with access to do their own short walk-through, or a video call, too",
+          "Check the rooms, storerooms and balconies you listed against the photos",
+          "Keep the photos with the date, in case a landlord or buyer questions the condition later",
+        ],
+      },
+      { type: "h2", text: "Payments and receipts" },
+      {
+        type: "p",
+        text: "You pay after the job is finished. We agree a payment method that's easy for you when we confirm the quote, so being overseas doesn't hold anything up. Keep the quote, the confirmation and the completion photos together as your record of the job.",
+      },
+      { type: "h2", text: "FAQs" },
+      { type: "h3", text: "Can my agent or a relative manage it?" },
+      {
+        type: "p",
+        text: "Yes. Many remote clearances are run by an agent or relative who has the keys. You agree the scope and price, and they handle access on the day. Make sure building management knows they're acting for you, and tell them what's staying.",
+      },
+      { type: "h3", text: "What if something valuable is found during the clearance?" },
+      {
+        type: "p",
+        text: "Agree this before the day. The usual approach is that documents, jewellery, cash or anything that looks personal is set aside, photographed and handed to the person with access, not loaded. A careful sweep beforehand is still the best protection.",
+      },
+    ],
+  },
+  {
+    slug: "office-furniture-disposal-dubai",
+    title: "Office furniture disposal in Dubai: reuse, resell or remove",
+    description:
+      "Office furniture disposal in Dubai: how to audit what you have, resale and donation routes, dismantling workstations, and clearing without stopping work.",
+    date: "2026-11-20",
+    readMinutes: 6,
+    tag: "Recycling",
+    relatedService: "office-clearance",
+    blocks: [
+      {
+        type: "p",
+        text: "Office furniture disposal in Dubai works best as three decisions, made in order: what can be reused in the business, what can be sold or donated, and what has to be removed. Settling the first two before you book a clearance usually means a smaller, cheaper removal and less going to waste.",
+      },
+      {
+        type: "p",
+        text: "This guide is for office managers, SMEs and co-working operators in places like JLT, Al Quoz and Dubai Investments Park who are downsizing, refurbishing or moving out.",
+      },
+      { type: "h2", text: "Audit: what is reusable, resaleable or scrap" },
+      {
+        type: "p",
+        text: "Walk the office with a simple spreadsheet and sort every piece into one of three columns.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Reusable: good-condition chairs, storage and meeting tables that suit your next space",
+          "Resaleable or donatable: sound furniture you won't use, especially branded task chairs, height-adjustable desks and steel storage",
+          "Scrap: broken chairs, chipped laminate desks, damaged partitions and anything stained or sagging",
+        ],
+      },
+      {
+        type: "p",
+        text: "Be honest in the scrap column. Worn laminate desks and old swivel chairs rarely sell, and holding onto them in the hope of a buyer often means paying to store them first and remove them later.",
+      },
+      {
+        type: "p",
+        text: "Count as you go: \"14 task chairs, 8 bench desks, 3 pedestal units\" is far more useful to a buyer or a clearance crew than \"a lot of furniture\". Photograph each type.",
+      },
+      {
+        type: "p",
+        text: "Before anything goes in a column, check who owns it. Furniture can be leased, provided with a serviced office, or left by a previous tenant and listed in your lease. None of that is yours to sell or throw away without agreement.",
+      },
+      { type: "h2", text: "Resale and donation routes for office furniture" },
+      {
+        type: "p",
+        text: "Used office furniture moves best in batches. A buyer wants ten matching chairs, not one.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Used office furniture dealers may buy matching sets, usually collecting themselves",
+          "Online marketplaces suit smaller lots and individual pieces in good condition",
+          "Staff often want chairs, monitor arms and storage for home offices",
+          "Schools, charities and community groups sometimes accept sound furniture, but ask what they can use and collect",
+          "The building or the incoming tenant may want to keep some pieces, which saves everyone a move",
+        ],
+      },
+      {
+        type: "p",
+        text: "Leave time. Selling and donating take weeks, not days, so start this at least a month before you need the space empty. Whatever hasn't gone by the cut-off date moves to the removal list.",
+      },
+      { type: "h3", text: "Getting furniture ready to sell" },
+      {
+        type: "ul",
+        items: [
+          "Wipe down desks and chairs, and photograph matching pieces together as a set",
+          "Note the brand and model where you can find it, usually on a label under the seat or desktop",
+          "Give dimensions for desks and storage, so buyers know whether it fits their space",
+          "Be clear about faults, such as a broken gas lift or a missing key",
+          "Set collection terms: the buyer collects, from the loading bay, during the building's permitted hours",
+        ],
+      },
+      {
+        type: "callout",
+        title: "Price the leftovers",
+        body: "Send photos of what's left after resale and donation on WhatsApp, with the building and floor. We reply with a fixed price for the clearance.",
+      },
+      { type: "h2", text: "Dismantling workstations and partitions" },
+      {
+        type: "p",
+        text: "Most office furniture has to come apart to leave the building. Bench desks unbolt into frames and tops, cable trays and screens come off, and pedestals roll out separately. Our crews dismantle freestanding furniture on site as part of the clearance.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Clear desks of personal items, papers and IT equipment first",
+          "Unplug and remove monitors and computers, which should be handled separately from furniture",
+          "Empty filing cabinets and pedestals, and keep the keys with them",
+          "Note anything bolted to the floor or wall",
+        ],
+      },
+      { type: "h3", text: "Freestanding vs fixed partitions" },
+      {
+        type: "p",
+        text: "Freestanding partitions and desk screens clip or bolt to the furniture and can be removed with it. Fixed partitions, glass walls and anything built into the floor or ceiling are part of the fit-out. Those need a fit-out contractor, and often the building's approval, before they come out.",
+      },
+      { type: "h2", text: "What happens to the furniture nobody wants" },
+      {
+        type: "p",
+        text: "Furniture that can't be reused, sold or donated still doesn't all end up in the same place. Steel frames, filing cabinets and metal storage can be recycled for their metal. Laminate and particle board are harder to recycle and are more often disposed of. We set aside what can be reused or recycled where possible, and the rest goes for disposal through proper channels.",
+      },
+      {
+        type: "p",
+        text: "Separating as you dismantle helps. Keeping metal frames apart from desktops and cardboard apart from both makes it far more likely each part goes somewhere useful.",
+      },
+      { type: "h2", text: "Clearing without disrupting staff" },
+      {
+        type: "p",
+        text: "If the office is still working, plan the clearance around the people in it.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Clear in zones, starting with empty desks, storerooms and unused meeting rooms",
+          "Book evenings or weekends where the building allows it, so lifts and corridors are free",
+          "Tell staff which day their area is cleared, and what they need to empty first",
+          "Keep fire exits and corridors clear between visits",
+        ],
+      },
+      {
+        type: "p",
+        text: "After the final visit, walk each zone with the clearance list. Check under desks, inside cupboards and in the storeroom for anything missed, then take dated photos of the empty space. If the office is being handed back, those photos are useful when the landlord inspects it.",
+      },
+      { type: "h2", text: "FAQs" },
+      { type: "h3", text: "Can you take partitions once the fit-out contractor has removed them?" },
+      {
+        type: "p",
+        text: "Yes. Once fixed partitions, ceilings or flooring have been stripped by a contractor, we can clear the panels and debris they leave behind, along with the rest of the furniture.",
+      },
+      { type: "h3", text: "Is it worth selling old office chairs?" },
+      {
+        type: "p",
+        text: "For matching sets of good branded task chairs, often yes. For mixed, worn or basic chairs, usually not. The time spent listing and arranging collections costs more than they'll sell for.",
+      },
+    ],
+  },
 ];
 
 export const getPost = (slug: string) => posts.find((p) => p.slug === slug);

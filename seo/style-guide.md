@@ -74,6 +74,8 @@ The site currently states these as service promises. Confirm they stay true befo
 - open Saturday to Thursday 7am–10pm, Friday 9am–10pm
 - same-day **when available**, never guaranteed
 - crews take down freestanding pallet racking and shelving, then load and remove it (owner confirmed 18 November 2026)
+- payment method is flexible: whatever is easiest for the customer, agreed with the quote, including for owners overseas (owner confirmed 20 November 2026). Don't list specific methods
+- completion photos are sent after a clearance; receipts aren't promised (owner confirmed 20 November 2026)
 
 ## Words to avoid
 
