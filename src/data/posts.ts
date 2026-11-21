@@ -2480,6 +2480,248 @@ export const posts: Post[] = [
       },
     ],
   },
+  {
+    slug: "donate-furniture-dubai",
+    title: "Where to donate furniture in Dubai, and what's accepted",
+    description:
+      "How to donate furniture in Dubai: which pieces charities and groups accept, the ways to give furniture away, arranging pickup, and what to do with the rest.",
+    date: "2026-11-21",
+    readMinutes: 6,
+    tag: "Recycling",
+    relatedService: "furniture-removal",
+    blocks: [
+      {
+        type: "p",
+        text: "To donate furniture in Dubai, start with its condition: clean, sound and complete pieces find a home quickly, while stained, broken or upholstered items usually don't. Then choose a route, such as a charity, a community group or a noticeboard, and confirm what they accept and who collects before you promise anything.",
+      },
+      {
+        type: "p",
+        text: "Policies on what can be donated change often, and the details passed around online go out of date quickly. So this guide doesn't list organisations. It shows you how to check what's donatable, where to offer it, and what to ask so a pickup actually happens.",
+      },
+      { type: "h2", text: "Is your furniture donatable? A quick condition check" },
+      {
+        type: "p",
+        text: "Ask yourself whether you'd be happy to receive the piece as it is. If the answer is yes, it's probably donatable. A few quick checks:",
+      },
+      {
+        type: "ul",
+        items: [
+          "It's clean, with no stains, smells or signs of pests",
+          "It's structurally sound: no wobbly legs, split joints or broken drawers",
+          "It's complete, with its shelves, handles, keys and fixings",
+          "It can be moved, or taken apart and moved, by the people collecting it",
+        ],
+      },
+      { type: "h3", text: "What most charities refuse" },
+      {
+        type: "ul",
+        items: [
+          "Broken, damaged or heavily worn furniture",
+          "Pieces with missing parts that can't easily be replaced",
+          "Very large, heavy items they have no space or vehicle for",
+          "Flat-pack furniture that has been rebuilt several times and no longer holds together",
+        ],
+      },
+      { type: "h3", text: "Why mattresses and upholstered pieces are often declined" },
+      {
+        type: "p",
+        text: "Mattresses, sofas and upholstered chairs are hard to check for hygiene and pests, and hard to clean properly. Many groups won't take them at all, and some only take them nearly new. If a sofa or mattress isn't in excellent condition, plan to dispose of it rather than donate it.",
+      },
+      { type: "h2", text: "Ways to donate in Dubai" },
+      { type: "h3", text: "Registered charities and their acceptance rules" },
+      {
+        type: "p",
+        text: "Some UAE charities accept household furniture for families in need, but what they take and whether they collect varies, and it changes. Before you offer anything, contact the charity directly through its official website or phone line, and check three things: whether it accepts furniture at the moment, which items and in what condition, and whether it collects or you must deliver.",
+      },
+      {
+        type: "p",
+        text: "Be cautious with websites and numbers that appear only in adverts or listings. Some companies use the word \"charity\" for what is a paid removal service. A registered charity will be clear about who it is.",
+      },
+      { type: "h3", text: "Community groups and give-away posts" },
+      {
+        type: "p",
+        text: "Neighbourhood and expat groups online are often the fastest way to rehome furniture. Post clear photos, the dimensions, the area and the date it must go. Free items usually attract takers within days, but expect some people not to turn up. Keep a reserve list.",
+      },
+      { type: "h3", text: "Workplace and building noticeboards" },
+      {
+        type: "p",
+        text: "Colleagues, your building's residents and the community's maintenance staff may want what you're giving away. A note on the noticeboard or in the residents' group reaches people who live close by, which makes collection much easier.",
+      },
+      {
+        type: "callout",
+        title: "Clearing what's left",
+        body: "Send a photo of whatever hasn't found a home on WhatsApp. We reply with a fixed price, set aside items for reuse where possible, and take the rest.",
+      },
+      { type: "h2", text: "Arranging pickup or drop-off" },
+      { type: "h3", text: "What to ask before you book" },
+      {
+        type: "ul",
+        items: [
+          "Do you accept this item, in this condition, right now?",
+          "Do you collect, and is there a charge?",
+          "How many people will come, and will they carry it from the flat or only from the ground floor?",
+          "Can you take it apart if it doesn't fit through the door?",
+          "What happens if you can't take it on the day?",
+        ],
+      },
+      { type: "h3", text: "Timing a donation with a move-out date" },
+      {
+        type: "p",
+        text: "Donations take longer than people expect. Collections get rescheduled, and some items are turned down on the doorstep. Start offering furniture three or four weeks before you move out, and set a cut-off a week before the handover. Anything still there after the cut-off goes to removal, so it doesn't end up in the corridor on your last day. Keep a simple list of who is collecting what, when, and their phone number, and confirm each collection the day before.",
+      },
+      {
+        type: "p",
+        text: "In a tower, book the service lift for any collection and tell the building who is coming. In older areas like Deira and Al Qusais, check where a van can stop. For larger collections in Al Quoz and the newer communities, ask whether the group needs help loading.",
+      },
+      { type: "h2", text: "What to do with pieces nobody will take" },
+      {
+        type: "p",
+        text: "Some furniture won't find a taker, however good your intentions. That doesn't mean it has to be dumped.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Dubai Municipality's free bulky waste service takes household furniture where your address is eligible. Request it on 800900 or through the municipality's apps",
+          "Metal frames, shelving and some materials can be recycled rather than thrown away",
+          "A removal crew can take the rest in one visit, carrying it from wherever it is",
+        ],
+      },
+      {
+        type: "p",
+        text: "Never leave furniture beside the bins or in the corridor in the hope someone will take it. Dubai fines leaving goods near waste containers, and buildings can charge for clearing them.",
+      },
+      { type: "h2", text: "FAQs" },
+      { type: "h3", text: "Do charities collect from towers?" },
+      {
+        type: "p",
+        text: "Some do, but many only collect from the ground floor or the loading bay, and few have staff to carry heavy furniture down from upper floors. Ask before you book, and arrange the service lift yourself.",
+      },
+      { type: "h3", text: "Can I donate furniture for free pickup?" },
+      {
+        type: "p",
+        text: "Sometimes. A charity or a person collecting a free item may come at no cost, but it depends on the item, the location and their capacity. If a company offers free pickup and then charges for items it says it can't use, you're dealing with a removal service, not a charity.",
+      },
+    ],
+    sources: [
+      { label: "Dubai Municipality: bulky waste disposal service (furniture and used electrical appliances)", url: "https://www.dm.gov.ae/35-increase-in-requests-for-dubai-municipality-bulky-waste-disposal-service/" },
+      { label: "Dubai Legislation Portal: Executive Council Resolution No. 14 of 2015", url: "https://dlp.dubai.gov.ae/Legislation%20Reference/2015/Executive%20Council%20Resolution%20No.%20(14)%20of%202015.html" },
+    ],
+  },
+  {
+    slug: "dumping-furniture-next-to-bin-dubai-rules",
+    title: "Dumping fines in Dubai: can you leave furniture by the bin?",
+    description:
+      "Can you leave furniture by the bin in Dubai? What the 2024 waste law says about dumping, the fines in the published schedule, and the legal alternatives.",
+    date: "2026-11-21",
+    readMinutes: 6,
+    tag: "Dubai guide",
+    relatedService: "junk-removal",
+    blocks: [
+      {
+        type: "p",
+        text: "No. Leaving furniture beside a bin, in a corridor or on empty land in Dubai is treated as dumping, not as a collection. Dubai's waste law forbids it, and the published penalty schedule lists fines starting at AED 500 for goods left in public places and AED 1,000 for goods left near a waste container.",
+      },
+      {
+        type: "p",
+        text: "The good news is that the legal alternatives are easy, and one of them is free. Here's what the rules say, what the fines are, and what to do instead.",
+      },
+      { type: "h2", text: "What Law No. 18 of 2024 says" },
+      {
+        type: "p",
+        text: "Dubai's waste management law, Law No. 18 of 2024, sets the basic rule in Article 6, on public cleanliness: \"No Person may dump, discard, place, spill, discharge, or otherwise dispose of any Waste in Public Places or in places other than those designated for this purpose.\"",
+      },
+      {
+        type: "p",
+        text: "The law's definition of a public place is wide. It includes roads, streets, pavements, beaches, the creek, public squares and vacant land plots. A sofa left on the pavement or a wardrobe left on the empty plot at the end of the road is covered.",
+      },
+      {
+        type: "p",
+        text: "Article 6 also protects the bins themselves. It bans scattering the contents of a waste container, moving one without approval, using one for anything other than its purpose, and parking beside one in a way that blocks collection.",
+      },
+      { type: "h2", text: "Fines: what the published schedules show" },
+      {
+        type: "p",
+        text: "Under the 2024 law, fines can reach AED 500,000, and the fine doubles if the same violation is repeated within a year, up to that limit. The law leaves the specific amount for each violation to a separate resolution of the Executive Council.",
+      },
+      {
+        type: "p",
+        text: "The detailed public hygiene schedule published on the Dubai Legislation Portal is Executive Council Resolution No. 14 of 2015. Its relevant entries include:",
+      },
+      {
+        type: "ul",
+        items: [
+          "AED 1,000 for leaving equipment or goods near a waste container in a way that may hinder waste disposal",
+          "AED 1,000 for disposing of waste in public places, on vacant land or outside designated disposal sites",
+          "AED 500 for leaving goods in a public place, on a roof or on a balcony in a way that spoils the appearance of the city",
+          "AED 5,000 for disposing of waste or hazardous materials in places other than designated sites",
+        ],
+      },
+      {
+        type: "p",
+        text: "Amounts and schedules can be updated, so check the Dubai Legislation Portal for the current version before relying on a figure. The direction is clear either way: dumping furniture costs far more than disposing of it properly.",
+      },
+      {
+        type: "p",
+        text: "A fine isn't the only cost. Article 23 of the 2024 law requires the person responsible to put the violation right at their own expense. If they don't, Dubai Municipality can do it and charge them the cost, plus 25% as an administrative fee. Clearing a dumped sofa yourself, then paying for it twice, is the worst outcome of all.",
+      },
+      { type: "h2", text: "Building rules on bin rooms" },
+      {
+        type: "p",
+        text: "Separately from the law, your building or community has its own rules. Bin rooms and chutes are for bagged household waste. A wardrobe in the bin room blocks the space for everyone, and in many towers it's against the building rules.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Buildings can charge residents for clearing bulky items left in bin rooms or corridors",
+          "Items in corridors and stairwells can block fire exits, which building management takes seriously",
+          "Communities may issue violation notices for items left on verges and shared areas",
+          "Disputes over abandoned items often surface at move-out, when deposits are on the line",
+        ],
+      },
+      {
+        type: "p",
+        text: "If you're not sure what your building allows, ask the management office before anything leaves the flat. The same applies in villa communities, where verges and shared areas are usually covered by community rules.",
+      },
+      {
+        type: "callout",
+        title: "Out of the flat, not by the bin",
+        body: "Send a photo of what needs to go on WhatsApp. We reply with a fixed price, carry it from the room and take it away for proper disposal.",
+      },
+      { type: "h2", text: "Legal alternatives, free and paid" },
+      { type: "h3", text: "Free: Dubai Municipality's bulky waste service" },
+      {
+        type: "p",
+        text: "Dubai Municipality runs a free bulky waste collection for household furniture and used appliances. You request it on 800900, through the municipality's apps or website, and a staff member contacts you to arrange the pickup. The service doesn't cover free zones or real estate development zones, and it has access limits for high-rise buildings.",
+      },
+      { type: "h3", text: "Free: give it away" },
+      {
+        type: "p",
+        text: "If the furniture is clean and sound, offer it to friends, neighbours, colleagues or a community group. Agree a collection date and a cut-off, so it doesn't sit in the corridor waiting. Our guide to donating furniture in Dubai explains what charities and community groups usually accept.",
+      },
+      { type: "h3", text: "Paid: a removal crew" },
+      {
+        type: "p",
+        text: "A crew carries the furniture from wherever it is, dismantles it if needed and takes it away in one visit. It's the quickest option when you're in a tower, outside the municipal service area, or working to a deadline. Send photos first, so you know the fixed price before anyone arrives.",
+      },
+      { type: "h2", text: "FAQs" },
+      { type: "h3", text: "Can I leave items for the municipality without booking?" },
+      {
+        type: "p",
+        text: "No. The municipal bulky waste service is booked in advance. Leaving furniture by the bins and hoping it's taken counts as leaving goods near a waste container. Book first, then put items out only when and where you're told.",
+      },
+      { type: "h3", text: "Is it still dumping if I put a \"free\" sign on it?" },
+      {
+        type: "p",
+        text: "Yes. A sign doesn't change where the furniture is. Goods left beside a bin or in a public place fall under the same schedule entries, whether or not you hope someone takes them. Offer it online or on a noticeboard instead, and only put it out when a taker is on the way.",
+      },
+    ],
+    sources: [
+      { label: "Dubai Legislation Portal: Law No. 18 of 2024 Regulating Waste Management (Articles 2, 6 and 20)", url: "https://dlp.dubai.gov.ae/Legislation%20Reference/2024/Law%20No.%20%2818%29%20of%202024%20Regulating%20Waste%20Management.html" },
+      { label: "Dubai Legislation Portal: Executive Council Resolution No. 14 of 2015 (public hygiene violations and penalties)", url: "https://dlp.dubai.gov.ae/Legislation%20Reference/2015/Executive%20Council%20Resolution%20No.%20(14)%20of%202015.html" },
+      { label: "Dubai Municipality: bulky waste disposal service", url: "https://www.dm.gov.ae/35-increase-in-requests-for-dubai-municipality-bulky-waste-disposal-service/" },
+      { label: "Khaleej Times: free bulk waste removal via WhatsApp", url: "https://www.khaleejtimes.com/uae/dubai-offers-free-bulk-waste-removal-service-via-whatsapp" },
+    ],
+  },
 ];
 
 export const getPost = (slug: string) => posts.find((p) => p.slug === slug);

@@ -65,6 +65,9 @@ export const photos = {
   // Pexels 8112184 and 12703093, used under the Pexels licence.
   keysHandover: photo("keys-handover", "One hand passing a set of keys to another"),
   officeDesks: photo("office-desks-chairs", "An office with wooden desks and black task chairs under ceiling lights"),
+  // Pexels 15751563 and 12478148, used under the Pexels licence.
+  secondhandArmchairs: photo("secondhand-armchairs", "Two green armchairs, cushions and a rug set out on a pavement outside a shopfront"),
+  chairBesideBins: photo("chair-beside-bins", "A black-and-white photo of a wooden chair left beside a row of large waste bins"),
   renovationRoom: photo("renovation-room-bags", "Room stripped back to brick during a renovation, with bags of material on the floor"),
   // Illustrative pair for the before and after slider, from the redesign prototype.
   clutteredRoom: photo("cluttered-bedroom-before", "A cluttered bedroom with clothes piled on the bed and rails"),
@@ -170,4 +173,6 @@ export const postPhotos: Record<string, Photo> = {
   "it-asset-disposal-dubai": photos.oldComputers,
   "clear-dubai-property-from-abroad": photos.keysHandover,
   "office-furniture-disposal-dubai": photos.officeDesks,
+  "donate-furniture-dubai": photos.secondhandArmchairs,
+  "dumping-furniture-next-to-bin-dubai-rules": photos.chairBesideBins,
 };
