@@ -68,6 +68,9 @@ export const photos = {
   // Pexels 15751563 and 12478148, used under the Pexels licence.
   secondhandArmchairs: photo("secondhand-armchairs", "Two green armchairs, cushions and a rug set out on a pavement outside a shopfront"),
   chairBesideBins: photo("chair-beside-bins", "A black-and-white photo of a wooden chair left beside a row of large waste bins"),
+  // Pexels 34397245 and 6114347, used under the Pexels licence.
+  washerDrum: photo("washing-machine-drum", "Close-up of the stainless steel drum inside a front-loading washing machine"),
+  saleTag: photo("sale-tag-lamp", "A red sale tag hanging on string from a lamp"),
   renovationRoom: photo("renovation-room-bags", "Room stripped back to brick during a renovation, with bags of material on the floor"),
   // Illustrative pair for the before and after slider, from the redesign prototype.
   clutteredRoom: photo("cluttered-bedroom-before", "A cluttered bedroom with clothes piled on the bed and rails"),
@@ -175,4 +178,6 @@ export const postPhotos: Record<string, Photo> = {
   "office-furniture-disposal-dubai": photos.officeDesks,
   "donate-furniture-dubai": photos.secondhandArmchairs,
   "dumping-furniture-next-to-bin-dubai-rules": photos.chairBesideBins,
+  "how-to-dispose-washing-machine-in-dubai": photos.washerDrum,
+  "moving-out-sale-dubai": photos.saleTag,
 };

@@ -2716,10 +2716,263 @@ export const posts: Post[] = [
       },
     ],
     sources: [
-      { label: "Dubai Legislation Portal: Law No. 18 of 2024 Regulating Waste Management (Articles 2, 6 and 20)", url: "https://dlp.dubai.gov.ae/Legislation%20Reference/2024/Law%20No.%20%2818%29%20of%202024%20Regulating%20Waste%20Management.html" },
+      { label: "Dubai Legislation Portal: Law No. 18 of 2024 Regulating Waste Management (Articles 2, 6, 20 and 23)", url: "https://dlp.dubai.gov.ae/Legislation%20Reference/2024/Law%20No.%20%2818%29%20of%202024%20Regulating%20Waste%20Management.html" },
       { label: "Dubai Legislation Portal: Executive Council Resolution No. 14 of 2015 (public hygiene violations and penalties)", url: "https://dlp.dubai.gov.ae/Legislation%20Reference/2015/Executive%20Council%20Resolution%20No.%20(14)%20of%202015.html" },
       { label: "Dubai Municipality: bulky waste disposal service", url: "https://www.dm.gov.ae/35-increase-in-requests-for-dubai-municipality-bulky-waste-disposal-service/" },
       { label: "Khaleej Times: free bulk waste removal via WhatsApp", url: "https://www.khaleejtimes.com/uae/dubai-offers-free-bulk-waste-removal-service-via-whatsapp" },
+    ],
+  },
+  {
+    slug: "how-to-dispose-washing-machine-in-dubai",
+    title: "How to dispose of a washing machine in Dubai",
+    description:
+      "How to dispose of a washing machine in Dubai: getting it disconnected safely, draining and securing the drum, the four ways to get rid of it, and stacked units.",
+    date: "2026-11-22",
+    readMinutes: 6,
+    tag: "How-to",
+    relatedService: "appliance-removal",
+    blocks: [
+      {
+        type: "p",
+        text: "To dispose of a washing machine in Dubai, have it disconnected from the water supply and drained first, then choose a route: an exchange when you buy a new one, a sale if it works, Dubai Municipality's free bulky waste pickup, or a crew to carry it out. The disconnection is the step people skip, and the one that causes floods.",
+      },
+      {
+        type: "p",
+        text: "A washing machine is heavy, it holds water even when it looks empty, and it's connected to both the plumbing and the electricity. Here's how to get it out without damage, in a villa or a flat.",
+      },
+      { type: "h2", text: "Before anything: disconnect water safely" },
+      {
+        type: "p",
+        text: "A washing machine is connected in three places: a cold water inlet hose, a drain hose to a standpipe or the sink waste, and the power socket. Before it moves, all three need undoing, and the water supply needs closing so nothing leaks when the hose comes off.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Switch off and unplug the machine",
+          "Close the isolation valve on the water supply behind or beside it",
+          "Disconnect the inlet hose, with a towel and a bucket ready",
+          "Unhook or disconnect the drain hose, which will still hold some water",
+          "Check the floor and the wall behind for leaks once it's pulled out",
+        ],
+      },
+      { type: "h3", text: "Why a technician should disconnect plumbed appliances" },
+      {
+        type: "p",
+        text: "If the valve is stiff or old, it may not close fully, or it may leak once it's moved. In a flat, a leak can reach the unit below before anyone notices. If you're not confident, ask your building's maintenance team or a plumber to disconnect the machine and cap the supply. Our crews unplug and move appliances, but we don't disconnect anything plumbed in or gas-fed, so book the disconnection before collection day.",
+      },
+      { type: "h2", text: "Draining and securing the drum" },
+      {
+        type: "p",
+        text: "Even after a spin cycle, water sits in the pump and the bottom of the drum. Most front-loaders have a small drain hose or filter cap behind a panel at the bottom front. Put a shallow tray and towels down, open it slowly and let it drain fully. This also tells you whether the filter is blocked, which is worth knowing if you're selling.",
+      },
+      {
+        type: "p",
+        text: "If the machine is going to someone who'll use it, the drum needs securing. New machines are delivered with transit bolts that lock the drum in place, and refitting them protects the drum and suspension in a van. If the bolts are long gone, wedge the drum with towels and keep the machine upright.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Leave the door ajar for a day afterwards so it dries out and doesn't smell",
+          "Tape the door shut and coil the hoses on the back before it's moved",
+          "Remove the detergent drawer if it's loose, and keep it with the machine",
+        ],
+      },
+      { type: "h2", text: "Four ways to get rid of an old washer" },
+      { type: "h3", text: "Retailer exchange" },
+      {
+        type: "p",
+        text: "If you're buying a new machine, ask the shop whether it takes the old one away. Some retailers run exchange or buyback offers, and some delivery teams will remove the old machine, sometimes for a fee. Check before you pay, because the delivery team usually won't disconnect it for you.",
+      },
+      { type: "h3", text: "Resale" },
+      {
+        type: "p",
+        text: "A working machine a few years old can sell, especially a well-known brand. Be honest about its age and any faults, include the model number, and agree who carries it before the buyer arrives.",
+      },
+      { type: "h3", text: "Municipal pickup" },
+      {
+        type: "p",
+        text: "Dubai Municipality's free bulky waste service covers used electrical appliances. You request it on 800900 or through the municipality's apps or website. The service doesn't cover free zones or real estate development zones and has access limits for high-rise buildings, so it suits villas in eligible areas best.",
+      },
+      { type: "h3", text: "A removal crew" },
+      {
+        type: "p",
+        text: "A crew carries the machine from the laundry or kitchen, protects the floors on the way out and directs it towards recycling where possible. It's the easiest option on an upper floor, from a tower, or when the machine is going with other items.",
+      },
+      {
+        type: "callout",
+        title: "Price it from a photo",
+        body: "Once it's disconnected, send a photo of the washing machine on WhatsApp, with your area and floor. We reply with a fixed price, working or not.",
+      },
+      { type: "h2", text: "Washer-dryers and stacked units" },
+      {
+        type: "p",
+        text: "A combined washer-dryer is moved like a washing machine, but it's usually heavier. A vented tumble dryer also has a vent hose to remove, and a condenser dryer has a water container to empty.",
+      },
+      {
+        type: "p",
+        text: "Stacked units, with a dryer on top of a washer, are common in Dubai flats where space is tight. The dryer is usually held by a stacking kit, a bracket or strap fixed to the washer. Never try to move the pair together. Separate them first, lift the dryer down with two people, then move each machine on its own.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Check whether the units sit in a cupboard with a door frame that has to come off",
+          "Measure the cupboard opening and the route to the lift",
+          "Ask whether the washer is built in under a worktop, which may need a fitter to release it",
+        ],
+      },
+      { type: "h2", text: "FAQs" },
+      { type: "h3", text: "Who disconnects the washer if the crew doesn't?" },
+      {
+        type: "p",
+        text: "Your building's maintenance team, your landlord's maintenance contractor or a plumber. Many buildings handle it as a small maintenance request. Book it for the day before or the morning of the collection, and ask them to cap the water supply.",
+      },
+      { type: "h3", text: "Is the washing machine mine to dispose of?" },
+      {
+        type: "p",
+        text: "Check first if you rent. In many furnished flats, and some unfurnished ones, the washing machine belongs to the landlord and is on the inventory. If it's broken, report it rather than replacing and disposing of it yourself.",
+      },
+    ],
+    sources: [
+      { label: "Dubai Municipality: bulky waste disposal service (furniture and used electrical appliances)", url: "https://www.dm.gov.ae/35-increase-in-requests-for-dubai-municipality-bulky-waste-disposal-service/" },
+      { label: "Khaleej Times: free bulk waste removal via WhatsApp", url: "https://www.khaleejtimes.com/uae/dubai-offers-free-bulk-waste-removal-service-via-whatsapp" },
+    ],
+  },
+  {
+    slug: "moving-out-sale-dubai",
+    title: "Moving-out sale in Dubai: what sells and what doesn't",
+    description:
+      "How to run a moving-out sale in Dubai: plan it three to four weeks out, price and bundle well, follow building rules, and book clearance for the leftovers.",
+    date: "2026-11-22",
+    readMinutes: 6,
+    tag: "Moving",
+    relatedService: "move-out-clearance",
+    blocks: [
+      {
+        type: "p",
+        text: "A moving-out sale in Dubai works best as a short, planned event: list everything three to four weeks before you leave, price to sell rather than to recover what you paid, and set a hard end date. Book the clearance for whatever's left before the sale starts, not after it ends.",
+      },
+      {
+        type: "p",
+        text: "This guide is about selling a whole home's contents in one go, against a deadline. For selling individual pieces when you're not in a hurry, the approach is different.",
+      },
+      { type: "h2", text: "Plan the sale 3 to 4 weeks out" },
+      {
+        type: "ol",
+        items: [
+          "Four weeks out: walk through every room and list what's for sale, what's moving with you and what's staying with the landlord",
+          "Three weeks out: photograph and list everything, and post the sale in your building and community groups",
+          "Two weeks out: hold collection days or viewing slots, and drop prices on anything with no interest",
+          "One week out: stop selling large items, so buyers aren't collecting while your movers pack",
+          "Final days: clear the leftovers and hand over a swept, empty home",
+        ],
+      },
+      {
+        type: "p",
+        text: "Keep a simple list of what's sold, to whom, for how much and when they're collecting. With twenty items and a dozen buyers, it's the only way to stay on top of it.",
+      },
+      { type: "h2", text: "Pricing, bundling and listing photos" },
+      {
+        type: "p",
+        text: "Buyers at a moving-out sale expect a bargain, because they know you're leaving. Price for a quick sale, not for what the item cost new. If something hasn't had a single message in a few days, it's priced too high.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Bundle related items: a bed with its mattress, a dining table with its chairs, a desk with its chair",
+          "Group small things into a single \"kitchen lot\" or \"kids' bundle\" rather than listing each one",
+          "Photograph each piece in daylight, in the room, with any marks or faults shown honestly",
+          "Give dimensions for every piece of furniture, since buyers need to know it will fit",
+          "Say clearly when the item must be collected and that the buyer handles carrying",
+        ],
+      },
+      { type: "h3", text: "Show appliances working" },
+      {
+        type: "p",
+        text: "Appliances sell far more easily when buyers can see them work. Keep the fridge, washing machine and microwave connected until the buyer collects, and offer to switch them on during a viewing. Note the model number in the listing, and agree who disconnects plumbed-in appliances before the buyer arrives with a van.",
+      },
+      { type: "h2", text: "Getting paid and handing over" },
+      {
+        type: "p",
+        text: "A moving-out sale means a lot of short meetings with strangers, often in the evening. A few habits keep them simple and safe:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Agree the price and payment method in writing before the buyer travels",
+          "Take payment before the item leaves the flat, and check a transfer has arrived rather than trusting a screenshot",
+          "Be wary of buyers who offer to pay more than the asking price, or ask you to send money back",
+          "Have someone else at home for evening collections where you can",
+          "Mark each item as sold in your listing straight away, so you don't sell it twice",
+        ],
+      },
+      { type: "h2", text: "Building rules: buyers, visitors and lift use" },
+      {
+        type: "p",
+        text: "In a tower in JLT, Motor City or Dubai Sports City, a stream of buyers collecting furniture needs some planning. Ask building management before you start:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Whether visitors need registering at reception",
+          "Whether furniture can go down in the passenger lift, or only the service lift",
+          "Whether the service lift has to be booked for each collection",
+          "Where buyers can park and load",
+        ],
+      },
+      {
+        type: "p",
+        text: "Group collections into set slots, such as two evenings and a weekend morning, rather than letting buyers turn up whenever they like. It's easier on you, on the building and on your neighbours.",
+      },
+      { type: "h2", text: "What never sells" },
+      {
+        type: "p",
+        text: "Some things are hard to sell however low the price. Plan to clear them rather than spend your last weeks answering messages about them:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Used mattresses and pillows",
+          "Worn or stained sofas and upholstered chairs",
+          "Flat-pack furniture that has been taken apart and rebuilt before",
+          "Old, heavy televisions and outdated electronics",
+          "Half-used paint, cleaning products and toiletries",
+          "Large items that only fit your current home, such as built-to-measure wardrobes",
+        ],
+      },
+      {
+        type: "p",
+        text: "Offer the near-misses free in your community group before you give up on them. Free items often go within a day, as long as the taker collects.",
+      },
+      {
+        type: "callout",
+        title: "Book the leftovers early",
+        body: "Send photos of what you expect to be left on WhatsApp, with your move-out date. We reply with a fixed price, and you can add or remove items as the sale goes on.",
+      },
+      { type: "h2", text: "Book clearance for the leftovers before the sale ends" },
+      {
+        type: "p",
+        text: "However well the sale goes, something will be left. The mistake is waiting until the last day to deal with it, when the service lift is booked for your movers and buyers are still messaging.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Book the clearance when you start the sale, for a day or two before handover",
+          "Send updated photos as items sell, so the price matches what's actually left",
+          "Agree a cut-off: anything unsold by then goes with the clearance",
+          "Keep the clearance day separate from your packers' day if you can",
+        ],
+      },
+      { type: "h2", text: "FAQs" },
+      { type: "h3", text: "Can buyers collect on handover day?" },
+      {
+        type: "p",
+        text: "It's best not to. Handover day is for the final walk-through with your landlord or agent, and the building may need the lift for other moves. Set your last collection at least a day before, so anything unclaimed can go with the clearance.",
+      },
+      { type: "h3", text: "Should I take a deposit from buyers?" },
+      {
+        type: "p",
+        text: "For large items with a collection date a few days away, a small deposit reduces no-shows. Agree it in writing on WhatsApp, and say what happens if the buyer doesn't collect by the agreed time.",
+      },
     ],
   },
 ];
