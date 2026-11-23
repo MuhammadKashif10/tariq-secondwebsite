@@ -71,6 +71,9 @@ export const photos = {
   // Pexels 34397245 and 6114347, used under the Pexels licence.
   washerDrum: photo("washing-machine-drum", "Close-up of the stainless steel drum inside a front-loading washing machine"),
   saleTag: photo("sale-tag-lamp", "A red sale tag hanging on string from a lamp"),
+  // Pexels 6115026 and 33175809, used under the Pexels licence.
+  phoneSalePhoto: photo("phone-photographing-sale", "A hand holding a phone to photograph items for sale, with a sale sign in the background"),
+  officeTurnstiles: photo("office-turnstiles", "A row of security turnstiles at the entrance of an office building lobby"),
   renovationRoom: photo("renovation-room-bags", "Room stripped back to brick during a renovation, with bags of material on the floor"),
   // Illustrative pair for the before and after slider, from the redesign prototype.
   clutteredRoom: photo("cluttered-bedroom-before", "A cluttered bedroom with clothes piled on the bed and rails"),
@@ -180,4 +183,6 @@ export const postPhotos: Record<string, Photo> = {
   "dumping-furniture-next-to-bin-dubai-rules": photos.chairBesideBins,
   "how-to-dispose-washing-machine-in-dubai": photos.washerDrum,
   "moving-out-sale-dubai": photos.saleTag,
+  "sell-used-furniture-dubai": photos.phoneSalePhoto,
+  "free-zone-office-clearance-dubai": photos.officeTurnstiles,
 };

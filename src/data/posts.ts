@@ -2975,6 +2975,279 @@ export const posts: Post[] = [
       },
     ],
   },
+  {
+    slug: "sell-used-furniture-dubai",
+    title: "Where to sell used furniture in Dubai, and when to skip it",
+    description:
+      "Where to sell used furniture in Dubai: what sells second-hand, your selling options, pricing and hand-over, and when to stop selling and clear the rest.",
+    date: "2026-11-23",
+    readMinutes: 6,
+    tag: "Moving",
+    relatedService: "move-out-clearance",
+    blocks: [
+      {
+        type: "p",
+        text: "The best places to sell used furniture in Dubai are online classifieds and marketplace groups, used-furniture buyers who collect, and your own building's resident groups. Good-condition, well-known pieces sell. Worn, bulky or dated ones often don't, and knowing which is which saves you weeks of messages.",
+      },
+      {
+        type: "p",
+        text: "This guide is for selling individual pieces, whether you're upgrading, moving or clearing a furnished unit. We don't buy furniture ourselves. We clear what doesn't sell, so we see both sides.",
+      },
+      { type: "h2", text: "What actually sells second-hand in Dubai" },
+      {
+        type: "p",
+        text: "Dubai has a lot of second-hand furniture on offer, because people move often. That means buyers can be choosy. What sells is what they'd struggle to find cheaper elsewhere.",
+      },
+      { type: "h3", text: "Brands and condition buyers ask about" },
+      {
+        type: "ul",
+        items: [
+          "Well-known brands, where buyers can look up the price new",
+          "Solid wood pieces rather than particle board",
+          "Clean, unstained sofas and armchairs in neutral colours",
+          "Dining sets with all their chairs",
+          "Home office furniture, such as desks and good task chairs",
+          "Children's furniture and outdoor sets in good condition",
+        ],
+      },
+      {
+        type: "p",
+        text: "Expect the first questions to be about age, condition, smoke and pets, and exact dimensions. Have the answers ready in your listing.",
+      },
+      { type: "h3", text: "Items that rarely sell" },
+      {
+        type: "ul",
+        items: [
+          "Used mattresses",
+          "Stained or sagging upholstery",
+          "Flat-pack furniture that has been moved before",
+          "Very large wardrobes and wall units made for one particular room",
+          "Dated glass and veneer pieces",
+        ],
+      },
+      {
+        type: "p",
+        text: "If a piece is on this list, don't spend weeks trying to sell it. Offer it free in a community group, and if nobody takes it within a few days, add it to the clearance.",
+      },
+      { type: "h2", text: "Your selling options" },
+      { type: "h3", text: "Online classifieds and marketplace groups" },
+      {
+        type: "p",
+        text: "Classifieds sites and online marketplace groups reach the most buyers. They also bring the most time-wasters, so be ready for questions, haggling and buyers who don't turn up. List the item clearly once, and repost it if it slips down the feed.",
+      },
+      { type: "h3", text: "Used-furniture buyers who collect" },
+      {
+        type: "p",
+        text: "Some second-hand dealers buy furniture and collect it themselves. You'll usually get less than a private sale, but it can be one visit for several pieces. Ask for a price from photos first, agree what they're taking, and confirm they'll carry it from the room.",
+      },
+      { type: "h3", text: "Building noticeboards and resident groups" },
+      {
+        type: "p",
+        text: "Your neighbours are the easiest buyers of all. In towers in JLT or Business Bay, or a community like Dubai Hills Estate, a post in the residents' group reaches people who can collect without a van. It's often the quickest way to sell a dining table or a bookcase.",
+      },
+      { type: "h2", text: "Pricing a piece and handing it over" },
+      {
+        type: "p",
+        text: "Check what a similar item sells for second-hand, not what you paid. A piece a few years old in good condition often sells for a fraction of its price new. Start a little high if you have time, and drop the price if there's no interest within a week.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Photograph the piece in daylight from the front and the side, plus any marks",
+          "Give the dimensions, the brand and, where possible, the model name",
+          "Say clearly that the buyer collects and carries, and from which floor",
+          "Take payment before the item leaves, and confirm any transfer has arrived",
+        ],
+      },
+      {
+        type: "p",
+        text: "In a tower, the buyer will need the service lift. Agree a collection time that matches a lift slot, and tell reception who's coming.",
+      },
+      {
+        type: "callout",
+        title: "For what doesn't sell",
+        body: "Send photos of the pieces that haven't found a buyer on WhatsApp. We reply with a fixed price to carry them out and take them away.",
+      },
+      { type: "h2", text: "Selling stock from furnished units" },
+      {
+        type: "p",
+        text: "Landlords refreshing furnished flats often have several matching sets to sell at once: beds, sofas, dining sets and white goods. That changes the approach.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Sell by room or by unit as a lot, rather than piece by piece",
+          "Ask used-furniture dealers to price the whole lot from photos, since they buy in volume",
+          "Time the sale so buyers collect before the new furniture is delivered",
+          "Keep the tenancy inventory to hand, so nothing listed for the next tenant is sold by mistake",
+        ],
+      },
+      { type: "h2", text: "The cut-off: when to stop selling and clear the rest" },
+      {
+        type: "p",
+        text: "Selling furniture takes time, and time is often what you don't have before a move. Set a cut-off date before you start.",
+      },
+      {
+        type: "ul",
+        items: [
+          "If a piece hasn't had a serious enquiry in two weeks, drop the price or offer it free",
+          "If it still hasn't gone a week before you need the space empty, stop selling it",
+          "Book the clearance early, and add or remove items as they sell",
+          "Don't leave unsold furniture in the corridor in the hope a buyer turns up",
+        ],
+      },
+      {
+        type: "p",
+        text: "It's easy to underrate the cost of a slow sale: evenings answering messages, rearranged viewings and a last-minute scramble. For a low-value piece, giving it away or clearing it is often the better deal.",
+      },
+      { type: "h2", text: "FAQs" },
+      { type: "h3", text: "Do used furniture buyers pay for broken items?" },
+      {
+        type: "p",
+        text: "Rarely. Dealers and private buyers want furniture they can use or resell straight away. Broken, stained or incomplete pieces are usually refused, or taken only as part of a larger deal. Plan to dispose of them instead.",
+      },
+      { type: "h3", text: "Who books the service lift when a buyer collects?" },
+      {
+        type: "p",
+        text: "Usually you do, as the resident. Many buildings only take lift bookings from the tenant or owner. Book the slot, give the buyer the time, and tell reception their name and vehicle so they're let in.",
+      },
+      { type: "h3", text: "Is a sofa I paid a lot for worth selling?" },
+      {
+        type: "p",
+        text: "Often, if it's clean, a known brand and a few years old at most. What you paid matters less than its condition and how easy it is to collect. A large, heavy sofa that needs dismantling to leave the flat sells more slowly than a smaller one, so price it with that in mind.",
+      },
+    ],
+  },
+  {
+    slug: "free-zone-office-clearance-dubai",
+    title: "Free zone office clearance in Dubai: passes and handover",
+    description:
+      "Clearing an office in a Dubai free zone: why access takes extra steps, what crews and vehicles must supply, lead times for passes, and handover.",
+    date: "2026-11-23",
+    readMinutes: 6,
+    tag: "Dubai guide",
+    relatedService: "office-clearance",
+    blocks: [
+      {
+        type: "p",
+        text: "Clearing an office in a Dubai free zone takes the same work as anywhere else, plus one extra layer: access. Free zones control who and what comes in through their own permit and pass systems, so a clearance has to be planned around them. Start the pass process a week or more before the clearance, not the day before.",
+      },
+      {
+        type: "p",
+        text: "This guide covers what to expect in free-zone office clusters such as JLT, DIFC, Dubai Silicon Oasis, Jebel Ali and Dubai South. Each authority runs its own system, so use it as a checklist and confirm the details with yours.",
+      },
+      { type: "h2", text: "Why free-zone buildings have extra access steps" },
+      {
+        type: "p",
+        text: "A free zone is run by its own authority, which licenses the companies inside it and controls access to its areas and buildings. On top of the building's own rules, there's often a zone-level pass for people and vehicles. Two documented examples show how this works.",
+      },
+      {
+        type: "p",
+        text: "At Jebel Ali Free Zone, gate passes are handled through Tasreeh, an online gate pass system. The visitor creates an account and selects the company they're visiting, and the pass is issued once that company accepts the request. Passes range from day and weekly passes to temporary and longer-term ones.",
+      },
+      {
+        type: "p",
+        text: "In JLT, the tenant handbook for retail units issued by DMCC says contractors and suppliers must get temporary access permits from Security. Fit-out contractors must submit trade licences, insurance certificates and staff lists before they're allowed on site. Goods move through designated loading bays and service corridors.",
+      },
+      {
+        type: "p",
+        text: "Other zones, including DIFC and Dubai Silicon Oasis, have their own procedures, often run through the building's property manager. Ask them early, in writing.",
+      },
+      { type: "h2", text: "Information crews and vehicles usually need to supply" },
+      {
+        type: "p",
+        text: "Requirements vary, but most pass and permit requests ask for some combination of:",
+      },
+      {
+        type: "ul",
+        items: [
+          "The contractor's company name and trade licence",
+          "Names and ID details for each crew member",
+          "Vehicle registration numbers, and sometimes vehicle type and size",
+          "The date, time window and purpose of the visit",
+          "The host company, meaning you, approving or sponsoring the request",
+          "Insurance certificates, for some buildings and types of work",
+        ],
+      },
+      {
+        type: "p",
+        text: "Collect the details from every contractor involved, including movers, the clearance crew and any IT or fit-out contractor, and submit them together. A missing name or plate number is the most common reason a truck waits at the barrier.",
+      },
+      {
+        type: "callout",
+        title: "Crew and vehicle details on request",
+        body: "Send photos of the office and your building's access rules on WhatsApp. We reply with a fixed price and supply the crew and vehicle details your free zone or landlord needs.",
+      },
+      { type: "h2", text: "Lead times for passes and loading bays" },
+      {
+        type: "p",
+        text: "Pass approvals, loading bay bookings and service lift slots all take time, and they depend on each other. Work back from the clearance date:",
+      },
+      {
+        type: "ol",
+        items: [
+          "Two weeks out: ask the building and the free zone what they need, and how long approval takes",
+          "Ten days out: collect crew and vehicle details from every contractor",
+          "One week out: submit pass requests and book the loading bay and service lift",
+          "Two or three days out: confirm the approvals have come through and share them with each contractor",
+          "The day before: check vehicle sizes against any loading bay height limits",
+        ],
+      },
+      {
+        type: "p",
+        text: "If your building only allows removals after hours or at weekends, check that passes are valid for those times too.",
+      },
+      { type: "h2", text: "Handover expectations" },
+      {
+        type: "p",
+        text: "Leaving a free-zone office usually involves more than returning keys. Read your lease and the building's exit procedure for what's required, which often includes some of the following:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Removing all furniture, equipment and waste, unless the landlord agrees otherwise",
+          "Restoring the unit to the condition set out in the lease, which may need a fit-out contractor",
+          "A joint inspection with the landlord or building management",
+          "Returning access cards, parking permits and keys",
+          "Settling service charges and utility accounts before deposits are released",
+        ],
+      },
+      {
+        type: "p",
+        text: "Your free zone licence may have its own exit or relocation steps too. Those are separate from the physical clearance, so check them with the authority as early as possible.",
+      },
+      {
+        type: "p",
+        text: "Treat IT equipment as its own job. Wipe or remove drives before anything leaves, keep laptops, servers and printers apart from furniture, and keep a record of what went where. A clearance crew moves hardware, but dealing with the data on it is your responsibility.",
+      },
+      { type: "h2", text: "Why free municipal bulky pickup may not apply" },
+      {
+        type: "p",
+        text: "Dubai Municipality's free bulky waste service is aimed at households, and the municipality says it isn't available in free zones or real estate development zones. Business waste also has its own rules, so an office clearance in a free zone almost always needs a private collector. Our guide to the free municipal pickup explains where it does and doesn't reach.",
+      },
+      { type: "h2", text: "FAQs" },
+      { type: "h3", text: "Can you work weekends in a free zone tower?" },
+      {
+        type: "p",
+        text: "Yes, where the building and the free zone allow it. Many office towers prefer removals outside working hours, but some restrict weekend access or need a separate approval. Tell us the rules when you ask for a quote, and we'll plan the visit around them.",
+      },
+      { type: "h3", text: "Who applies for the passes, us or the clearance company?" },
+      {
+        type: "p",
+        text: "Usually the tenant company hosts or sponsors the request, and the contractor supplies its details. At Jebel Ali Free Zone, for example, the company being visited accepts the gate pass request. Agree early who submits what, so nothing is missed.",
+      },
+      { type: "h3", text: "Can the clearance happen in phases while we're still working?" },
+      {
+        type: "p",
+        text: "Yes. Large offices are often cleared zone by zone, starting with storerooms and empty desks. Each visit needs its own pass and lift booking, so plan the dates together and ask whether the free zone will issue a pass covering several days.",
+      },
+    ],
+    sources: [
+      { label: "Jafza: How to apply for a Jafza gate pass (Tasreeh)", url: "https://www.jafza.ae/resource-centre/guides/how-to-apply-for-a-jafza-gate-pass/" },
+      { label: "JLT / DMCC: Retail Tenant Handbook (access, contractors and loading bays)", url: "https://jlt.ae/hubfs/JLT/Community%20Governance%20web/Retail%20Tenant%20Handbook%20R4.pdf" },
+      { label: "Dubai Municipality: bulky waste disposal service (not available in free zones)", url: "https://www.dm.gov.ae/35-increase-in-requests-for-dubai-municipality-bulky-waste-disposal-service/" },
+    ],
+  },
 ];
 
 export const getPost = (slug: string) => posts.find((p) => p.slug === slug);
