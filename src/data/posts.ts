@@ -463,7 +463,7 @@ export const posts: Post[] = [
     sources: [
       { label: "Dubai Municipality: services (bulky waste disposal)", url: "https://www.dm.gov.ae/dubai-municipality-services/" },
       { label: "Dubai Municipality: free bulky waste disposal service (July 2022)", url: "https://www.dm.gov.ae/dubai-municipality-promotes-waste-segregation-through-free-bulky-waste-disposal-service/" },
-      { label: "Dubai Municipality: Waste Segregation Guide (800900 bulky waste hotline)", url: "https://www.dm.gov.ae/wp-content/uploads/2024/12/Waste-Segregation-Guide.pdf" },
+      { label: "Dubai Municipality: Waste Segregation Guide (800900 bulky waste hotline)", url: "https://dmpmedia.dm.gov.ae/uploads/2024/12/Waste-Segregation-Guide.pdf" },
       { label: "Dubai Legislation Portal: Executive Council Resolution No. 14 of 2015", url: "https://dlp.dubai.gov.ae/Legislation%20Reference/2015/Executive%20Council%20Resolution%20No.%20(14)%20of%202015.html" },
       { label: "Dubai Legislation Portal: Law No. 18 of 2024 Regulating Waste Management", url: "https://dlp.dubai.gov.ae/Legislation%20Reference/2024/Law%20No.%20%2818%29%20of%202024%20Regulating%20Waste%20Management.html" },
     ],
@@ -1145,7 +1145,7 @@ export const posts: Post[] = [
     ],
     sources: [
       { label: "Dubai Municipality: bulky waste disposal service (furniture and used electrical appliances)", url: "https://www.dm.gov.ae/35-increase-in-requests-for-dubai-municipality-bulky-waste-disposal-service/" },
-      { label: "Dubai Municipality: Waste Segregation Guide (800900 bulky waste hotline)", url: "https://www.dm.gov.ae/wp-content/uploads/2024/12/Waste-Segregation-Guide.pdf" },
+      { label: "Dubai Municipality: Waste Segregation Guide (800900 bulky waste hotline)", url: "https://dmpmedia.dm.gov.ae/uploads/2024/12/Waste-Segregation-Guide.pdf" },
       { label: "Khaleej Times: free bulk waste removal via WhatsApp", url: "https://www.khaleejtimes.com/uae/dubai-offers-free-bulk-waste-removal-service-via-whatsapp" },
       { label: "ILO NATLEX: UAE Cabinet Resolution No. 26 of 2014 on the national regime of ozone-depleting substances", url: "https://natlex.ilo.org/dyn/natlex2/r/natlex/fe/details?p3_isn=98630" },
       { label: "Sharaf DG: home appliance buyback offer (terms change, check the current page)", url: "https://uae.sharafdg.com/ha-buyback-offer/" },
@@ -3171,7 +3171,7 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: "Collect the details from every contractor involved, including movers, the clearance crew and any IT or fit-out contractor, and submit them together. A missing name or plate number is the most common reason a truck waits at the barrier.",
+        text: "Collect the details from every contractor involved, including movers, the clearance crew and any IT or fit-out contractor, and submit them together. A missing name or plate number can leave a truck waiting at the barrier.",
       },
       {
         type: "callout",
@@ -3243,9 +3243,276 @@ export const posts: Post[] = [
       },
     ],
     sources: [
-      { label: "Jafza: How to apply for a Jafza gate pass (Tasreeh)", url: "https://www.jafza.ae/resource-centre/guides/how-to-apply-for-a-jafza-gate-pass/" },
+      { label: "Jafza: How to apply for a Jafza gate pass (Tasreeh)", url: "https://www.jafza.ae/resource-centre/guides/informative/how-to-apply-for-a-jafza-gate-pass/" },
       { label: "JLT / DMCC: Retail Tenant Handbook (access, contractors and loading bays)", url: "https://jlt.ae/hubfs/JLT/Community%20Governance%20web/Retail%20Tenant%20Handbook%20R4.pdf" },
       { label: "Dubai Municipality: bulky waste disposal service (not available in free zones)", url: "https://www.dm.gov.ae/35-increase-in-requests-for-dubai-municipality-bulky-waste-disposal-service/" },
+    ],
+  },
+  {
+    slug: "wardrobe-disposal-dubai",
+    title: "Wardrobe disposal in Dubai: getting it out of an apartment",
+    description:
+      "Wardrobe disposal in Dubai: tell freestanding from built-in, measure the lift and corridor, take it apart safely and choose where the parts should go.",
+    date: "2026-11-24",
+    readMinutes: 6,
+    tag: "How-to",
+    relatedService: "furniture-removal",
+    blocks: [
+      {
+        type: "p",
+        text: "Wardrobe disposal in Dubai usually means taking the wardrobe apart in the bedroom, carrying the panels out through the service lift, and then selling, giving away or disposing of them. A freestanding or flat-pack wardrobe can be dismantled. A built-in one is part of the room, and removing it is a different job.",
+      },
+      {
+        type: "p",
+        text: "Most wardrobes arrived as flat boxes and were assembled in place, so they were never meant to leave in one piece. This guide covers how to tell which type you have, what to measure, and how to take one down without hurting yourself or the walls.",
+      },
+      { type: "h2", text: "Freestanding, flat-pack or built-in: know which you have" },
+      {
+        type: "p",
+        text: "Look at the top, the sides and the back before you do anything else.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Freestanding: there's a gap between it and the walls or ceiling, and it has its own back and sides. It may still be strapped to the wall to stop it tipping",
+          "Flat-pack: the panels are joined with cam locks, dowels and screws, usually hidden under small plastic caps, with a thin back panel pinned on",
+          "Built-in: it runs wall to wall or up to the ceiling, with filler strips or trim closing the gaps, and often no back or sides of its own",
+        ],
+      },
+      {
+        type: "p",
+        text: "A wall strap doesn't make a wardrobe built-in. It's a safety fixing, and it comes off with one or two screws.",
+      },
+      { type: "h3", text: "Why built-in units are a fit-out job" },
+      {
+        type: "p",
+        text: "A built-in wardrobe is fixed to the walls, floor or ceiling, and the plaster, skirting, flooring and lighting are often finished around it. Taking it out can leave damage that needs making good. That's work for a carpenter or a fit-out contractor, and your landlord or building may have to agree to it first. Once it's been taken down, a removal crew can clear the pieces.",
+      },
+      { type: "h2", text: "Measure before you book" },
+      {
+        type: "p",
+        text: "Dismantling solves most problems, but not all of them. The long side panels, the doors and the mirrors stay full length, so measure those first.",
+      },
+      { type: "h3", text: "Lift door and cabin dimensions" },
+      {
+        type: "p",
+        text: "Measure the height and width of the lift door opening, then the height and depth of the cabin. A panel taller than the cabin may still fit leaning corner to corner, so measure that diagonal too. Do this for the service lift, not only the passenger lift. In Dubai Marina, bulky items normally leave by a goods lift. Many buildings in International City don't have a large lift, so the stairs may be the route.",
+      },
+      { type: "h3", text: "Corridor turns and stairwells" },
+      {
+        type: "p",
+        text: "Walk the whole route with a tape measure, from the bedroom door to the truck. The tightest points are usually the bedroom doorway, the turn out of the flat and the landing on the stairs. Note any low ceilings, fire doors that don't stay open, and railings that stick out.",
+      },
+      { type: "h2", text: "Dismantling safely" },
+      {
+        type: "p",
+        text: "Two people is the minimum. A tall side panel or a door can fall the moment its last fixing comes out, and a half-dismantled wardrobe isn't stable.",
+      },
+      { type: "h3", text: "Tools and order of work" },
+      {
+        type: "ol",
+        items: [
+          "Empty it completely and take out the drawers, rails and loose shelves",
+          "Lift off the doors, starting at the top hinge while someone holds the weight",
+          "Remove the back panel, which is usually pinned or slotted in. The frame can lean once it's gone, so keep holding it",
+          "Undo the wall strap only when someone is steadying the frame",
+          "Take off the top panel, then separate the sides and the base",
+          "Stack the panels flat on a blanket, longest at the bottom",
+          "Bag the screws, cams and hinges, and tape the bag to a panel if anyone will reuse it",
+        ],
+      },
+      {
+        type: "p",
+        text: "A screwdriver, hex keys, a rubber mallet, gloves and a step stool cover most flat-pack wardrobes. Don't kick or lever the joints apart. Particle board breaks into sharp edges, and the pieces are harder to carry.",
+      },
+      { type: "h3", text: "Mirrors and sliding doors" },
+      {
+        type: "p",
+        text: "Sliding doors hang from a track and are often the heaviest parts, especially with mirrors. Look for a release clip or an adjusting screw on the bottom wheels. Lift the door up into the top track, swing the bottom out and bring it down with two people. Tape a large cross over any mirror, wrap it in a blanket and carry it upright, never flat.",
+      },
+      {
+        type: "callout",
+        title: "Rather not do it yourself?",
+        body: "Send a photo of the wardrobe with the doors open, plus your floor and lift details, on WhatsApp. We reply with a fixed price, and our crew takes it apart and carries it out.",
+      },
+      { type: "h2", text: "Building rules for moving bulky pieces" },
+      {
+        type: "p",
+        text: "Taking a wardrobe apart doesn't change the building's rules. A stack of two-metre panels still counts as bulky.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Ask whether you need a permit or a service lift booking, and how far ahead",
+          "Check the hours for noisy work, since dismantling involves some knocking",
+          "Ask whether the lift walls and corridor need protecting",
+          "Don't store panels in the corridor, even for an hour",
+        ],
+      },
+      {
+        type: "p",
+        text: "Rules vary between buildings. In JVC, mid-rise blocks rarely need elaborate permits, while Marina towers often want the goods lift booked a day or two ahead.",
+      },
+      { type: "h2", text: "Disposal options for the parts" },
+      {
+        type: "ul",
+        items: [
+          "Sell it complete: possible for solid wood or a good-condition branded wardrobe, if it can be rebuilt. Photograph it before you dismantle it",
+          "Give it away: keep every fixing together, or nobody will be able to put it back up",
+          "Dubai Municipality's free bulky waste pickup: takes household furniture where your address is eligible. It doesn't cover free zones or real estate development zones, and high-rise access is limited",
+          "A removal crew: takes the parts from the bedroom, whole or already dismantled",
+        ],
+      },
+      {
+        type: "p",
+        text: "Particle board swells when it gets wet and loosens each time it's rebuilt, so an older flat-pack wardrobe is usually at the end of its life once it's been down.",
+      },
+      { type: "h2", text: "FAQs" },
+      { type: "h3", text: "Can a wardrobe be rebuilt after it's been taken apart?" },
+      {
+        type: "p",
+        text: "Solid wood and well-made wardrobes usually can. Flat-pack ones often manage it once, but the holes loosen and the back panel tears. If you plan to rebuild it, number the panels with masking tape, take photos as you go and keep the fixings in labelled bags.",
+      },
+      { type: "h3", text: "Is a landlord's wardrobe mine to remove?" },
+      {
+        type: "p",
+        text: "No, not without their agreement. Built-in wardrobes almost always belong to the property, and freestanding ones may be on the inventory of a furnished flat. Ask in writing before you take anything down, and keep the reply for your move-out.",
+      },
+    ],
+    sources: [
+      { label: "Dubai Municipality: bulky waste disposal service (not available in development and free zones)", url: "https://www.dm.gov.ae/35-increase-in-requests-for-dubai-municipality-bulky-waste-disposal-service/" },
+      { label: "Khaleej Times: free bulk waste removal via WhatsApp", url: "https://www.khaleejtimes.com/uae/dubai-offers-free-bulk-waste-removal-service-via-whatsapp" },
+    ],
+  },
+  {
+    slug: "garage-clearance-dubai",
+    title: "Garage clearance in Dubai villas and townhouses",
+    description:
+      "Garage clearance in Dubai villas and townhouses: why garages fill up, the five piles to sort into, what crews can't take, and how to keep the space clear.",
+    date: "2026-11-24",
+    readMinutes: 6,
+    tag: "How-to",
+    relatedService: "house-villa-clearance",
+    blocks: [
+      {
+        type: "p",
+        text: "A garage clearance in a Dubai villa or townhouse goes fastest when you sort everything into five piles first: keep, give away or sell, recycle, clear and hazardous. Four of those can leave in a normal week. The fifth, which is paint, fuel, gas and chemicals, has to be dealt with separately.",
+      },
+      {
+        type: "p",
+        text: "The same method works for a storeroom, a maid's room that has turned into storage, or the space under the stairs. Here's how to do it in a morning or two, and how to stop it filling up again.",
+      },
+      { type: "h2", text: "Why garages fill up in Dubai" },
+      {
+        type: "p",
+        text: "Garages here collect things for reasons that have little to do with cars. Families arrive with more than the house can hold, children outgrow bikes and play equipment, and outdoor furniture goes indoors for the summer and never comes back out. Boxes from the last move stay sealed because nobody needed what was in them.",
+      },
+      {
+        type: "ul",
+        items: [
+          "In Arabian Ranches, villas with a decade or more of family life often have packed garages",
+          "In Al Furjan, clearing out townhouse garage storage is a regular job",
+          "In JVT, some larger villas have a converted garage or maid's room used as overflow storage",
+          "In Umm Suqeim, faded outdoor lounges and outgrown trampolines end up beside the car",
+        ],
+      },
+      {
+        type: "p",
+        text: "Heat adds to the problem. A closed garage gets very hot in summer, and cardboard, rubber, adhesives and batteries don't age well in it. Things put away to be used again often can't be.",
+      },
+      { type: "h2", text: "Sort into five piles" },
+      {
+        type: "p",
+        text: "Start early, open the door and bring everything out onto the driveway in sections, so you're never looking at the whole garage at once. Mark five areas with tape or chalk.",
+      },
+      {
+        type: "ol",
+        items: [
+          "Keep: used in the past year, or genuinely needed. It has to earn a place on a shelf",
+          "Give away or sell: clean and working, such as bikes, prams, tools and garden furniture",
+          "Recycle: flattened cardboard, metal and old electronics, kept apart from each other",
+          "Clear: broken, worn out or incomplete, with no realistic taker",
+          "Hazardous: paint, fuel, gas, chemicals and batteries, kept in the shade and away from everything else",
+        ],
+      },
+      {
+        type: "p",
+        text: "Open every sealed box before it goes in a pile. Documents, photos and spare keys turn up in boxes labelled \"cables\". If you can't decide about something in a minute, put it in a sixth spot and come back at the end. That spot should be empty by the time you finish.",
+      },
+      {
+        type: "callout",
+        title: "Price the clear pile",
+        body: "Once it's sorted, send one wide photo of the clear pile and a close-up of anything heavy on WhatsApp. We reply with a fixed price, and our crew carries it from the garage.",
+      },
+      { type: "h2", text: "Hazardous leftovers: paint, fuel and gas" },
+      {
+        type: "p",
+        text: "Our crews can't take hazardous waste, including chemicals, paint in bulk, gas cylinders, asbestos, fuel and medical waste. Those materials don't belong in household bins or drains either, and they shouldn't be hidden inside a general load.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Keep liquids in their original containers, with the lids closed and the labels readable",
+          "Never mix products together to save space, and don't pour anything down a drain",
+          "Stand gas cylinders upright, valves closed, outside and out of the sun, and ask the supplier whether they'll take them back",
+          "Keep fuel away from anything that sparks, including chargers and power tools",
+          "Tape the terminals of loose batteries, and keep damaged or swollen ones away from everything else",
+        ],
+      },
+      {
+        type: "p",
+        text: "For disposal, contact Dubai Municipality on 800900 and ask what applies to the items and quantities you have. Arrangements change, so it's better to ask than to rely on an old list.",
+      },
+      { type: "h2", text: "Bikes, toys, tools and boxes" },
+      { type: "h3", text: "Bikes and scooters" },
+      {
+        type: "p",
+        text: "Pump up the tyres before you decide. Tyres go flat in storage, and a bike that looks finished may only need air. Clean, rideable children's bikes are easy to pass on. For electric scooters and bikes, tell whoever collects them about the battery, and never hand one over if the battery is swollen or leaking.",
+      },
+      { type: "h3", text: "Toys and play equipment" },
+      {
+        type: "p",
+        text: "Check for missing parts and for plastic that has gone brittle in the sun. Trampolines and climbing frames need taking apart first, and they take more time than people allow. Keep the bolts in a labelled bag if the frame is going to another family.",
+      },
+      { type: "h3", text: "Tools and equipment" },
+      {
+        type: "p",
+        text: "Test power tools before giving them away. Drain petrol-powered equipment, such as a mower or a pressure washer, and put the fuel with the hazardous pile. Mention anything very heavy, such as a multi-gym or a workbench, when you ask for a price.",
+      },
+      { type: "h3", text: "Boxes and paperwork" },
+      {
+        type: "p",
+        text: "Set aside anything with personal details on it, and shred it rather than adding it to the cardboard. Check the bottoms of old boxes before lifting them, because damp and pests weaken the card.",
+      },
+      { type: "h2", text: "Keeping it clear afterwards" },
+      {
+        type: "ul",
+        items: [
+          "Put shelving along one wall and keep the floor for the car and large items",
+          "Use clear boxes with lids, labelled on the side you can see",
+          "Give each family member one box for things they can't decide about",
+          "Deal with the packaging from new furniture and appliances the same week",
+          "Choose one date a year, such as before the summer, to check every shelf",
+        ],
+      },
+      {
+        type: "p",
+        text: "If you're in a gated community, check its rules before you put anything on the driveway for more than a day. Piles left outside overnight can bring a complaint, and cuttings or boxes can blow into the road.",
+      },
+      { type: "h2", text: "FAQs" },
+      { type: "h3", text: "Can you take old paint tins?" },
+      {
+        type: "p",
+        text: "Not paint in bulk, and paint can't go in a mixed load with everything else. If you've only a tin or two, show them in your photo and tell us what's in them, so we can say before the day whether they have to stay behind.",
+      },
+      { type: "h3", text: "Can you clear a garage while the car is still in it?" },
+      {
+        type: "p",
+        text: "It's better to move the car out first. The crew needs room to turn long items, and nobody wants a wardrobe panel carried past a car door. If the car doesn't run, tell us when you send photos so we can plan the route around it.",
+      },
+    ],
+    sources: [
+      { label: "Dubai Municipality: bulky waste disposal service (800900 contact line)", url: "https://www.dm.gov.ae/35-increase-in-requests-for-dubai-municipality-bulky-waste-disposal-service/" },
     ],
   },
 ];

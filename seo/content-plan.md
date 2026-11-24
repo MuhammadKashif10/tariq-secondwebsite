@@ -75,7 +75,7 @@ Two guides a day. Dates follow the PDF and can be shifted as a block. Each guide
 | 10 | Wed 25 Nov | #20 | Moving-out sale in Dubai: what sells and what doesn't | moving out sale dubai | `/services/move-out-clearance` | Medium | – |
 | 11 | Thu 26 Nov | #21 | Where to sell used furniture in Dubai, and when to skip it | where to sell used furniture in dubai | `/services/move-out-clearance` | Medium | – |
 | 11 | Thu 26 Nov | #22 | Free zone office clearance in Dubai: passes and handover | free zone office clearance dubai | `/services/office-clearance` | Medium | Verify: free zone access-pass process per zone |
-| 12 | Fri 27 Nov | #23 | Wardrobe disposal in Dubai: getting a built-in out of a flat | wardrobe disposal dubai | `/services/furniture-removal` | Medium | – |
+| 12 | Fri 27 Nov | #23 | Wardrobe disposal in Dubai: getting it out of an apartment | wardrobe disposal dubai | `/services/furniture-removal` | Medium | – |
 | 12 | Fri 27 Nov | #24 | Garage clearance in Dubai villas and townhouses | garage clearance dubai | `/services/house-villa-clearance` | Medium | – |
 | 13 | Sat 28 Nov | #25 | Movers vs junk removal in Dubai: which do you need? | movers vs junk removal dubai | `/services/move-out-clearance` | Medium | – |
 | 13 | Sat 28 Nov | #26 | Kitchen removal in Dubai: who strips it out, who takes it | kitchen removal dubai | `/services/construction-debris-removal` | Medium | Owner: whether crews strip kitchens or only take them away |

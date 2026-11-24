@@ -74,6 +74,9 @@ export const photos = {
   // Pexels 6115026 and 33175809, used under the Pexels licence.
   phoneSalePhoto: photo("phone-photographing-sale", "A hand holding a phone to photograph items for sale, with a sale sign in the background"),
   officeTurnstiles: photo("office-turnstiles", "A row of security turnstiles at the entrance of an office building lobby"),
+  // Pexels 7587809 and 18082438 (cropped), used under the Pexels licence.
+  woodenWardrobes: photo("wooden-wardrobes-bedroom", "Bedroom with tall pale wooden wardrobes facing a double bed"),
+  garageClutter: photo("garage-bags-clutter", "A bar stool in front of blue bags, boxes and boards stacked in a garage"),
   renovationRoom: photo("renovation-room-bags", "Room stripped back to brick during a renovation, with bags of material on the floor"),
   // Illustrative pair for the before and after slider, from the redesign prototype.
   clutteredRoom: photo("cluttered-bedroom-before", "A cluttered bedroom with clothes piled on the bed and rails"),
@@ -185,4 +188,6 @@ export const postPhotos: Record<string, Photo> = {
   "moving-out-sale-dubai": photos.saleTag,
   "sell-used-furniture-dubai": photos.phoneSalePhoto,
   "free-zone-office-clearance-dubai": photos.officeTurnstiles,
+  "wardrobe-disposal-dubai": photos.woodenWardrobes,
+  "garage-clearance-dubai": photos.garageClutter,
 };
