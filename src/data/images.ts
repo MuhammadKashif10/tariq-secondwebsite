@@ -190,4 +190,6 @@ export const postPhotos: Record<string, Photo> = {
   "free-zone-office-clearance-dubai": photos.officeTurnstiles,
   "wardrobe-disposal-dubai": photos.woodenWardrobes,
   "garage-clearance-dubai": photos.garageClutter,
+  "movers-vs-junk-removal-dubai": photos.moversInterior,
+  "old-kitchen-removal-dubai": photos.renovation,
 };

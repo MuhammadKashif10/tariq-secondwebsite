@@ -3515,6 +3515,235 @@ export const posts: Post[] = [
       { label: "Dubai Municipality: bulky waste disposal service (800900 contact line)", url: "https://www.dm.gov.ae/35-increase-in-requests-for-dubai-municipality-bulky-waste-disposal-service/" },
     ],
   },
+  {
+    slug: "movers-vs-junk-removal-dubai",
+    title: "Movers vs junk removal in Dubai: which do you need?",
+    description:
+      "Movers vs junk removal in Dubai: what each crew does, how to book both on the same day, and why paying to move items you will bin makes no sense.",
+    date: "2026-11-25",
+    readMinutes: 6,
+    tag: "Moving",
+    relatedService: "move-out-clearance",
+    blocks: [
+      {
+        type: "p",
+        text: "When you're deciding between movers vs junk removal in Dubai, the difference comes down to where the items are going. Movers pack, protect and transport what you're keeping to your new home; a junk removal crew takes away everything you're leaving behind so the old place is empty for handover.",
+      },
+      {
+        type: "p",
+        text: "We're a junk removal crew, not a moving company, so we don't move belongings from one address to another. Many moves need both teams, and knowing where one job stops and the other starts saves you from paying twice.",
+      },
+      {
+        type: "callout",
+        title: "Need the leftover items cleared?",
+        body: "Send a wide photo of what's staying behind on WhatsApp. We'll reply with a fixed price before anything moves, with no call-out fee and payment after the job.",
+      },
+      { type: "h2", text: "What movers do and don't take" },
+      {
+        type: "p",
+        text: "A moving company is set up to protect furniture, pack boxes into a closed truck and rebuild beds and tables at your next address. Their crew works on the assumption that everything they touch needs to arrive undamaged.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Pack, wrap and load furniture, boxes and appliances going to your new flat or villa",
+          "Dismantle beds and dining tables and reassemble them at the other end",
+          "Charge based on the volume they're transporting and the crew hours involved",
+          "Won't usually dispose of broken furniture, loose bags of clutter or renovation offcuts",
+          "Won't clear out a balcony, storeroom or bin-room pile you want thrown away",
+        ],
+      },
+      {
+        type: "p",
+        text: "Even when a moving company agrees to take a few unwanted pieces to the tip, it's rarely their main job and often ends up priced as an extra stop.",
+      },
+      { type: "h2", text: "What a junk removal crew does" },
+      {
+        type: "p",
+        text: "A junk removal crew works in the opposite direction. Nothing needs wrapping for a new living room, and our focus is clearing the space cleanly so you pass the landlord's inspection.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Carries out old sofas, mattresses, broken wardrobes, boxes and mixed household junk from any floor",
+          "Takes apart freestanding flat-pack furniture that won't fit through doorways or lifts",
+          "Sorts usable items for reuse and recycling where possible, and disposes of the rest responsibly",
+          "Sweeps the cleared rooms once the truck is loaded",
+          "Doesn't transport items to your new home, and doesn't disconnect plumbed or gas appliances",
+        ],
+      },
+      {
+        type: "p",
+        text: "Because we don't pack fragile belongings or reassemble anything, the crew can clear a room quickly once you've pointed out what's going.",
+      },
+      { type: "h2", text: "Using both on the same day" },
+      {
+        type: "p",
+        text: "If you're moving out of a tower in Business Bay, JVC or Dubai Creek Harbour, the simplest approach is to clear what you don't want first, or book both crews around the same move-out window.",
+      },
+      { type: "h3", text: "One lift booking, two crews" },
+      {
+        type: "p",
+        text: "Most towers and master communities require a move-out permit and a service lift reservation before bulky items can leave the building. Trying to squeeze two uncoordinated trucks into one loading bay causes delays and can cost you your lift slot.",
+      },
+      {
+        type: "ol",
+        items: [
+          "Walk through the flat three to five days before moving day and mark what's staying behind",
+          "Book the junk removal slot for the morning before the movers, or the afternoon once the movers finish",
+          "If both crews must share the same day, tell building security both vehicle details on your move-out permit",
+          "Keep everything you're keeping in one room or clearly labelled so neither crew loads the wrong piece",
+          "Check the balcony, maid's room and storage cage before the removal crew locks the door",
+        ],
+      },
+      {
+        type: "p",
+        text: "Clearing the unwanted items a day ahead is usually calmer. The movers have space to work, and nothing gets packed onto the moving van by mistake.",
+      },
+      { type: "h2", text: "Paying to move items you won't keep" },
+      {
+        type: "p",
+        text: "It's common to pack half a storeroom or a worn-out guest bed because there wasn't time to sort it before moving day. The problem is that you pay twice: once to have movers wrap, carry and haul it across Dubai, and a second time to get rid of it when it still doesn't fit the new flat.",
+      },
+      {
+        type: "p",
+        text: "Before the movers arrive, walk through the heavy pieces: the sagging sofa, the spare mattress, the flat-pack wardrobe that won't survive another rebuild, and the boxes that stayed sealed since your last move. Leaving them out of the moving quote keeps the move smaller and faster.",
+      },
+      {
+        type: "p",
+        text: "Our pricing page explains how truck space, weight and building access set a removal quote, and why one photo on WhatsApp is enough to agree a fixed price before either crew turns up.",
+      },
+      { type: "h2", text: "FAQs" },
+      { type: "h3", text: "Can junk removal take items to my new home?" },
+      {
+        type: "p",
+        text: "No. We're a junk removal and clearance service, not a moving company. We collect items you no longer want for reuse, recycling or disposal, and we don't transport belongings between addresses.",
+      },
+      { type: "h3", text: "Should junk removal come before or after the movers?" },
+      {
+        type: "p",
+        text: "Before, if you can. Clearing the unwanted furniture first gives the movers room to pack and ensures you aren't paying them to work around things you're throwing away. If that isn't possible, book us for the afternoon once the movers have cleared out.",
+      },
+      { type: "h3", text: "What if movers leave behind boxes or broken furniture?" },
+      {
+        type: "p",
+        text: "Send us a photo on WhatsApp once the movers are done. We're open Saturday to Thursday 7am–10pm and Friday 9am–10pm, and we can often fit in a same-day pickup when slots are available, though same-day isn't guaranteed.",
+      },
+    ],
+  },
+  {
+    slug: "old-kitchen-removal-dubai",
+    title: "Kitchen removal in Dubai: who strips it out, who takes it",
+    description:
+      "Kitchen removal in Dubai: why a contractor must strip cabinets and disconnect plumbing, gas and electrics first, and how a crew clears the debris.",
+    date: "2026-11-25",
+    readMinutes: 6,
+    tag: "How-to",
+    relatedService: "construction-debris-removal",
+    blocks: [
+      {
+        type: "p",
+        text: "Kitchen removal in Dubai is a two-stage job: your renovation contractor strips the old cabinets, worktops and appliances off the walls and disconnects the services, and a junk removal crew collects the dismantled debris afterwards. We don't carry out fit-out stripping or disconnect plumbing, gas or electrics.",
+      },
+      {
+        type: "p",
+        text: "That boundary matters in Dubai villas and apartments, because a kitchen is tied into water, drainage, gas lines and hardwired sockets. Knowing who does what stops your new kitchen fitting from stalling with the old one still sitting in the garage.",
+      },
+      {
+        type: "callout",
+        title: "Got a stripped kitchen waiting to go?",
+        body: "Send a photo of the stacked cabinets, worktops and bagged debris on WhatsApp. We'll agree a fixed price before anything moves, with payment after the job.",
+      },
+      { type: "h2", text: "Strip-out is a contractor job: plumbing, gas and electrics" },
+      {
+        type: "p",
+        text: "Removing a fitted kitchen isn't like moving a freestanding table. Wall units are anchored into blockwork or gypsum, base units sit around water supply valves and floor drains, and hobs or ovens are connected to gas or high-load electrical spurs.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Shutting off and capping water supply lines and sink waste pipes",
+          "Disconnecting gas hobs or ovens safely",
+          "Isolating hardwired cookers, extractor hoods and under-cabinet lighting",
+          "Unbolting wall cabinets, tall pantry units and island frames",
+          "Removing fixed tiles, backsplash and adhesive without damaging hidden pipes",
+        ],
+      },
+      {
+        type: "p",
+        text: "Your kitchen supplier or fit-out contractor should handle all of that as part of the strip-out. Once everything is detached, isolated and stacked, our crew can clear the lot in one visit.",
+      },
+      { type: "h2", text: "After strip-out: cabinets, worktops and sinks" },
+      {
+        type: "p",
+        text: "Once the contractor has finished stripping the room, the debris usually divides into bulky carcass panels, heavy worktop slabs and bagged offcuts. Asking the contractor to stack it cleanly saves time on collection day.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Cabinet doors, drawers and carcass boards, ideally with protruding screws or nails knocked flat",
+          "Laminate, quartz, granite or marble worktop sections",
+          "Old stainless steel or ceramic sinks and taps once disconnected",
+          "Bagged plaster, tile and grout rubble in heavy-duty sacks that won't split when lifted",
+        ],
+      },
+      {
+        type: "p",
+        text: "Tell us in advance if there are long stone or marble worktop slabs, because they're much heavier than wood and need extra hands to carry safely.",
+      },
+      { type: "h2", text: "Appliances from the old kitchen" },
+      {
+        type: "p",
+        text: "A kitchen remodel often means replacing the fridge, dishwasher, washing machine or cooker at the same time. We can take those in the same load, provided they're ready to move.",
+      },
+      {
+        type: "ol",
+        items: [
+          "Have your contractor or technician disconnect plumbed dishwashers, washing machines and gas cookers first",
+          "Switch off, empty and defrost fridges and freezers 24 hours before collection so they don't leak in corridors or lifts",
+          "Keep integrated appliance doors or panels with the unit so nothing is left behind",
+        ],
+      },
+      {
+        type: "p",
+        text: "If an appliance is still working and in clean condition, let us know when you send your photo so we can keep it separate for reuse where possible.",
+      },
+      { type: "h2", text: "Staging debris in garages and parking bays" },
+      {
+        type: "p",
+        text: "In villa areas such as Al Barsha, Mirdif and JVT, contractors often stack the old kitchen in the garage or driveway while the new units are installed. In apartment buildings, space is tighter and building rules are stricter.",
+      },
+      { type: "h3", text: "Building rules and bin rooms" },
+      {
+        type: "p",
+        text: "Old kitchen cabinets, worktops and bagged tiles count as renovation waste under Dubai waste rules and can't be placed in household community bins, building corridors or on open land. Most apartment towers also require a work permit or gate pass and a service lift booking before any renovation debris is brought down.",
+      },
+      {
+        type: "p",
+        text: "Keep stacked panels inside your garage, utility area or designated loading zone until collection, and ask your building management whether a permit is needed for the removal truck.",
+      },
+      { type: "h2", text: "FAQs" },
+      { type: "h3", text: "Can you remove a kitchen from the wall?" },
+      {
+        type: "p",
+        text: "No. Fixed fit-out stripping, including unbolting wall cabinets and disconnecting plumbing, gas or electrics, is a contractor job. Book us once the kitchen has been stripped out and disconnected.",
+      },
+      { type: "h3", text: "Can old kitchen cabinets go in the community bin?" },
+      {
+        type: "p",
+        text: "No. Kitchen cabinets, worktops and tiles are renovation debris and aren't accepted in household bins. Under Dubai's waste management rules, renovation waste must go to an approved disposal site through an authorised collection.",
+      },
+      { type: "h3", text: "Will you take a stone or marble worktop?" },
+      {
+        type: "p",
+        text: "Yes, once it's detached from the base units and sink. Show the worktop in your WhatsApp photo and mention the floor and lift access so we send enough crew to carry it safely.",
+      },
+    ],
+    sources: [
+      { label: "Dubai Legislation Portal: Law No. 18 of 2024 Regulating Waste Management", url: "https://dlp.dubai.gov.ae/Legislation%20Reference/2024/Law%20No.%20%2818%29%20of%202024%20Regulating%20Waste%20Management.html" },
+      { label: "Dubai Legislation Portal: Executive Council Resolution No. 14 of 2015", url: "https://dlp.dubai.gov.ae/Legislation%20Reference/2015/Executive%20Council%20Resolution%20No.%20(14)%20of%202015.html" },
+    ],
+  },
 ];
 
 export const getPost = (slug: string) => posts.find((p) => p.slug === slug);
