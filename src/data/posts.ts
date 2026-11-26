@@ -607,13 +607,14 @@ export const posts: Post[] = [
     description:
       "The photos and details that turn a WhatsApp message into a fixed junk removal quote in Dubai, and how to stop the price changing on the day.",
     date: "2026-11-14",
+    updated: "2026-11-26",
     readMinutes: 5,
     tag: "How-to",
     relatedService: "junk-removal",
     blocks: [
       {
         type: "p",
-        text: "To get an accurate junk removal quote in Dubai, send clear photos of everything that's going, plus four details: the area, the floor, whether there's a service lift, and where a truck can park. With that, a crew can agree a fixed price before anyone arrives, and the price shouldn't change on the day.",
+        text: "To get an accurate junk removal quote in Dubai, send clear photos of everything that's going, plus four details: the area, the floor, whether there's a service lift, and where a truck can park. With that, we can agree a fixed price before anyone arrives, and the price shouldn't change on the day.",
       },
       {
         type: "p",
@@ -709,8 +710,16 @@ export const posts: Post[] = [
         text: "Every one of these can be prevented before the day. Send photos of everything, book the lift, empty what needs emptying, and send a photo of any new item as soon as you add it, so it can be priced before the crew sets out.",
       },
       {
+        type: "h2",
+        text: "Quoting from overseas or through an agent",
+      },
+      {
         type: "p",
-        text: "How the price itself is worked out (volume, weight, access and timing) is explained on our pricing page. This guide is only about giving the crew what it needs to price the job right the first time.",
+        text: "If you're not at the property, ask your agent, tenant or concierge to take the five photos and share the location pin. We agree the fixed price and payment arrangement with you on WhatsApp before the crew goes in, and we send completion photos once the space is cleared.",
+      },
+      {
+        type: "p",
+        text: "How the price itself is worked out is explained on our pricing page, and you can reach us through our contact page or on WhatsApp. This guide is only about giving the crew what it needs to price the job right the first time.",
       },
       { type: "h2", text: "FAQs" },
       { type: "h3", text: "Is a photo quote free?" },
@@ -736,6 +745,7 @@ export const posts: Post[] = [
     description:
       "Where renovation debris can and can't go in Dubai, who is responsible for removing it, what the law and fines say, and how to handle a small DIY job.",
     date: "2026-11-14",
+    updated: "2026-11-26",
     readMinutes: 6,
     tag: "Dubai guide",
     relatedService: "construction-debris-removal",
@@ -852,7 +862,7 @@ export const posts: Post[] = [
       },
       {
         type: "p",
-        text: "When you get a quote for the collection, say what's in the bags. Tiles and rubble weigh far more than they look, and that affects the price and the vehicle.",
+        text: "When you send us a photo on WhatsApp for a quote, say what's in the bags. Tiles and rubble weigh far more than they look, and that affects the vehicle and the crew needed.",
       },
       { type: "h2", text: "FAQs" },
       { type: "h3", text: "What is the fine for dumping debris in Dubai?" },
