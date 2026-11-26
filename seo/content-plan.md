@@ -79,8 +79,8 @@ Two guides a day. Dates follow the PDF and can be shifted as a block. Each guide
 | 12 | Fri 27 Nov | #24 | Garage clearance in Dubai villas and townhouses | garage clearance dubai | `/services/house-villa-clearance` | Medium | – |
 | 13 | Sat 28 Nov | #25 | Movers vs junk removal in Dubai: which do you need? | movers vs junk removal dubai | `/services/move-out-clearance` | Medium | – |
 | 13 | Sat 28 Nov | #26 | Kitchen removal in Dubai: who strips it out, who takes it | kitchen removal dubai | `/services/construction-debris-removal` | Medium | Confirmed: contractor strips first; crew collects after (matches service page) |
-| 14 | Sun 29 Nov | #27 | Laptop recycling in Dubai: how to wipe it first | laptop recycling dubai | `/services/e-waste-removal` | Medium | Verify: data-wiping steps per OS (manufacturer docs) |
-| 14 | Sun 29 Nov | #28 | Recycling centres in Dubai: what each one accepts | recycling centre dubai | `/services/e-waste-removal` | Medium | Verify: Smart Sustainability Oasis locations and accepted materials |
+| 14 | Sun 29 Nov | #27 | Laptop recycling in Dubai: how to wipe it first | laptop recycling dubai | `/services/e-waste-removal` | Medium | Verified: Apple Support & Microsoft Support reset steps |
+| 14 | Sun 29 Nov | #28 | Recycling centres in Dubai: what each one accepts | recycling centre dubai | `/services/e-waste-removal` | Medium | Verified: Smart Sustainability Oasis locations and accepted materials |
 | 15 | Mon 30 Nov | #29 | Dubai move-out security deposit: items left behind | security deposit dubai move out | `/services/move-out-clearance` | Medium | – |
 | 15 | Mon 30 Nov | #30 | Palm fronds in Dubai: how to bundle and dispose of them | palm fronds dubai | `/services/garden-waste-removal` | Medium | – |
 | 16 | Tue 01 Dec | #31 | Bed frame disposal in Dubai: dismantle, prepare, collect | bed frame disposal dubai | `/services/furniture-removal` | Medium | – |

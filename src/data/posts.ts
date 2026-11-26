@@ -3745,6 +3745,261 @@ export const posts: Post[] = [
       { label: "Dubai Legislation Portal: Executive Council Resolution No. 14 of 2015", url: "https://dlp.dubai.gov.ae/Legislation%20Reference/2015/Executive%20Council%20Resolution%20No.%20(14)%20of%202015.html" },
     ],
   },
+  {
+    slug: "wipe-laptop-before-recycling-dubai",
+    title: "Laptop recycling in Dubai: how to wipe it first",
+    description:
+      "Laptop recycling in Dubai starts with wiping your drive. Follow the Mac and Windows reset steps, sign out of accounts, and pick the right disposal route.",
+    date: "2026-11-26",
+    readMinutes: 6,
+    tag: "Recycling",
+    relatedService: "e-waste-removal",
+    blocks: [
+      {
+        type: "p",
+        text: "Before any laptop recycling in Dubai, back up what you want to keep, sign out of cloud and device-lock accounts, and run a full factory reset—or physically remove the drive if the machine won't turn on. Deleting files or emptying the bin leaves data recoverable on the disk.",
+      },
+      {
+        type: "p",
+        text: "We collect old electronics through our [e-waste collection service](/services/e-waste-removal), but we don't wipe drives or issue data destruction certificates. Handling the data yourself first keeps your banking, Emirates ID scans, saved passwords and photos off someone else's workbench.",
+      },
+      {
+        type: "callout",
+        title: "Need old laptops and cables collected?",
+        body: "Once your drives are wiped or removed, send a photo of the devices on WhatsApp. We'll agree a fixed price before anything moves, with payment after the job.",
+      },
+      { type: "h2", text: "Back up and sign out before you reset" },
+      {
+        type: "p",
+        text: "A factory reset can't be undone, and skipping account sign-outs can leave the laptop locked to your Apple Account or Microsoft profile even after the drive is cleared. Spend ten minutes checking these off first:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Copy documents, photos and browser bookmarks to an external drive or cloud storage",
+          "Export or unlink two-factor authenticator apps and password managers",
+          "Sign out of cloud drives, email clients and licensed software you plan to install on a new computer",
+          "Unplug USB receivers, SD cards and external drives left in the ports",
+        ],
+      },
+      { type: "h2", text: "How to wipe a MacBook" },
+      {
+        type: "p",
+        text: "Apple's steps depend on how old the Mac is. Newer models include a built-in tool that wipes your data and signs you out of iCloud in one pass.",
+      },
+      { type: "h3", text: "Macs with Apple silicon or an Apple T2 chip" },
+      {
+        type: "p",
+        text: "On macOS Ventura or later, open the Apple menu, go to System Settings, select General, choose Transfer or Reset, and click Erase All Content and Settings. On macOS Monterey, open System Preferences and choose Erase All Content and Settings from the menu bar.",
+      },
+      {
+        type: "p",
+        text: "Follow the prompts to enter your administrator password and sign out of your Apple Account. That turns off Find My and removes Activation Lock automatically. When the Mac restarts to the welcome screen, hold the power button to shut it down.",
+      },
+      { type: "h3", text: "Older Intel Macs without a T2 chip" },
+      {
+        type: "ol",
+        items: [
+          "Sign out of iCloud, iMessage and iTunes or Apple Music account authorisations manually",
+          "Shut down the Mac, then turn it on while holding Command and R to open macOS Recovery",
+          "Open Disk Utility, select the internal drive (usually Macintosh HD) and erase it",
+          "Quit Disk Utility and reinstall macOS if you plan to donate or sell the laptop",
+        ],
+      },
+      { type: "h2", text: "How to wipe a Windows laptop" },
+      {
+        type: "p",
+        text: "Windows 10 and Windows 11 both include Reset this PC. If your drive is encrypted with BitLocker, make sure your recovery key is backed up to your Microsoft account before you start.",
+      },
+      {
+        type: "ol",
+        items: [
+          "Open Start, go to Settings, then System and Recovery (or Update and Security, then Recovery on older Windows 10 builds)",
+          "Next to Reset this PC, select Get started (or Reset PC)",
+          "Choose Remove everything rather than Keep my files",
+          "Open the additional settings screen and turn on Clean data so Windows overwrites the drive rather than just deleting file pointers",
+          "Confirm the reset and leave the laptop plugged into power until it finishes",
+        ],
+      },
+      {
+        type: "p",
+        text: "Turning on Clean data makes the reset take longer, but it makes deleted files much harder to recover. Microsoft notes that this consumer reset doesn't meet strict government or industry data sanitisation standards, so if the laptop held sensitive business or client records, use a certified data destruction specialist or remove the drive.",
+      },
+      { type: "h2", text: "What if the laptop won't turn on?" },
+      {
+        type: "p",
+        text: "A dead screen, broken charger or swollen battery stops you running a software reset. In that case, the storage drive itself is what holds your data.",
+      },
+      {
+        type: "ul",
+        items: [
+          "On older laptops with an access panel underneath, unscrew the cover and slide out the 2.5-inch HDD, SATA SSD or M.2 NVMe drive",
+          "Put the removed drive in an inexpensive USB enclosure and wipe it from another computer, or keep it locked away",
+          "If the storage is soldered to the motherboard—common on modern ultrabooks and recent MacBooks—and the machine won't boot, take it to a repair shop or data destruction specialist rather than handing it over intact",
+          "Never puncture or bend a swollen lithium battery while opening the case; leave the case closed and tell your collector",
+        ],
+      },
+      { type: "h2", text: "Where wiped laptops go in Dubai" },
+      {
+        type: "p",
+        text: "Once the data is gone, how you dispose of the laptop depends on whether it still works and how many items you have. Our [Dubai e-waste disposal guide](/blog/e-waste-disposal-dubai) covers the broader options for household electronics.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Resell or pass on: a working, wiped laptop that's only a few years old still has value locally, especially with its charger",
+          "Drop-off recycling points: single dead laptops and tangled chargers can go to small e-waste collection points or Dubai Municipality Smart Sustainability Oasis stations",
+          "Private collection: when you're clearing a home office, moving out, or have several old laptops, monitors, printers and cables together, book our crew to collect the lot in one visit",
+        ],
+      },
+      {
+        type: "p",
+        text: "We keep laptops and other electronics separate from general household junk so they can be directed towards recycling rather than mixed waste. You can check how volume and access affect a collection on our [junk removal prices](/pricing) page.",
+      },
+      { type: "h2", text: "FAQs" },
+      { type: "h3", text: "Can you wipe my laptop or remove the hard drive for me?" },
+      {
+        type: "p",
+        text: "No. We collect hardware once your data has been wiped or the drive has been removed, and we don't offer data wiping or destruction certificates.",
+      },
+      { type: "h3", text: "Do I need to include the charger and cables?" },
+      {
+        type: "p",
+        text: "If you still have the power brick and cables, bundle them with the laptop. Working chargers help if the machine can be reused, and damaged cables can be recycled with the rest of your e-waste.",
+      },
+      { type: "h3", text: "What if the laptop battery is swollen?" },
+      {
+        type: "p",
+        text: "Don't try to force the battery out, don't plug it in to wipe it, and don't put it in a household bin. Keep the laptop away from flammable items and mention the swollen battery when you message us on WhatsApp.",
+      },
+    ],
+    sources: [
+      { label: "Apple Support: Erase your Mac and reset it to factory settings", url: "https://support.apple.com/en-us/102664" },
+      { label: "Apple Support: What to do before you sell, give away, trade in, or recycle your Mac", url: "https://support.apple.com/en-us/102773" },
+      { label: "Microsoft Support: Reset your PC in Windows", url: "https://support.microsoft.com/en-us/windows/reset-your-pc-0ef73740-b927-549b-b7c9-e6f2b48d275e" },
+    ],
+  },
+  {
+    slug: "dubai-recycling-centres-guide",
+    title: "Recycling centres in Dubai: what each one accepts",
+    description:
+      "Where to find a recycling centre in Dubai, what Dubai Municipality Smart Sustainability Oasis stations accept, and when to book a pickup instead.",
+    date: "2026-11-26",
+    readMinutes: 6,
+    tag: "Recycling",
+    relatedService: "e-waste-removal",
+    blocks: [
+      {
+        type: "p",
+        text: "If you're looking for a recycling centre in Dubai for sorted household items, Dubai Municipality's Smart Sustainability Oasis stations are the main public drop-off network. They run 24 hours a day and take up to 18 types of clean, sorted recyclables, though they don't accept bulky furniture, large appliances or renovation rubble.",
+      },
+      {
+        type: "p",
+        text: "Knowing what fits in a public drop-off compartment—and what needs a specialist facility or a collection truck—saves you driving across town with a boot full of items that won't fit through the chute.",
+      },
+      {
+        type: "callout",
+        title: "Too bulky for a drop-off station?",
+        body: "If you have large TVs, broken office kit, old furniture or a full room to clear, send a photo on WhatsApp for a fixed-price pickup.",
+      },
+      { type: "h2", text: "Dubai Municipality Smart Sustainability Oasis stations" },
+      {
+        type: "p",
+        text: "Dubai Municipality operates solar-powered Smart Sustainability Oasis hubs across residential neighbourhoods, parks and municipal centres. Each station has separate slots for sorted household streams rather than one mixed bin.",
+      },
+      { type: "h3", text: "What they accept" },
+      {
+        type: "ul",
+        items: [
+          "Paper and flattened cardboard boxes",
+          "Clean plastic bottles and household plastic containers",
+          "Glass bottles and jars, and metal or aluminium cans",
+          "Used clothes, textiles, fabric scraps, leather and rubber",
+          "Small wooden items",
+          "Small electronics (phones, cables, chargers) and household batteries",
+        ],
+      },
+      { type: "h3", text: "Where to find them" },
+      {
+        type: "p",
+        text: "Stations are spread across parks and community hubs including Al Barsha 2 Pond Park, Al Karama Park, Al Manara Centre in Al Safa, Al Twar Centre, Al Satwa Park, Umm Suqaim Park, Mirdif Park, Al Rashidiya Park, Al Nahda 2 Pond Park, Nadd Al Hamar Park, Muhaisnah 1 Park, The Quranic Park in Al Khawaneej and Hatta Centre.",
+      },
+      {
+        type: "p",
+        text: "Because stations can occasionally be full or under maintenance, check Dubai Municipality's channels or Makani location details before making a special trip with a large boot load.",
+      },
+      { type: "h2", text: "Specialist e-waste and community drop-offs" },
+      {
+        type: "p",
+        text: "Public park stations are built for everyday household sorting and small gadgets, not heavy electronics or commercial volumes. For dedicated e-waste streams, Dubai has larger specialist options.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Enviroserve's The Recycling Hub in Dubai Industrial City handles e-waste and specialised equipment at scale; check its current public drop-off or collection terms before visiting",
+          "Retailer and mall collection points sometimes take small electronics, dead cables and household batteries—our [e-waste disposal guide](/blog/e-waste-disposal-dubai) explains how to prepare devices first",
+          "Community recycling bins inside gated estates and apartment towers usually cover paper, plastic and cans only, not electronics or textiles",
+        ],
+      },
+      { type: "h2", text: "What recycling centres in Dubai won't take" },
+      {
+        type: "p",
+        text: "Most wasted trips happen when people assume a recycling hub works like a tip. Public drop-off centres have tight slot sizes and strict rules on what can go in:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Bulky furniture such as sofas, wardrobes, dining tables and mattresses",
+          "Large white goods including fridges, freezers, washing machines and cookers",
+          "Big-screen TVs, heavy printers and server racks that don't fit small e-waste chutes",
+          "Construction and renovation debris such as tiles, rubble, gypsum board and kitchen cabinets",
+          "Garden green waste in bulk, soil, and liquid paint, solvents or gas cylinders",
+        ],
+      },
+      {
+        type: "p",
+        text: "Leaving oversized items beside a recycling kiosk counts as illegal dumping and risks a fine, so bring anything that doesn't fit straight back home.",
+      },
+      { type: "h2", text: "Drop-off vs municipal pickup vs private collection" },
+      {
+        type: "p",
+        text: "Pick the route that matches the size and urgency of what you're clearing:",
+      },
+      {
+        type: "ol",
+        items: [
+          "Use a Smart Sustainability Oasis when you have a couple of bags of sorted paper, plastics, clothes, small cables or batteries and a car to drop them off",
+          "Use Dubai Municipality's free bulky waste service (800900) if you live in an eligible villa, aren't in a hurry, and can place a few bulky items outside",
+          "Book a private crew like our [e-waste collection](/services/e-waste-removal) or general clearance team when you're in a tower, a free zone, need items carried from inside, or have a mixed load of electronics, furniture and boxes",
+        ],
+      },
+      {
+        type: "p",
+        text: "If you're comparing what a pickup costs against driving multiple loads yourself, our [junk removal prices](/pricing) page explains how load size and building access set a fixed quote from one WhatsApp photo.",
+      },
+      { type: "h2", text: "FAQs" },
+      { type: "h3", text: "Are Smart Sustainability Oasis stations open at night?" },
+      {
+        type: "p",
+        text: "Yes. Dubai Municipality's Smart Sustainability Oasis stations are solar-powered and designed for 24-hour public access, though individual park gates or parking areas may have their own access hours.",
+      },
+      { type: "h3", text: "Can I drop off an old microwave or large TV at a park recycling station?" },
+      {
+        type: "p",
+        text: "No, large TVs and bulky appliances won't fit in the small e-waste compartments. Check specialist e-waste facilities or book a collection crew to pick them up from your home.",
+      },
+      { type: "h3", text: "Do I need to sort items before arriving?" },
+      {
+        type: "p",
+        text: "Yes. Each station has separate compartments for different material streams, and items should be clean, dry and flattened where possible—especially cardboard boxes and plastic bottles.",
+      },
+    ],
+    sources: [
+      { label: "Dubai Municipality: Smart Sustainability Oasis and waste services", url: "https://www.dm.gov.ae/" },
+      { label: "Dubai Industrial City: Enviroserve's recycling plant", url: "https://dubaiindustrialcity.ae/media/press-release/enviroserve-launches-world-largest-integrated-e-waste-and-specialised-recycling-plant" },
+      { label: "Dubai Municipality: bulky waste disposal service (800900)", url: "https://www.dm.gov.ae/35-increase-in-requests-for-dubai-municipality-bulky-waste-disposal-service/" },
+    ],
+  },
 ];
 
 export const getPost = (slug: string) => posts.find((p) => p.slug === slug);
