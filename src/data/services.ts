@@ -25,13 +25,13 @@ export const services: Service[] = [
     name: "Junk Removal",
     short: "Mixed loads from homes and businesses. If two people can carry it, it can go.",
     icon: "truck",
-    metaTitle: "Junk Removal Dubai: Fixed Price from a Photo",
+    metaTitle: "Mixed Junk Collection in Dubai: Bags and Bulky Items",
     metaDescription:
-      "General junk removal anywhere in Dubai. Send a WhatsApp photo, get a fixed price, and our crew lifts, loads and sweeps up. Same-day slots when available.",
+      "Mixed household and bulky junk collection in Dubai. Bags, boxes, odd furniture and bulky items taken in one visit. WhatsApp a photo for a fixed price.",
     headline: "Whatever's in the way, gone in one visit.",
     intro: [
-      "Most jobs aren't one neat category. It's a broken chair, three bags of old clothes, a treadmill nobody uses and a pile of boxes from the last move. That mixed load is exactly what this service is for.",
-      "You point, we carry. The crew handles everything from the room to the truck, so you don't need to drag anything to the lobby or the kerb first.",
+      "A mixed load is the usual job: bags, boxes, a broken chair, a treadmill and whatever is left from the last move, all in one room. Mixed household and bulky junk collection is what this service is for.",
+      "You point, we carry. The crew takes everything from the room to the truck, including bulky pieces that will not fit in a car, so nothing has to be dragged to the lobby or the kerb first.",
     ],
     includes: [
       "All lifting and carrying from wherever the items are",
@@ -163,9 +163,9 @@ export const services: Service[] = [
     name: "Mattress Removal",
     short: "Any size, any condition. Wrapped and out without dragging it through the lobby.",
     icon: "mattress",
-    metaTitle: "Mattress Removal Dubai: Old Mattress Disposal",
+    metaTitle: "Mattress Removal Dubai: Collected from Your Bedroom",
     metaDescription:
-      "Old mattress disposal in Dubai. Single to super-king collected from your room, wrapped if needed, and removed the same week or often the same day.",
+      "Mattress removal in Dubai, collected from your bedroom. Single to super-king, wrapped if needed, and the bed frame can go in the same visit.",
     headline: "Don't leave it by the bins. We'll take it from the bedroom.",
     intro: [
       "Mattresses are awkward, floppy and too big for building bin rooms, and leaving one by the bins can cause trouble with your building. They're also the item people least want to handle themselves.",
@@ -551,3 +551,26 @@ export const services: Service[] = [
 ];
 
 export const getService = (slug: string) => services.find((s) => s.slug === slug);
+
+/**
+ * Keyword heading for each service page. The homepage owns "junk removal dubai",
+ * so the general service targets mixed household and bulky collection instead.
+ */
+const serviceHeadings: Record<string, string> = {
+  "junk-removal": "Mixed junk collection in Dubai",
+  "furniture-removal": "Furniture removal in Dubai",
+  "sofa-removal": "Sofa removal in Dubai",
+  "mattress-removal": "Mattress removal in Dubai",
+  "appliance-removal": "Appliance removal in Dubai",
+  "house-villa-clearance": "Villa clearance in Dubai",
+  "move-out-clearance": "Move-out junk removal in Dubai",
+  "office-clearance": "Office clearance in Dubai",
+  "garden-waste-removal": "Garden waste removal in Dubai",
+  "construction-debris-removal": "Renovation debris removal in Dubai",
+  "e-waste-removal": "E-waste collection in Dubai",
+  "same-day-junk-removal": "Same-day junk removal in Dubai",
+};
+
+export function serviceH1(slug: string, name: string) {
+  return serviceHeadings[slug] ?? `${name} in Dubai`;
+}

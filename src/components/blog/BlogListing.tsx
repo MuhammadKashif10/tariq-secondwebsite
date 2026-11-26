@@ -1,6 +1,4 @@
-"use client";
-
-import { useState } from "react";
+import { Fragment } from "react";
 import { PostCard, type PostSummary } from "./PostCard";
 
 type Props = {
@@ -8,38 +6,55 @@ type Props = {
   tags: string[];
 };
 
+function tagId(tag: string) {
+  return `guide-${tag.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")}`;
+}
+
+function cssAttr(value: string) {
+  return value.replace(/\\/g, "\\\\").replace(/"/g, '\\"');
+}
+
+/** Tag filter in CSS, so every guide link is in the first HTML response. */
 export function BlogListing({ posts, tags }: Props) {
-  const [active, setActive] = useState("All");
-  const allGrid = active === "All";
   const featured = posts[0];
-  const filtered = allGrid ? posts : posts.filter((p) => p.tag === active);
-  const gridPosts = allGrid ? filtered.slice(1) : filtered;
+  const rules = [
+    ".blog-filters:has(#guide-all:checked) .guide-grid > li[data-featured]{display:none}",
+    ".blog-filters:not(:has(#guide-all:checked)) .guide-featured{display:none}",
+    ...tags.map((tag) => `.blog-filters:has(#${tagId(tag)}:checked) .guide-grid > li:not([data-tag="${cssAttr(tag)}"]){display:none}`),
+  ].join("");
 
   return (
-    <>
-      <div className="chips" role="group" aria-label="Filter guides by topic">
-        {["All", ...tags].map((tag) => (
-          <button key={tag} type="button" className="chip" aria-pressed={active === tag} onClick={() => setActive(tag)}>
-            {tag}
-          </button>
+    <div className="blog-filters">
+      <style>{rules}</style>
+      <div className="chips" role="radiogroup" aria-label="Filter guides by topic">
+        <input className="sr-only" type="radio" name="guide-tag" id="guide-all" defaultChecked />
+        <label className="chip" htmlFor="guide-all">
+          All
+        </label>
+        {tags.map((tag) => (
+          <Fragment key={tag}>
+            <input className="sr-only" type="radio" name="guide-tag" id={tagId(tag)} />
+            <label className="chip" htmlFor={tagId(tag)}>
+              {tag}
+            </label>
+          </Fragment>
         ))}
       </div>
 
       <div className="mt-9 space-y-6">
-        {allGrid && featured && (
-          <article data-post-tag={featured.tag} data-post-featured="true">
+        {featured && (
+          <article className="guide-featured" data-tag={featured.tag}>
             <PostCard post={featured} featured />
           </article>
         )}
-
-        <ul className="cards3">
-          {gridPosts.map((post) => (
-            <li key={post.slug} data-post-tag={post.tag}>
+        <ul className="cards3 guide-grid">
+          {posts.map((post, index) => (
+            <li key={post.slug} data-tag={post.tag} data-featured={index === 0 ? "true" : undefined}>
               <PostCard post={post} />
             </li>
           ))}
         </ul>
       </div>
-    </>
+    </div>
   );
 }

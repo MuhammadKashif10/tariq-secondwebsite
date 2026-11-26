@@ -9,7 +9,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata({
   title: "Junk Removal Prices in Dubai",
   description:
-    "How junk removal is priced in Dubai: truck space, weight, access and timing. See what's included in your fixed quote and how to lower it.",
+    "Junk removal prices in Dubai for a single item through a full truck. See what a fixed quote includes before you book a crew.",
   path: "/pricing",
 });
 
@@ -29,9 +29,9 @@ export default function PricingPage() {
       <PageHero
         crumbs={[{ name: "Pricing", path: "/pricing" }]}
         eyebrow="Pricing"
-        photo={photos.packingBox}
-        title="One price, agreed before anything moves."
-        lead="Every job is different, so we price from your photo. Here's exactly what goes into that number."
+        photo={{ ...photos.packingBox, alt: "Mover packing items into a box before a priced collection in Dubai" }}
+        title="Junk removal prices in Dubai"
+        lead="One price, agreed before anything moves. Every job is different, so we price from your photo. Here's exactly what goes into that number."
       >
         <WhatsAppButton label="Get my price" />
       </PageHero>

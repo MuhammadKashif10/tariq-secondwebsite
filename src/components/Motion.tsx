@@ -4,18 +4,14 @@ import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 
 /**
- * Page-wide motion from the design: scroll reveals (.rv), the hero line
- * reveal (body.loaded), the scroll progress bar and the word-by-word
- * highlight (.hl). Re-runs on every client-side navigation.
+ * Scroll reveals for content below the fold, the scroll progress bar and the
+ * word-by-word highlight. Hero headlines are visible without this script.
+ * Re-runs on every client-side navigation.
  */
 export function Motion() {
   const pathname = usePathname();
 
   useEffect(() => {
-    const body = document.body;
-    body.classList.remove("loaded");
-    const raf = requestAnimationFrame(() => requestAnimationFrame(() => body.classList.add("loaded")));
-
     const io = new IntersectionObserver(
       (entries) => {
         for (const entry of entries) {
@@ -34,7 +30,6 @@ export function Motion() {
     if (main) mo.observe(main, { childList: true, subtree: true });
 
     return () => {
-      cancelAnimationFrame(raf);
       io.disconnect();
       mo.disconnect();
     };

@@ -30,8 +30,8 @@ export default function BlogPage() {
       <PageHero
         crumbs={[{ name: "Guides", path: "/blog" }]}
         eyebrow="Guides"
-        title="Useful things to know about clearing out in Dubai."
-        lead="Honest advice, including when you don't need to pay anyone at all."
+        title="Dubai junk removal guides"
+        lead="Useful things to know about clearing out in Dubai. Honest advice, including when you don't need to pay anyone at all."
       />
 
       <section className="sec sec-light sheet">

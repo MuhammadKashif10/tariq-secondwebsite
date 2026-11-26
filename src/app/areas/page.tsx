@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { AreaCheck, AreaMap } from "@/components/AreaFinder";
+import { AreaCheck } from "@/components/AreaFinder";
+import { AreaMap } from "@/components/AreaMap";
 import { AreaDirectory, JsonLd, PageHero, SectionHead } from "@/components/Blocks";
 import { CtaBand, WhatsAppButton } from "@/components/Cta";
 import { areas } from "@/data/areas";
@@ -9,9 +10,9 @@ import { itemListSchema } from "@/lib/schema";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Areas We Cover Across Dubai",
+  title: "Junk Removal Areas Across Dubai",
   description:
-    "Junk removal in Dubai Marina, Downtown, JVC, Palm Jumeirah, Deira, Al Quoz and more. Find access tips and local services for your community.",
+    "Junk removal areas across Dubai, from Dubai Marina and Downtown to JVC, Palm Jumeirah, Deira and Al Quoz. Local access tips for each community.",
   path: "/areas",
 });
 
@@ -23,8 +24,8 @@ export default function AreasPage() {
         crumbs={[{ name: "Areas", path: "/areas" }]}
         eyebrow="Areas"
         photo={photos.marina}
-        title="A tower in the Marina and a villa in Mirdif need different plans."
-        lead={`Each of these ${areas.length} areas has its own rules for lifts, gates and parking. Choose yours to see what to expect.`}
+        title="Junk removal areas across Dubai"
+        lead={`A tower in the Marina and a villa in Mirdif need different plans. Each of these ${areas.length} areas has its own rules for lifts, gates and parking.`}
       >
         <WhatsAppButton />
       </PageHero>

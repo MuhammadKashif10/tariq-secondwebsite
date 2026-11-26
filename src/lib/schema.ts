@@ -1,26 +1,51 @@
-import { hasRealPhone, site } from "@/config/site";
+import { hasRealPhone, profileLinks, site } from "@/config/site";
 import { areas } from "@/data/areas";
 import type { Post } from "@/data/posts";
 import { services, type Faq } from "@/data/services";
 import { postWordCount, sortedPosts } from "@/lib/post";
+import { richPlain } from "@/lib/rich-text";
 
 const businessId = `${site.url}/#business`;
 const websiteId = `${site.url}/#website`;
 
+/** "AED" until real tier prices exist, then the range those prices actually span. */
+function priceRange() {
+  const prices = site.priceTiers.map((tier) => tier.fromAed).filter((price): price is number => price !== null);
+  if (prices.length === 0) return "AED";
+  const min = Math.min(...prices);
+  const max = Math.max(...prices);
+  return min === max ? `AED ${min}` : `AED ${min}–${max}`;
+}
+
 /**
  * Only states facts held in the site config. Ratings are left out until real
  * reviews exist, and the phone is left out until a real number is set.
+ * The street line is included only when a real street is set, so the city is
+ * not repeated inside streetAddress.
  */
 export function businessSchema() {
+  const map = site.mapUrl.trim() || site.googleBusinessProfile.trim();
+  const sameAs = profileLinks();
+  const rating = aggregateRating();
   return {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
     "@id": businessId,
     name: site.name,
     url: site.url,
     description: site.description,
-    image: `${site.url}/opengraph-image`,
+    image: new URL(site.image, site.url).href,
     logo: `${site.url}/apple-icon`,
+    priceRange: priceRange(),
+    ...(site.geo
+      ? {
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: site.geo.latitude,
+            longitude: site.geo.longitude,
+          },
+        }
+      : {}),
     ...(hasRealPhone
       ? {
           telephone: site.phone,
@@ -36,8 +61,8 @@ export function businessSchema() {
     address: {
       "@type": "PostalAddress",
       ...(site.streetAddress ? { streetAddress: site.streetAddress } : {}),
-      addressLocality: "Dubai",
-      addressRegion: "Dubai",
+      addressLocality: site.addressLocality,
+      addressRegion: site.addressRegion,
       addressCountry: "AE",
     },
     areaServed: [
@@ -58,7 +83,32 @@ export function businessSchema() {
         itemOffered: { "@type": "Service", name: service.name, url: `${site.url}/services/${service.slug}` },
       })),
     },
-    ...(site.profiles.length ? { sameAs: site.profiles } : {}),
+    ...(map ? { hasMap: map } : {}),
+    ...(sameAs.length ? { sameAs } : {}),
+    ...(site.tradeLicence
+      ? {
+          identifier: {
+            "@type": "PropertyValue",
+            propertyID: "DED Trade Licence",
+            name: "Dubai trade licence",
+            value: site.tradeLicence,
+          },
+        }
+      : {}),
+    ...(rating ? { aggregateRating: rating } : {}),
+  };
+}
+
+/** Average of real reviews only. Omitted entirely while the list is empty. */
+function aggregateRating() {
+  if (site.reviews.length === 0) return undefined;
+  const total = site.reviews.reduce((sum, review) => sum + review.rating, 0);
+  return {
+    "@type": "AggregateRating",
+    ratingValue: Math.round((total / site.reviews.length) * 10) / 10,
+    reviewCount: site.reviews.length,
+    bestRating: 5,
+    worstRating: 1,
   };
 }
 
@@ -108,7 +158,7 @@ export function faqSchema(faqs: Faq[]) {
     mainEntity: faqs.map((faq) => ({
       "@type": "Question",
       name: faq.q,
-      acceptedAnswer: { "@type": "Answer", text: faq.a },
+      acceptedAnswer: { "@type": "Answer", text: richPlain(faq.a) },
     })),
   };
 }

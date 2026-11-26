@@ -7,8 +7,9 @@ import { CheckList, FaqSection, JsonLd, PageHero, SectionHead, ServiceGrid, TipC
 import { CallButton, CtaBand, WhatsAppButton } from "@/components/Cta";
 import { Icon } from "@/components/Icon";
 import { areas } from "@/data/areas";
-import { photos, servicePhotos } from "@/data/images";
-import { getService, services } from "@/data/services";
+import { photos, serviceHeroAlt, servicePhotos } from "@/data/images";
+import { serviceGroups } from "@/data/service-groups";
+import { getService, serviceH1, services } from "@/data/services";
 import { faqSchema, serviceSchema } from "@/lib/schema";
 import { sortedPosts } from "@/lib/post";
 import { pageMetadata } from "@/lib/seo";
@@ -36,8 +37,13 @@ export default async function ServicePage({ params }: Props) {
   const localAreas = areas.filter((area) => area.services.includes(service.slug));
   const guides = sortedPosts().filter((post) => post.relatedService === service.slug);
   const heroPhoto = servicePhotos[service.slug];
+  const group = serviceGroups.find((item) => (item.slugs as readonly string[]).includes(service.slug));
   // A second image for the body, different from the one in the hero.
   const bodyPhoto = heroPhoto === photos.moversRoom ? photos.moversInterior : photos.moversRoom;
+  const bodyAlt =
+    bodyPhoto === photos.moversInterior
+      ? "Mover carrying a sofa past packed boxes during a collection in Dubai"
+      : "Two movers lifting a sofa in an empty room during a Dubai collection";
 
   return (
     <>
@@ -49,10 +55,10 @@ export default async function ServicePage({ params }: Props) {
           { name: "Services", path: "/services" },
           { name: service.name, path },
         ]}
-        eyebrow={`${service.name} in Dubai`}
-        title={service.headline}
-        lead={service.short}
-        photo={heroPhoto}
+        eyebrow={group?.label ?? "Service"}
+        title={serviceH1(service.slug, service.name)}
+        lead={`${service.headline} ${service.short}`}
+        photo={{ ...heroPhoto, alt: serviceHeroAlt[service.slug] ?? heroPhoto.alt }}
       >
         <WhatsAppButton label="Get a price on WhatsApp" />
         <CallButton dark />
@@ -66,6 +72,13 @@ export default async function ServicePage({ params }: Props) {
               {service.intro.map((paragraph) => (
                 <p key={paragraph}>{paragraph}</p>
               ))}
+              <p>
+                What changes the price is covered on our{" "}
+                <Link href="/pricing" className="link">
+                  junk removal prices
+                </Link>{" "}
+                page. Send a photo for a fixed figure on this job.
+              </p>
             </div>
             <h2 className="h-md mt-14">What we commonly take</h2>
             <ul className="item-chips mt-6">
@@ -93,7 +106,7 @@ export default async function ServicePage({ params }: Props) {
           </div>
           <aside className="glass-ink rv self-start lg:sticky lg:top-28" style={{ "--d": ".1s" } as React.CSSProperties}>
             <div className="relative -mx-2 -mt-2 mb-6 aspect-[16/10] overflow-hidden rounded-[24px]">
-              <Image src={bodyPhoto.src} alt={bodyPhoto.alt} fill sizes="(min-width: 1100px) 400px, 100vw" className="object-cover" />
+              <Image src={bodyPhoto.src} alt={bodyAlt} fill sizes="(min-width: 1100px) 400px, 100vw" className="object-cover" />
             </div>
             <p className="eyebrow">Included in your price</p>
             <CheckList items={service.includes} dark />

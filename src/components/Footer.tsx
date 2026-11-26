@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { site } from "@/config/site";
+import { placeLine, profileLinks, site } from "@/config/site";
 import { areas } from "@/data/areas";
 import { photos } from "@/data/images";
 import { services } from "@/data/services";
@@ -136,12 +136,17 @@ export function Footer() {
                 <Icon name="clock" className="size-4 shrink-0 text-amb" />
                 {site.hoursLabel}
               </li>
-              {site.streetAddress && (
-                <li className="flex items-center gap-2.5 text-soft">
-                  <Icon name="pin" className="size-4 shrink-0 text-amb" />
-                  {site.streetAddress}
+              <li className="flex items-center gap-2.5 text-soft">
+                <Icon name="pin" className="size-4 shrink-0 text-amb" />
+                {placeLine()}
+              </li>
+              {profileLinks().map((url) => (
+                <li key={url}>
+                  <a href={url} className="text-soft hover:text-amb" rel="noopener noreferrer">
+                    {profileHost(url)}
+                  </a>
                 </li>
-              )}
+              ))}
             </ul>
           </div>
           <FooterList title="Services">
@@ -186,6 +191,14 @@ export function Footer() {
       </div>
     </footer>
   );
+}
+
+function profileHost(url: string) {
+  try {
+    return new URL(url).hostname.replace(/^www\./, "");
+  } catch {
+    return url;
+  }
 }
 
 function FooterList({ title, children }: { title: string; children: React.ReactNode }) {

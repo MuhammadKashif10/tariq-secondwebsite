@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { CheckList, FaqSection, JsonLd, PageHero, SectionHead, ServiceGrid, TipCards } from "@/components/Blocks";
 import { CallButton, CtaBand, WhatsAppButton } from "@/components/Cta";
 import { Icon } from "@/components/Icon";
-import { LoadBuilder } from "@/components/LoadBuilder";
+import { DeferredLoadBuilder } from "@/components/DeferredLoadBuilder";
 import { areas, getArea, zones } from "@/data/areas";
 import { faqGroups } from "@/data/faqs";
 import { areaPhotos, zonePhotos } from "@/data/images";
@@ -45,7 +45,7 @@ export default async function AreaPage({ params }: Props) {
   return (
     <>
       <JsonLd data={serviceSchema(title, area.intro, path, `${area.name}, Dubai`)} />
-      <JsonLd data={faqSchema(faqs)} />
+      <JsonLd data={faqSchema(area.faqs)} />
 
       <PageHero
         crumbs={[
@@ -90,7 +90,7 @@ export default async function AreaPage({ params }: Props) {
       <section className="sec sec-dark2 sheet">
         <div className="wrap">
           <SectionHead eyebrow="Instant load check" title="Build your load." dark />
-          <LoadBuilder />
+          <DeferredLoadBuilder />
         </div>
       </section>
 

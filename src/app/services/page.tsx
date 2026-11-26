@@ -21,7 +21,8 @@ export default function ServicesPage() {
       <PageHero
         crumbs={[{ name: "Services", path: "/services" }]}
         eyebrow="Services"
-        title="Everything we'll carry out, load up and take away."
+        title="List of junk removal services in Dubai"
+        lead="Everything we'll carry out, load up and take away. Furniture, appliances, clearances, garden waste and mixed loads."
         aside={
           <div className="glass">
             <p className="eyebrow text-amb">Not sure which one?</p>

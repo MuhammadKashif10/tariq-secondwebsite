@@ -509,22 +509,13 @@ p {
   }
   .ln {
     display: block;
-    overflow: hidden;
+    overflow: visible;
     padding-bottom: 0.08em;
   }
+  /* Painted on first load. A translate that waits for JS hides the H1 from LCP. */
   .ln > span {
     display: block;
-    transform: translateY(110%);
-    transition: transform 1s var(--ease);
-  }
-  .loaded .ln > span {
     transform: none;
-  }
-  .loaded .ln:nth-child(2) > span {
-    transition-delay: 0.12s;
-  }
-  .loaded .ln:nth-child(3) > span {
-    transition-delay: 0.24s;
   }
   .pill-stats {
     display: flex;
@@ -1704,11 +1695,11 @@ p {
       box-shadow 0.3s,
       border-color 0.3s;
   }
-  .ai.open {
+  .ai[open] {
     box-shadow: 0 30px 50px -34px rgb(11 22 38 / 0.5);
     border-color: var(--ink);
   }
-  .ai button {
+  .ai summary {
     width: 100%;
     display: flex;
     align-items: center;
@@ -1725,6 +1716,18 @@ p {
     letter-spacing: -0.02em;
     color: var(--ink);
     cursor: pointer;
+    list-style: none;
+  }
+  .ai summary::-webkit-details-marker {
+    display: none;
+  }
+  .ai summary::marker {
+    content: "";
+  }
+  .ai summary h3 {
+    margin: 0;
+    font: inherit;
+    letter-spacing: inherit;
   }
   .ai .pm {
     width: 40px;
@@ -1739,20 +1742,12 @@ p {
       transform 0.35s,
       background 0.3s;
   }
-  .ai.open .pm {
+  .ai[open] .pm {
     transform: rotate(45deg);
     background: var(--amb);
   }
   .ai .bd {
-    display: grid;
-    grid-template-rows: 0fr;
-    transition: grid-template-rows 0.4s ease;
-  }
-  .ai.open .bd {
-    grid-template-rows: 1fr;
-  }
-  .ai .bd > div {
-    overflow: hidden;
+    display: block;
   }
   .ai .bd p {
     margin: 0;
@@ -2498,9 +2493,105 @@ p {
       transform 0.9s var(--ease);
     transition-delay: var(--d, 0s);
   }
+  /* Heroes are the LCP element. Keep them painted; motion stays below the fold. */
+  .js .phero .rv,
+  .js .hero .rv {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
   .js .rv.in {
     opacity: 1;
     transform: none;
+  }
+
+  .step-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin: 56px 0 0;
+    padding: 0;
+    list-style: none;
+  }
+  .step-card {
+    border-radius: 32px;
+    padding: 28px;
+    border: 1px solid var(--lineD);
+    background: rgb(255 255 255 / 0.05);
+    color: #fff;
+  }
+  .step-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  .step-card .no {
+    font-family: var(--fd);
+    font-weight: 600;
+    color: var(--amb);
+  }
+  .step-card h3 {
+    margin: 18px 0 8px;
+    font-size: 28px;
+  }
+  .step-card p {
+    margin: 0;
+    color: var(--mutD);
+  }
+  .step-card .ic {
+    width: 48px;
+    height: 48px;
+    border-radius: 16px;
+    background: var(--amb);
+    color: var(--ink);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: none;
+  }
+  .rail-static {
+    cursor: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--amb) transparent;
+  }
+  .rail-static::-webkit-scrollbar {
+    display: block;
+    height: 8px;
+  }
+  .rail-static::-webkit-scrollbar-thumb {
+    background: var(--amb);
+    border-radius: 99px;
+  }
+  .svc-filters,
+  .blog-filters {
+    position: relative;
+  }
+  .svc-filters input:checked + label.chip,
+  .blog-filters input:checked + label.chip {
+    background: var(--ink);
+    color: #fff;
+    border-color: var(--ink);
+  }
+  .svc-filters input:focus-visible + label.chip,
+  .blog-filters input:focus-visible + label.chip {
+    outline: 3px solid var(--amb);
+    outline-offset: 3px;
+  }
+  .pin:hover em,
+  .pin:focus-within em {
+    opacity: 1;
+    transform: none;
+  }
+  .pin:hover a,
+  .pin:focus-within a {
+    background: var(--coral);
+    transform: scale(1.25);
+  }
+  @media (max-width: 800px) {
+    .step-grid {
+      grid-template-columns: 1fr;
+    }
   }
 }
 
@@ -2804,7 +2895,7 @@ p {
     width: 100px;
     height: 100px;
   }
-  .ai button {
+  .ai summary {
     font-size: 18px;
     padding: 20px 22px;
   }

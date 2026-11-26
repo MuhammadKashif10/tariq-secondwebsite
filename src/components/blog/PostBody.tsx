@@ -1,5 +1,6 @@
 import type { Block } from "@/data/posts";
 import { assignHeadingIds } from "@/lib/post";
+import { RichText } from "@/lib/rich-text";
 
 export function PostBody({ blocks }: { blocks: Block[] }) {
   const headingIds = assignHeadingIds(blocks);
@@ -21,7 +22,9 @@ export function PostBody({ blocks }: { blocks: Block[] }) {
           return (
             <ul key={index}>
               {block.items.map((item) => (
-                <li key={item}>{item}</li>
+                <li key={item}>
+                  <RichText text={item} />
+                </li>
               ))}
             </ul>
           );
@@ -30,7 +33,9 @@ export function PostBody({ blocks }: { blocks: Block[] }) {
           return (
             <ol key={index}>
               {block.items.map((item) => (
-                <li key={item}>{item}</li>
+                <li key={item}>
+                  <RichText text={item} />
+                </li>
               ))}
             </ol>
           );
@@ -39,19 +44,27 @@ export function PostBody({ blocks }: { blocks: Block[] }) {
           return (
             <aside key={index} className="callout">
               {block.title && <b>{block.title}</b>}
-              <p>{block.body}</p>
+              <p>
+                <RichText text={block.body} />
+              </p>
             </aside>
           );
         }
         if (block.type === "quote") {
           return (
             <blockquote key={index}>
-              <p className="m-0">{block.text}</p>
+              <p className="m-0">
+                <RichText text={block.text} />
+              </p>
               {block.cite && <footer>— {block.cite}</footer>}
             </blockquote>
           );
         }
-        return <p key={index}>{block.text}</p>;
+        return (
+          <p key={index}>
+            <RichText text={block.text} />
+          </p>
+        );
       })}
     </div>
   );

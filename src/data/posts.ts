@@ -77,27 +77,18 @@ export const posts: Post[] = [
   },
   {
     slug: "how-junk-removal-is-priced-in-dubai",
-    title: "How junk removal is priced in Dubai, and how to pay less",
+    title: "How to lower your junk removal quote in Dubai",
     description:
-      "What really moves the price of a junk removal job in Dubai: volume, weight, access and timing. Plus five simple ways to bring your quote down.",
+      "Five ways to bring a junk removal quote down in Dubai: one trip, bagged items, and booking the service lift before the crew arrives.",
     date: PUBLISHED,
-    readMinutes: 3,
+    updated: "2026-11-26",
+    readMinutes: 2,
     tag: "Pricing",
     relatedService: "junk-removal",
     blocks: [
       {
         type: "p",
-        text: "Junk removal isn't priced by the hour in most cases. A quote is really an estimate of how much of a truck and how much of a crew's day your job will use.",
-      },
-      { type: "h2", text: "The four things that set the price" },
-      {
-        type: "ul",
-        items: [
-          "Volume: how much truck space your items fill",
-          "Weight: a pile of soil or tiles takes up less space than a sofa, but costs more to move",
-          "Access: floor, lift, carrying distance and parking",
-          "Timing: same-day, evening and peak-season slots can cost more",
-        ],
+        text: "What sets a junk removal price in Dubai is explained on our [junk removal prices](/pricing) page. This guide is only about the part you can change before you accept a quote.",
       },
       { type: "h2", text: "Five ways to lower your quote" },
       {
@@ -110,10 +101,10 @@ export const posts: Post[] = [
           "Be flexible on the day, as we can sometimes fit you in alongside a nearby job",
         ],
       },
-      { type: "h2", text: "Watch out for these quotes" },
+      { type: "h2", text: "Watch out for a price that looks too low" },
       {
         type: "p",
-        text: "Be careful with a very low price given without seeing any photos. It often grows on the day with added fees for stairs, labour or fuel. Ask whether the quote covers carrying, loading, transport and disposal, because that's the full job.",
+        text: "Be careful with a very low price given without seeing any photos. It often grows on the day with added fees for stairs, labour or fuel. Ask whether the quote covers carrying, loading, transport and disposal, because that's the full job. The [pricing page](/pricing) lists what a fixed quote on this site includes.",
       },
       {
         type: "p",

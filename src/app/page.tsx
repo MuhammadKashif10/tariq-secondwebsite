@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { AreaCheck, AreaMap } from "@/components/AreaFinder";
+import { AreaCheck } from "@/components/AreaFinder";
+import { AreaMap } from "@/components/AreaMap";
 import { BeforeAfter } from "@/components/BeforeAfter";
-import { ArrowIcon, CheckList, FaqSection, JsonLd, PriceTiers, Reviews, SectionHead } from "@/components/Blocks";
+import { ArrowIcon, CheckList, FaqSection, PriceTiers, Reviews, SectionHead } from "@/components/Blocks";
 import { CallButton, CtaBand, WhatsAppButton } from "@/components/Cta";
 import { HeroScene } from "@/components/HeroScene";
 import { Icon, WhatsAppIcon } from "@/components/Icon";
-import { LoadBuilder } from "@/components/LoadBuilder";
+import { DeferredLoadBuilder } from "@/components/DeferredLoadBuilder";
 import { ServiceRail } from "@/components/ServiceRail";
 import { Steps, type Step } from "@/components/Steps";
 import { site } from "@/config/site";
@@ -17,7 +18,6 @@ import { photos } from "@/data/images";
 import { areaLinks, mapPins } from "@/data/map-pins";
 import { services } from "@/data/services";
 import { defaultMessage, telUrl, whatsappUrl } from "@/lib/contact";
-import { faqSchema } from "@/lib/schema";
 import { pageMetadata } from "@/lib/seo";
 import { toCards } from "@/lib/service-card";
 
@@ -62,8 +62,6 @@ export default function HomePage() {
 
   return (
     <>
-      <JsonLd data={faqSchema(homeFaqs)} />
-
       <HeroScene
         faces={[photos.junkBags, photos.moversRoom, photos.villaPool, photos.office, photos.labelledBox, photos.marina]}
         chips={[
@@ -79,10 +77,10 @@ export default function HomePage() {
           </span>
           <h1 className="h-xl">
             <span className="ln">
-              <span>Dubai junk removal,</span>
+              <span>Dubai junk removal, </span>
             </span>
             <span className="ln">
-              <span>priced from</span>
+              <span>priced from </span>
             </span>
             <span className="ln">
               <span className="grad">one photo.</span>
@@ -117,9 +115,9 @@ export default function HomePage() {
             ))}
           </p>
           <div className="mosaic">
-            <Tile className="m1" photo={photos.villaPool} n={String(services.length)} label="Services, from one sofa to a whole villa" />
-            <Tile className="m2" photo={photos.office} n={String(areas.length)} label="Dubai areas with local tips" />
-            <Tile className="m3" photo={photos.labelledBox} n="7" label="Days a week" />
+            <Tile className="m1" photo={{ ...photos.villaPool, alt: "Modern villa with a pool, typical of the Dubai homes we clear" }} n={String(services.length)} label="Services, from one sofa to a whole villa" />
+            <Tile className="m2" photo={{ ...photos.office, alt: "Open-plan office of the kind cleared for businesses in Dubai" }} n={String(areas.length)} label="Dubai areas with local tips" />
+            <Tile className="m3" photo={{ ...photos.labelledBox, alt: "Moving box labelled for the kitchen during a Dubai move-out" }} n="7" label="Days a week" />
             <Tile className="m4" photo={photos.marina} n="1" label="Photo for a fixed price" />
           </div>
           <div className="about-foot rv">
@@ -166,7 +164,7 @@ export default function HomePage() {
           <SectionHead eyebrow="Instant load check" title="Build your load." dark>
             <p className="lead mutD max-w-[24em]">Tap what's going and we turn it into a ready WhatsApp message. Add your photo and send.</p>
           </SectionHead>
-          <LoadBuilder />
+          <DeferredLoadBuilder />
         </div>
       </section>
 
@@ -247,7 +245,10 @@ export default function HomePage() {
           <SectionHead eyebrow="Space back" title="A swept, empty space when we leave." dark>
             <WhatsAppButton label="Get my price" />
           </SectionHead>
-          <BeforeAfter before={photos.clutteredRoom} after={photos.emptyRoom} />
+          <BeforeAfter
+            before={{ ...photos.clutteredRoom, alt: "Illustrative photo of a cluttered bedroom before junk is collected in Dubai" }}
+            after={{ ...photos.emptyRoom, alt: "Illustrative photo of a bright empty room after a clearance in Dubai" }}
+          />
           <p className="mutD mt-[18px] text-center text-sm">Drag the handle. Illustrative photos.</p>
         </div>
       </section>
@@ -271,11 +272,11 @@ export default function HomePage() {
           </div>
           <div className="pho rv" style={delay(0.12)}>
             <figure>
-              <Image src={photos.moversStreet.src} alt={photos.moversStreet.alt} fill sizes="(min-width: 1100px) 290px, 50vw" className="object-cover" />
+              <Image src={photos.moversStreet.src} alt="Two movers carrying a sofa out of a home for collection in Dubai" fill sizes="(min-width: 1100px) 290px, 50vw" className="object-cover" />
               <figcaption>Carried out</figcaption>
             </figure>
             <figure>
-              <Image src={photos.moversDoorway.src} alt={photos.moversDoorway.alt} fill sizes="(min-width: 1100px) 290px, 50vw" className="object-cover" />
+              <Image src={photos.moversDoorway.src} alt="Movers carrying a sofa through a doorway during a Dubai pickup" fill sizes="(min-width: 1100px) 290px, 50vw" className="object-cover" />
               <figcaption>Any floor</figcaption>
             </figure>
           </div>

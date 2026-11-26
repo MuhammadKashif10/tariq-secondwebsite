@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Breadcrumbs } from "@/components/Blocks";
 import { ContactForm } from "@/components/ContactForm";
 import { Icon, WhatsAppIcon } from "@/components/Icon";
-import { site } from "@/config/site";
+import { placeLine, site } from "@/config/site";
 import { areas } from "@/data/areas";
 import { photos } from "@/data/images";
 import { services } from "@/data/services";
@@ -11,8 +11,9 @@ import { defaultMessage, telUrl, whatsappUrl } from "@/lib/contact";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Contact Us for a Quote",
-  description: "Get a junk removal quote in Dubai. WhatsApp a photo, call us, or fill in the short form, and you'll get a fixed price.",
+  title: "Contact Us for a Junk Removal Quote in Dubai",
+  description:
+    "Contact us for a junk removal quote in Dubai. WhatsApp a photo, call, or send the form and get a fixed price for homes and businesses across the city.",
   path: "/contact",
 });
 
@@ -24,9 +25,9 @@ export default function ContactPage() {
           <Breadcrumbs crumbs={[{ name: "Contact", path: "/contact" }]} />
           <p className="eyebrow">Contact</p>
           <h1 className="h-xl">
-            Tell us what's <span className="grad">going.</span>
+            Contact us for a junk removal quote in <span className="grad">Dubai.</span>
           </h1>
-          <p className="lead text-soft">WhatsApp is the fastest way, because a photo gets you a price. Calling works too.</p>
+          <p className="lead text-soft">Tell us what's going. WhatsApp is the fastest way, because a photo gets you a price. Calling works too.</p>
         </div>
       </section>
 
@@ -60,11 +61,11 @@ export default function ContactPage() {
                 {site.hoursLabel}
               </Info>
               <Info icon="pin" title="Based in">
-                {site.streetAddress || "Serving all of Dubai"}
+                {placeLine()}
               </Info>
             </ul>
             <div className="relative h-[260px] overflow-hidden rounded-[40px]">
-              <Image src={photos.deiraCreek.src} alt={photos.deiraCreek.alt} fill sizes="(min-width: 1100px) 400px, 100vw" className="object-cover" />
+              <Image src={photos.deiraCreek.src} alt="Deira waterfront and towers across Dubai Creek, one of the neighbourhoods we cover" fill sizes="(min-width: 1100px) 400px, 100vw" className="object-cover" />
             </div>
           </div>
         </div>

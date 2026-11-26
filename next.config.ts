@@ -45,6 +45,12 @@ const nextConfig: NextConfig = {
         destination: "https://dubaijunkremovalservices.com/:path*",
         permanent: true,
       },
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "tariq-secondwebsite.vercel.app" }],
+        destination: "https://dubaijunkremovalservices.com/:path*",
+        permanent: true,
+      },
       ...(redirectImagesToCdn
         ? [{ source: "/images/:path*", destination: `${imageCdn}/images/:path*`, statusCode: 301 as const }]
         : []),

@@ -6,7 +6,7 @@ export const faqGroups: { title: string; faqs: Faq[] }[] = [
     faqs: [
       {
         q: "How much does junk removal cost in Dubai?",
-        a: "It depends on how much truck space your items take up, how heavy they are, and how easy they are to reach. Send a photo on WhatsApp and you'll get a fixed price for your job, rather than a vague range.",
+        a: "It depends on how much truck space your items take up, how heavy they are, and how easy they are to reach. Those factors are explained on our [junk removal prices](/pricing) page. Send a photo on WhatsApp and you'll get a fixed price for your job, rather than a vague range.",
       },
       {
         q: "Is the price really fixed?",
