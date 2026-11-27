@@ -210,4 +210,6 @@ export const postPhotos: Record<string, Photo> = {
   "old-kitchen-removal-dubai": photos.renovation,
   "wipe-laptop-before-recycling-dubai": photos.oldComputers,
   "dubai-recycling-centres-guide": photos.recycling,
+  "security-deposit-dubai-move-out-items": photos.emptyRoom,
+  "palm-frond-disposal-dubai": photos.villaModern,
 };

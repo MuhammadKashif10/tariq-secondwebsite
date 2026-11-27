@@ -4000,6 +4000,310 @@ export const posts: Post[] = [
       { label: "Dubai Municipality: bulky waste disposal service (800900)", url: "https://www.dm.gov.ae/35-increase-in-requests-for-dubai-municipality-bulky-waste-disposal-service/" },
     ],
   },
+  {
+    slug: "security-deposit-dubai-move-out-items",
+    title: "Dubai move-out security deposit: items left behind",
+    description:
+      "Why items left behind cost tenants part of their security deposit when they move out in Dubai, and how to clear, check and photograph the flat first.",
+    date: "2026-11-27",
+    readMinutes: 6,
+    tag: "Moving",
+    relatedService: "move-out-clearance",
+    blocks: [
+      {
+        type: "p",
+        text: "Your security deposit should come back in full when you move out in Dubai, less any genuine damage or unpaid dues. Anything you leave behind gives the landlord a reason to deduct the cost of removing it, so the simplest protection is an empty flat, checked against the inventory and photographed on handover day.",
+      },
+      {
+        type: "p",
+        text: "This guide covers the leftovers that cause deductions, how to tell your things from the landlord's, the spaces tenants forget, and what to do if you disagree with a deduction. It's general information, not legal advice.",
+      },
+      {
+        type: "callout",
+        title: "Leftovers you don't want to move?",
+        body: "Send one photo of what's staying behind on WhatsApp. We reply with a fixed price and clear it within your building's lift slot, before the inspection.",
+      },
+      { type: "h2", text: "Why left-behind items lead to deductions" },
+      {
+        type: "p",
+        text: "Dubai's tenancy law lets a landlord take a security deposit to cover maintenance of the property, and requires the landlord to refund it, or whatever remains of it, when the lease ends. That's Article 20 of Law No. 26 of 2007. Article 21 asks the tenant to hand the property back in the condition it was received, apart from ordinary wear and tear.",
+      },
+      {
+        type: "p",
+        text: "A flat with someone else's furniture still in it isn't in the condition it was let in. Clearing it costs the landlord or the agent time and money, and that cost is easy to take from a deposit they already hold.",
+      },
+      { type: "p", text: "The items that cause most trouble are rarely the big ones:" },
+      {
+        type: "ul",
+        items: [
+          "A mattress or bed frame left \"for the next tenant\"",
+          "Bags of rubbish and packing waste in the kitchen or the bin room",
+          "A fridge, washing machine or TV you bought yourself and didn't want to move",
+          "Shelving, curtain rails or wall hooks you put up during the tenancy",
+          "Plants, pots and furniture on the balcony",
+        ],
+      },
+      {
+        type: "p",
+        text: "Leaving something because the next person might want it rarely works out. Unless the landlord agrees in writing, treat everything you brought in as yours to remove.",
+      },
+      { type: "h2", text: "Check the inventory: what's yours vs the landlord's" },
+      {
+        type: "p",
+        text: "In a furnished flat, the inventory you signed at move-in decides what stays. Get it out before you start clearing, not on the last day.",
+      },
+      {
+        type: "ol",
+        items: [
+          "Walk each room with the inventory and tick off every listed item",
+          "Mark anything you added during the tenancy, such as a second wardrobe, a desk or an extra fridge",
+          "Put back any landlord items you moved, for example into a storage cage, where the inventory lists them",
+          "Note anything listed that's broken or missing, and decide whether to repair or replace it before handover",
+        ],
+      },
+      {
+        type: "p",
+        text: "Fridges, washing machines, wardrobes and bed frames are the items most often mixed up. If you replaced a landlord's broken appliance with your own, keep the message or receipt that shows which is which.",
+      },
+      {
+        type: "p",
+        text: "In an unfurnished flat the rule is simpler. The property should be empty apart from the fittings that were there when you arrived. Built-in wardrobes and kitchen units stay, and freestanding furniture goes.",
+      },
+      {
+        type: "callout",
+        title: "Don't throw away the landlord's items",
+        body: "If a listed item is worn out, ask the landlord or agent in writing before getting rid of it. Removing something on the inventory without agreement can cost more than leaving it.",
+      },
+      {
+        type: "p",
+        text: "For the wider plan, from selling furniture to booking the lift, see our [move-out checklist](/blog/dubai-move-out-junk-checklist).",
+      },
+      { type: "h2", text: "Clearing storage cages, balconies and parking bays" },
+      {
+        type: "p",
+        text: "A move-out inspection doesn't stop at the front door. Agents check the spaces tenants use least, and that's where items get left.",
+      },
+      { type: "h3", text: "Storage cages and storerooms" },
+      {
+        type: "p",
+        text: "Some towers, including many in [Dubai Marina](/areas/dubai-marina) and JLT, come with a basement storage cage or storeroom. Old suitcases, paint tins and broken chairs collect there for years. Ask building management where yours is and whether reception holds the key.",
+      },
+      { type: "h3", text: "Balconies" },
+      {
+        type: "p",
+        text: "Clear plants, pots, drying racks and outdoor furniture, then sweep the floor. Some buildings restrict what can be kept on balconies, so a cluttered one can also draw a note from building management.",
+      },
+      { type: "h3", text: "Parking bays" },
+      {
+        type: "p",
+        text: "Bicycles, tyres and boxes left in an allocated bay are easy to forget once the car has gone. Check the bay on your last day.",
+      },
+      {
+        type: "p",
+        text: "Our [move-out clearance](/services/move-out-clearance) crew clears balconies, storage cages and parking spaces in the same visit as the flat. If your building needs a move-out permit before anything bulky leaves, sort that first. Our [move-out permit guide](/blog/move-out-permit-dubai) explains how the NOC and gate pass work.",
+      },
+      { type: "h2", text: "Photo evidence at handover" },
+      {
+        type: "p",
+        text: "Photos are your record that the flat was empty and clean when you returned the keys. Take them after the last item has gone and before you hand over.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Take a wide shot of every room from the doorway, then each corner",
+          "Open the wardrobes, kitchen cupboards and fridge, and photograph inside",
+          "Photograph the balcony, storage cage and parking bay",
+          "Capture the meter readings and any marks you reported at move-in",
+          "Keep the files with their original date and time, and don't edit them",
+        ],
+      },
+      {
+        type: "p",
+        text: "Compare them with any photos or condition report from the start of the tenancy. Wear from normal use isn't damage under Article 21, and before-and-after photos are the clearest way to show the difference.",
+      },
+      {
+        type: "p",
+        text: "If a clearance crew empties the flat, ask for completion photos. We send them once a clearance is finished, which helps when you've already left and someone else is handing over the keys.",
+      },
+      {
+        type: "p",
+        text: "Finally, get the handover in writing: a signed inspection report, an email from the agent, or a message confirming they received the keys and access cards.",
+      },
+      { type: "h2", text: "If there is a dispute" },
+      {
+        type: "p",
+        text: "If the landlord deducts for items or damage you disagree with, start in writing. Ask for an itemised list of deductions and the evidence behind each one, then reply with your photos and the signed inventory.",
+      },
+      {
+        type: "p",
+        text: "If that doesn't settle it, rental disputes in Dubai go to the Rental Disputes Center at the Dubai Land Department. Law No. 26 of 2007 sends disputes about the property's condition at handover to a tribunal, and Decree No. 26 of 2013 set up the centre to take over that role. A claim needs a tenancy contract registered with Ejari, so keep a copy of yours.",
+      },
+      {
+        type: "p",
+        text: "Check the Dubai Land Department's current guidance on fees and how to file before you start. We can clear the property, but we can't advise on a dispute.",
+      },
+      { type: "h2", text: "FAQs" },
+      { type: "h3", text: "Can the landlord charge for removing my junk?" },
+      {
+        type: "p",
+        text: "If you leave items that aren't on the inventory, the landlord has a reason to claim the cost of clearing them from the deposit. Avoid it by clearing everything before the inspection and keeping dated photos of the empty flat.",
+      },
+      { type: "h3", text: "Can I leave furniture for the next tenant?" },
+      {
+        type: "p",
+        text: "Only if the landlord agrees in writing, ideally by adding it to the inventory. Without that, it counts as something you left behind.",
+      },
+      { type: "h3", text: "What if I've already left Dubai?" },
+      {
+        type: "p",
+        text: "Someone you trust, or your agent, can let a crew in. Send photos of what's left, agree the price and how you'll pay, and we send completion photos once the flat is empty.",
+      },
+    ],
+    sources: [
+      {
+        label: "Dubai Legislation Portal: Law No. 26 of 2007 regulating the relationship between landlords and tenants (Articles 4, 20 and 21)",
+        url: "https://dlp.dubai.gov.ae/Legislation%20Reference/2007/Law%20No.%20(26)%20of%202007%20Regarding%20regulation%20between%20the%20lessor%20and%20the%20lessee.html",
+      },
+      {
+        label: "Dubai Legislation Portal: Decree No. 26 of 2013 concerning the Rental Disputes Center",
+        url: "https://dlp.dubai.gov.ae/Legislation%20Reference/2013/Decree%2026%20of%202013.html",
+      },
+    ],
+  },
+  {
+    slug: "palm-frond-disposal-dubai",
+    title: "Palm fronds in Dubai: how to bundle and dispose of them",
+    description:
+      "Palm fronds in Dubai are too long and spiky for most bins. How to handle date palm spines safely, bundle fronds for collection and plan a pickup.",
+    date: "2026-11-27",
+    readMinutes: 5,
+    tag: "How-to",
+    relatedService: "garden-waste-removal",
+    blocks: [
+      {
+        type: "p",
+        text: "Palm fronds in Dubai rarely fit a household bin: a mature date palm frond is often several metres long, and the spines near its base tear through bags and thin gloves. Cut them into short lengths, bundle them with the spines facing inwards, then use your community's garden waste arrangement or book a collection.",
+      },
+      {
+        type: "p",
+        text: "This guide is for villa owners with mature palms, in areas such as [Jumeirah](/areas/jumeirah), Umm Suqeim, Al Safa and Mirdif. For grass, hedge cuttings and general green waste, see our [garden waste collection guide](/blog/garden-waste-collection-dubai).",
+      },
+      {
+        type: "callout",
+        title: "Pile too big to bundle?",
+        body: "Send one wide photo of the fronds on WhatsApp with your community name. We reply with a fixed price, then bag and load everything when we arrive.",
+      },
+      { type: "h2", text: "Why fronds don't fit the bin" },
+      {
+        type: "p",
+        text: "Most garden waste breaks down into something that fits a bag. Palm fronds don't. Each one is a long, stiff midrib lined with leaflets, and on date palms the lower part carries hard spines.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Length: an uncut frond won't fit in a wheelie bin or a standard bag",
+          "Spines: they puncture bin bags and can injure whoever lifts them",
+          "Volume: trimming a few palms can fill more space than months of grass cuttings",
+          "Weight: freshly cut fronds are much heavier than dry ones, so bundles get heavy quickly",
+        ],
+      },
+      {
+        type: "p",
+        text: "That's why many villa communities treat a large pile of fronds as the resident's job to remove. Emaar's community rules for Arabian Ranches, for example, ask residents to pack garden waste in designated bags and to arrange large items separately, at their own cost. Check your own community's rules before the trim.",
+      },
+      {
+        type: "p",
+        text: "Don't leave fronds on the verge or beside a community bin. A loose pile can blow into the road, and leaving waste in shared areas breaks most community rules.",
+      },
+      { type: "h2", text: "Safe handling: spines and gloves" },
+      {
+        type: "p",
+        text: "Date palm spines are sharp and stiff enough to go through thin gloves and trainers. Handle them the way you would handle broken glass.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Wear thick, thorn-resistant gloves, long sleeves and closed shoes",
+          "Wear safety glasses when cutting, because leaflets and spines can flick back",
+          "Lift fronds by the leafy end, away from the spiny base",
+          "Keep children and pets away from the pile until it's bundled",
+          "Never leave fronds where people walk barefoot, such as beside a pool",
+        ],
+      },
+      {
+        type: "p",
+        text: "If a spine breaks off in the skin, or a puncture becomes red or swollen, get medical advice rather than waiting for it to settle.",
+      },
+      { type: "h2", text: "Bundling for collection" },
+      {
+        type: "p",
+        text: "Bundled fronds are quicker to load and less likely to be left behind, whoever collects them. This matters most when the bins or your community's contractor are doing the collecting.",
+      },
+      {
+        type: "ol",
+        items: [
+          "Cut each frond into lengths of about one metre with loppers or a pruning saw",
+          "Cut off the spiny base section separately, and keep those pieces together",
+          "Stack the lengths in one direction, with the spines pointing inwards",
+          "Tie each bundle at both ends with strong twine or cable ties, at a weight one person can carry",
+          "Put the spiny base sections in heavy-duty bags, doubled if needed",
+          "Keep the bundles inside your plot, near vehicle access, until collection day",
+        ],
+      },
+      {
+        type: "p",
+        text: "If a crew is collecting, one neat pile near the gate is enough. Our [garden waste removal](/services/garden-waste-removal) crew bags and loads fronds as part of the job, along with any branches, dead plants or old planters from the same tidy-up.",
+      },
+      { type: "h2", text: "Trimming season and booking ahead" },
+      {
+        type: "p",
+        text: "Palms aren't trimmed every week, so the waste tends to arrive all at once, often after a gardener or tree specialist has done several trees in a day. Plan the collection when you book the trim, not after the pile appears.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Ask whoever trims the palms whether taking the fronds away is in their price",
+          "Agree a collection for the afternoon of the trim or the next morning, so the spiny pile isn't left in the garden",
+          "Tell us how many palms are being trimmed and send a photo of one, if you want a price in advance",
+          "Avoid trimming just before a party, a viewing or a handover unless the collection is already booked",
+        ],
+      },
+      {
+        type: "p",
+        text: "Healthy green fronds feed the palm, and removing too many can weaken it. Leave the decision about how much to cut to the person trimming the tree.",
+      },
+      {
+        type: "p",
+        text: "Same-day collection is sometimes possible when a slot is free, but it isn't guaranteed. Book ahead if the date matters.",
+      },
+      { type: "h2", text: "FAQs" },
+      { type: "h3", text: "Can you trim palms?" },
+      {
+        type: "p",
+        text: "No. Trimming and felling palms is a job for a tree specialist with the right equipment, especially for tall palms that need work at height. We clear the fronds once they're on the ground, and can come straight after the trimming.",
+      },
+      { type: "h3", text: "Can palm fronds go in with green waste?" },
+      {
+        type: "p",
+        text: "In some communities, short, bagged lengths of frond go out with the household garden waste. Others ask residents to remove larger amounts separately. Ask your community management office how many bags count as too many.",
+      },
+      { type: "h3", text: "How is palm frond removal priced?" },
+      {
+        type: "p",
+        text: "By the size of the pile and how far it is from the truck. Send a photo for a fixed price. Our [junk removal prices](/pricing) page explains what goes into a quote.",
+      },
+    ],
+    sources: [
+      {
+        label: "Emaar Community Management: Master Community Rules, Villas, Arabian Ranches I (section 9, waste and trash management)",
+        url: "https://www.ecm.ae/wp-content/uploads/2025/12/Emaar-Master-Community-Rules-Villas-Arabian-Ranches-I-1.pdf",
+      },
+      {
+        label: "UF/IFAS Gardening Solutions: pruning palms (why green fronds should be left on the tree)",
+        url: "https://gardeningsolutions.ifas.ufl.edu/care/pruning/pruning-palms.html",
+      },
+    ],
+  },
 ];
 
 export const getPost = (slug: string) => posts.find((p) => p.slug === slug);
